@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Access-modifier-static-method-and-property/Access-modifier-static-method-and-property.iml" filepath="$PROJECT_DIR$/Access-modifier-static-method-and-property/Access-modifier-static-method-and-property.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Access-modifier/Access-modifier.iml" filepath="$PROJECT_DIR$/Access-modifier/Access-modifier.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Class-and-object/Class-and-object.iml" filepath="$PROJECT_DIR$/Class-and-object/Class-and-object.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-overview/Java-overview.iml" filepath="$PROJECT_DIR$/Java-overview/Java-overview.iml" />
