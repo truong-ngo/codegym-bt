@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 4-3</title>
+</head>
+<body>
+<script>
+    //Hình 1:
+    let data1 = '';
+    for (let i1 = 1; i1 <= 5; i1++) {
+        data1 += '*';
+        document.write(data1 + '<br>');
+    }
+    document.write('<br>');
+
+    //Hình 2:
+    let data2 = ''
+    for (let i2 = 1; i2 <= 5; i2++) {
+        for (let j2 = 5-i2; j2 >= 0; j2--) {
+            data2 += '*';
+        }
+        for (let k2 = 1; k2 < i2; k2++) {
+            data2 += '&ensp;'
+        }
+        data2 += '<br>';
+    }
+    document.write(data2);
+    document.write('<br>');
+
+    //Hình 3:
+    let data3 = ''
+    for (let i3 = 1; i3 <=5 ; i3 ++) {
+        for (let j3 = 5 - i3;j3 >= 1; j3--) {
+            data3 += '&ensp;'
+        }
+        for (let k3 = 1; k3 <= i3; k3++) {
+            data3 += '*'
+        }
+        data3 += "<br>"
+    }
+    document.write(data3);
+    document.write('<br>');
+
+    //Hình 4:
+    let data4 = ''
+    for (let i4 = 1; i4 <= 5; i4++) {
+        for (let k4 = 1; k4 < i4; k4++) {
+            data4 += '&ensp;'
+        }
+        for (let j4 = 5-i4; j4 >= 0; j4--) {
+            data4 += '*';
+        }
+        data4 += '<br>';
+    }
+    document.write(data4);
+    document.write('<br>');
+</script>
+</body>
+</html>

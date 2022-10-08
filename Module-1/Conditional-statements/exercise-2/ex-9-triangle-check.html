@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle check</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Enter a");
+    let b = +prompt("Enter b");
+    let c = +prompt("Enter c");
+    if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && c + b > a) {
+        alert("a,b,c is the side of a triangle");
+    } else {
+        alert("a,b,c is not the side of a triangle");
+    }
+</script>
+</body>
+</html>

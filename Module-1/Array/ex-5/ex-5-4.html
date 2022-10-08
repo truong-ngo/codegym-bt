@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-4</title>
+</head>
+<body>
+<script>
+  let n = +prompt('Nhập số phần tử của mảng')
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+    arr[i] = Math.floor(Math.random()*20);
+  }
+  document.write(arr.join() + '<br>');
+  arr.reverse();
+  document.write(arr.join());
+</script>
+</body>
+</html>

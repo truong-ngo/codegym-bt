@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caro</title>
+</head>
+<body>
+<h1>Simple Caro</h1>
+<p id="carogame"></p>
+<input onclick="initBtn()" type="button" value="Start">
+<input onclick="changeBtn()" type="button" value="Change Value">
+<!--<input onclick="clearBtn()" type="button" value="Clear">-->
+<input onclick="resetBtn()" type="button" value="Reset">
+<script>
+  let board = [];
+  let data = '';
+  function initBtn() {
+    for (let i = 0; i < 5; i++) {
+      board[i] = [0, 0, 0, 0, 0];
+    }
+    console.log(board);
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
+        data += board[i][j] + '&ensp;';
+      }
+      data += '<br>';
+    }
+    document.getElementById('carogame').innerHTML = data;
+    console.log(data)
+    data = '';
+  }
+  function changeBtn() {
+    let xAxis = +prompt('x: ');
+    let yAxis = +prompt('y: ');
+    board[xAxis][yAxis] = 'x';
+    data = '';
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
+        data += board[i][j] + '&ensp;';
+      }
+      data += '<br>';
+    }
+    document.getElementById('carogame').innerHTML = data;
+  }
+  // function clearBtn() {
+  //   document.getElementById('carogame').innerHTML = '';
+  // }
+  function resetBtn() {
+    data = '';
+    for (let i = 0; i < 5; i++) {
+      board[i] = [0, 0, 0, 0, 0];
+    }
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
+        data += board[i][j] + '&ensp;';
+      }
+      data += '<br>';
+    }
+    document.getElementById('carogame').innerHTML = data;
+    data = '';
+  }
+</script>
+</body>
+</html>

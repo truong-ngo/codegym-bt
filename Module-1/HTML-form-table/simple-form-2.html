@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản 2</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      form {
+        background-color: yellow;
+        display: block;
+        width: 400px;
+      }
+      th {
+        background-color: aquamarine;
+        color: blue;
+      }
+      .blue-text {
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+  <form action="" method="get">
+    <table>
+      <tr>
+        <th colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+      </tr>
+      <tr>
+        <td class="blue-text">Họ và tên</td>
+        <td><input type="text" name="name"></td>
+      <tr>
+        <td class="blue-text">Ngày sinh</td>
+        <td><input type="text" name="birth day"></td>
+      </tr>
+      <tr>
+        <td class="blue-text">Giới tính</td>
+        <td>
+          <input type="radio" name="gender" value="male">Nam
+          <input type="radio" name="gender" value="female">Nữ
+        </td>
+      </tr>
+      <tr>
+        <td class="blue-text">Địa chỉ</td>
+        <td><textarea name="address"></textarea></td>
+      </tr>
+      <tr>
+        <td class="blue-text">Lớp</td>
+        <td>
+          <select name="class" id="">
+            <option value="class">--Chọn lớp--</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="blue-text">Email</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td class="blue-text">Điện thoại</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Đăng ký" name="submit form">
+          <input type="reset" value="Nhập lại" name="reset form">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

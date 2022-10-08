@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 3-8</title>
+</head>
+<body>
+<button onclick="clickBt()">Start</button>
+<script>
+    function clickBt() {
+        let number = +prompt('Số bạn muốn đoán lớn nhất là bao nhiêu?');
+        let a = Math.floor(Math.random() * (number+1));
+        let predicNum = +prompt('Số bạn đoán là:');
+        for (let i = 1; i < 4; i++) {
+            if (predicNum === a) {
+                document.write('Chúc mừng bạn đã đoán đúng!');
+            } else if (predicNum < a) {
+                predicNum = +prompt('Số bạn đoán nhỏ hơn');
+            } else if (predicNum > a) {
+                predicNum = +prompt('Số bạn đoán lớn hơn');
+            }
+        }
+        document.write('Bạn hết số lần đoán')
+    }
+</script>
+</body>
+</html>

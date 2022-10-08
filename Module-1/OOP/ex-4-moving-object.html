@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moving Object</title>
+</head>
+<body onload="start()">
+<div id="display"></div>
+<script>
+    class Objects {
+        constructor(image,top,left,width,height,speed) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.width = width;
+            this.height = height;
+            this.speed = speed;
+        }
+        getObjectElement() {
+            return `<img src="${this.image}" style="width: ${this.width}px; height: ${this.height}px;
+                    position: relative; top: ${this.top}px; left: ${this.left}px" alt="Image">`
+        }
+        moveRight() {
+            if (event.ctrlKey) {
+                let newSpeed = this.speed + 80;
+                this.left += newSpeed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            } else {
+                this.left += this.speed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            }
+        }
+        moveLeft() {
+            if (event.ctrlKey) {
+                let newSpeed = this.speed + 80;
+                this.left -= newSpeed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            } else {
+                this.left -= this.speed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            }
+        }
+        moveUp() {
+            if (event.ctrlKey) {
+                let newSpeed = this.speed + 80;
+                this.top -= newSpeed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            } else {
+                this.top -= this.speed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            }
+        }
+        moveDown() {
+            if (event.ctrlKey) {
+                let newSpeed = this.speed + 80;
+                this.top += newSpeed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            } else {
+                this.top += this.speed;
+                document.getElementById("display").innerHTML = mew.getObjectElement();
+            }
+
+        }
+    }
+    let mew = new Objects('mew.png',0,0,180,135,20);
+    function start() {
+        document.getElementById("display").innerHTML = mew.getObjectElement();
+    }
+    window.addEventListener('keydown',moveObject);
+    function moveObject() {
+        let keyCode = event.keyCode;
+        switch (keyCode) {
+            case 37:
+                mew.moveLeft();
+                break;
+            case 39:
+                mew.moveRight();
+                break;
+            case 38:
+                mew.moveUp();
+                break;
+            case 40:
+                mew.moveDown();
+        }
+    }
+</script>
+</body>
+</html>

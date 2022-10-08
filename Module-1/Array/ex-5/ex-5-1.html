@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let count = 0;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Math.floor(Math.random()*20);
+    }
+    console.log(arr);
+    for (let i = 0; i < 10; i++) {
+        if (arr[i] >= 10) {
+            count += 1;
+        }
+    }
+    console.log('Có ' + count + ' số lớn hơn hoặc bằng 10');
+</script>
+</body>
+</html>

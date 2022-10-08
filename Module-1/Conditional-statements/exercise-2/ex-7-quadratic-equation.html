@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic equation ax^2 + bx + c = 0</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Enter a");
+    let b = +prompt("Enter b");
+    let c = +prompt("Enter c");
+    let delta = b*b - 4*a*c;
+    if (a === 0) {
+        alert("Linear Equation");
+    } else if (delta === 0) {
+        console.log("Equation have double root " + -b/2*a);
+    } else if (delta < 0) {
+        alert("Equation have no solution");
+    } else {
+        let x1 = (-b-Math.sqrt(delta))/(2*a);
+        let x2 = (-b+Math.sqrt(delta))/(2*a);
+        console.log("Equation have 2 root " + x1 + ', ' + x2);
+    }
+</script>
+</body>
+</html>

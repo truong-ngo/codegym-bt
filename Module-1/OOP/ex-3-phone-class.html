@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone class</title>
+</head>
+<body>
+<h2>Nokia</h2>
+<p>Status: <span id="NokiaStatus"></span></p>
+<textarea id="NokiaDisplay" cols="65" rows="5"></textarea><br>
+<button onclick="Nokia.turnOnOffPhone()">On/Off</button>
+<button onclick="Nokia.chargingBattery()">Charge</button>
+<button onclick="Nokia.typeMessage()">Type Message</button>
+<button onclick="Nokia.draftMessage()">Draft</button>
+<button onclick="Nokia.sendMessage(Iphone)">Send Message</button>
+<button onclick="Nokia.inbox()">Inbox</button>
+<button onclick="Nokia.outbox()">Outbox</button>
+<br><br>
+<h2>Iphone</h2>
+<p>Status: <span id="IphoneStatus"></span></p>
+<textarea id="IphoneDisplay" cols="65" rows="5"></textarea><br>
+<button onclick="Iphone.turnOnOffPhone()">On/Off</button>
+<button onclick="Iphone.chargingBattery()">Charge</button>
+<button onclick="Iphone.typeMessage()">Type Message</button>
+<button onclick="Iphone.draftMessage()">Draft</button>
+<button onclick="Iphone.sendMessage(Nokia)">Send Message</button>
+<button onclick="Iphone.inbox()">Inbox</button>
+<button onclick="Iphone.outbox()">Outbox</button>
+<script>
+    class Mobile {
+        constructor(phoneName, phoneStatus, batteryStatus, draftMemo, inboxMemo, outboxMemo) {
+            this.phoneName = phoneName;
+            this.phoneStatus = phoneStatus;
+            this.batteryStatus = batteryStatus;
+            this.draftMemo = draftMemo;
+            this.inboxMemo = inboxMemo;
+            this.outboxMemo = outboxMemo;
+        }
+        getPhoneName() {
+            return this.phoneName;
+        }
+        getPhoneStatus() {
+            return this.phoneStatus;
+        }
+        getBatteryStatus() {
+            return this.batteryStatus;
+        }
+        displayStatus() {
+            if (this.getBatteryStatus() === 0) {
+                alert("Please charge your phone");
+            }
+            if (this.getPhoneStatus()) {
+                document.getElementById(`${this.getPhoneName()}Status`).innerText = `On - Battery: ${this.getBatteryStatus()}`;
+            } else {
+                document.getElementById(`${this.getPhoneName()}Status`).innerText = `Off - Battery: ${this.getBatteryStatus()}`;
+            }
+        }
+        turnOnOffPhone() {
+            if (this.getPhoneStatus()) {
+                this.phoneStatus = false;
+                this.displayStatus();
+            } else {
+                this.phoneStatus = true;
+                this.displayStatus();
+            }
+        }
+        chargingBattery() {
+            if (this.getBatteryStatus() >= 0 && this.getBatteryStatus() < 100) {
+                this.batteryStatus++;
+                this.displayStatus();
+            }
+            if (this.getBatteryStatus() === 100) {
+                alert("Your phone is charged");
+            }
+        }
+        // draftSave() {
+        //     let draftMessage = document.getElementById(`${this.getPhoneName()}Display`).value;
+        //     this.draftMemo.push(draftMessage);
+        // }
+        // setTimeOut() {
+        //     let myTimeOut = setTimeout(this.draftSave,5000);
+        // }
+        typeMessage() {
+            if (this.getPhoneStatus()) {
+                document.getElementById(`${this.getPhoneName()}Display`).value = '';
+                document.getElementById(`${this.getPhoneName()}Display`).focus();
+                this.batteryStatus--;
+                this.displayStatus();
+            } else {
+                alert("Please turn on your phone");
+            }
+        }
+        draftMessage() {
+            if (this.getPhoneStatus()) {
+                let draftMessage = document.getElementById(`${this.getPhoneName()}Display`).value;
+                this.draftMemo.push(draftMessage);
+                this.batteryStatus--;
+                this.displayStatus();
+            } else {
+                alert("Please turn on your phone");
+            }
+            console.log(this.draftMemo);
+        }
+        sendMessage(mobile) {
+            if (this.getPhoneStatus()) {
+                let message = document.getElementById(`${this.getPhoneName()}Display`).value;
+                this.outboxMemo.push(message);
+                mobile.receiveMessage(message);
+                this.batteryStatus--;
+                this.displayStatus();
+            } else {
+                alert("Please turn on your phone");
+            }
+        }
+        receiveMessage(message) {
+            this.inboxMemo.push(message);
+            document.getElementById(`${this.getPhoneName()}Display`).value = message;
+        }
+        inbox() {
+            if (this.getPhoneStatus()) {
+                let inboxContent = '';
+                for (let i = 0; i < this.inboxMemo.length; i++) {
+                    inboxContent += `IB${i + 1}:${this.inboxMemo[i]} `
+                }
+                document.getElementById(`${this.getPhoneName()}Display`).value = inboxContent;
+                this.batteryStatus--;
+                this.displayStatus();
+            } else {
+                alert("Please turn on your phone");
+            }
+        }
+        outbox() {
+            if (this.getPhoneStatus()) {
+                let outboxContent = '';
+                for (let i = 0; i < this.outboxMemo.length; i++) {
+                    outboxContent += `OB${i + 1}:${this.outboxMemo[i]} `
+                }
+                document.getElementById(`${this.getPhoneName()}Display`).value = outboxContent;
+                this.batteryStatus--;
+                this.displayStatus();
+            } else {
+                alert("Please turn on your phone");
+            }
+        }
+    }
+    let Nokia = new Mobile('Nokia', false, 50,[],[],[]);
+    let Iphone = new Mobile('Iphone', false, 70,[],[],[]);
+</script>
+</body>
+</html>

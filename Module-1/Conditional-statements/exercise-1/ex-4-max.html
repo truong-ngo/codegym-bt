@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX4</title>
+</head>
+<body>
+<p style="display: inline-block">Số lớn nhất là:</p><span style="margin-left: 4px" id="result"></span>
+<script>
+  let a = +prompt('Nhập số a:');
+  let b = +prompt('Nhập số b:');
+  let c = +prompt('Nhập số c:');
+  max = a;
+  if (b > max) {
+    max = b;
+  }
+  if (c > max) {
+    max = c;
+  }
+  document.getElementById('result').innerText = max;
+</script>
+</body>
+</html>

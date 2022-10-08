@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle class</title>
+</head>
+<body>
+<script>
+    let Circles = function (radius,color) {
+        this.radius = radius;
+        this.getRadius = function () {
+            return this.radius;
+        }
+        this.getArea = function () {
+            let area = this.radius*this.radius*Math.PI;
+            return area;
+        }
+    }
+    let circle = new Circles(2);
+    let area = circle.getArea();
+    let radius = circle.getRadius();
+    console.log(`Radius: ${radius}, Area: ${area}`);
+</script>
+</body>
+</html>

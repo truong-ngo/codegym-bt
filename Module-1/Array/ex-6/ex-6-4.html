@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 6-4</title>
+</head>
+<body>
+<script>
+  let str = prompt('Nhập chuỗi');
+  let num = [0,1,2,3,4,5,6,7,8,9];
+  let count = 0;
+  console.log(str);
+  for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < num.length; j++) {
+      if (+str[i] === num[j]) {
+        count += 1;
+      }
+    }
+  }
+  console.log('Chuỗi có ' + count + ' số');
+</script>
+</body>
+</html>

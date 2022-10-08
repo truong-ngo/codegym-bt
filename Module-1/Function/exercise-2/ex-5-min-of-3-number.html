@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min of 3 number</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Enter number 1");
+    let num2 = +prompt("Enter number 2");
+    let num3 = +prompt("Enter number 3");
+    function checkMin(a,b,c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        return min;
+    }
+    console.log(`Minimum of 3 number is: ${checkMin(num1,num2,num3)}`);
+</script>
+</body>
+</html>

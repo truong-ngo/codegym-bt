@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-2</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let index = 0;
+  for (let i = 0; i < 10; i++) {
+    arr[i] = Math.floor(Math.random()*20);
+  }
+  console.log(arr);
+  let max = arr[0];
+  for (let i = 0; i < 10; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+      index = i;
+    }
+  }
+  console.log('Số lớn nhất là ' + max + ' tại vị trí ' + index);
+</script>
+</body>
+</html>

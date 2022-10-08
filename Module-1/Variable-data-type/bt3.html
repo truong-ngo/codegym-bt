@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+    <style>
+        caption {
+            font-weight: 600;
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+        input {
+            width: 96%
+        }
+    </style>
+</head>
+<body>
+  <table>
+      <caption>Calculator</caption>
+      <tr>
+          <td><input type="text" id="inputa"></td>
+          <td><input type="text" id="inputb"></td>
+      </tr>
+      <tr>
+          <td>
+              <button id="add" onclick="addition()">Addition(+)</button>
+              <button id="sub" onclick="subtraction()">Subtraction(-)</button>
+          </td>
+          <td>
+              <button id="multi" onclick="multiplication()">Multiplication(X)</button>
+              <button id="div" onclick="division()">Division(/)</button>
+          </td>
+      </tr>
+      <tr>
+          <td>Kết quả:</td>
+          <td id="result"></td>
+      </tr>
+  </table>
+  <script>
+    function addition () {
+        let a = +document.getElementById('inputa').value;
+        let b = +document.getElementById('inputb').value;
+        let add = a + b;
+        document.getElementById('result').innerText=add;
+    }
+    function subtraction () {
+        let a = +document.getElementById('inputa').value;
+        let b = +document.getElementById('inputb').value;
+        let sub = a - b;
+        document.getElementById('result').innerText=sub;
+    }
+    function multiplication () {
+        let a = +document.getElementById('inputa').value;
+        let b = +document.getElementById('inputb').value;
+        let multi = a * b;
+        document.getElementById('result').innerText=multi;
+    }
+    function division () {
+        let a = +document.getElementById('inputa').value;
+        let b = +document.getElementById('inputb').value;
+        let div = a / b;
+        document.getElementById('result').innerText=div;
+    }
+  </script>
+</body>
+</html>

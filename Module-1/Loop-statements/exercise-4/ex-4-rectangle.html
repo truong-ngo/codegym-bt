@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 4-4</title>
+</head>
+<body>
+<script>
+  let data = '';
+  for (let i = 1; i <= 21; i++) {
+    data += '*'
+  }
+  data = data + '<br>'
+  for (let j = 1; j <= 5; j++) {
+    data += '*';
+    for (let k = 1; k <= 19; k++) {
+      data += '&ensp;'
+    }
+    data += '*' + '<br>';
+  }
+  for (let i = 1; i <= 21; i++) {
+    data += '*'
+  }
+  data = data + '<br>'
+  document.write(data);
+</script>
+</body>
+</html>

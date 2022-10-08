@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Fast Cheap</title>
+    <style>
+        input {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+<h2>Good Fast Cheap</h2>
+<input onclick="clickBtn0()" id="input0" type="range" min="0" max="20" value="0" step="20"> <span>Good</span><br>
+<input onclick="clickBtn1()" id="input1" type="range" min="0" max="20" value="0" step="20"> <span>Fast</span><br>
+<input onclick="clickBtn2()" id="input2" type="range" min="0" max="20" value="0" step="20"> <span>Cheap</span>
+<script>
+    function clickBtn0() {
+        let value0 = document.getElementById("input0").value;
+        let value1 = document.getElementById("input1").value;
+        let value2 = document.getElementById("input2").value;
+        if (+value0 === 20 && +value1 === 20) {
+            document.getElementById("input2").value = 0;
+        }
+    }
+    function clickBtn1() {
+        let value0 = document.getElementById("input0").value;
+        let value1 = document.getElementById("input1").value;
+        let value2 = document.getElementById("input2").value;
+        if (+value1 === 20 && +value2 === 20) {
+            document.getElementById("input0").value = 0;
+        }
+    }
+    function clickBtn2() {
+        let value0 = document.getElementById("input0").value;
+        let value1 = document.getElementById("input1").value;
+        let value2 = document.getElementById("input2").value;
+        if (+value0 === 20 && +value2 === 20) {
+            document.getElementById("input1").value = 0;
+        }
+    }
+</script>
+</body>
+</html>

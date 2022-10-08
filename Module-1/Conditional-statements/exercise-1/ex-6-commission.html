@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX6</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+  let income = +prompt('Nhập doanh thu (đơn vị triệu đồng:');
+  if (income<=100) {
+    commission = income*0.05;
+  } else if (income<=300) {
+    commission = income*0.1;
+  } else {
+    commission = income*0.2;
+  }
+  document.getElementById('result').innerText = 'Hoa hồng là: ' + commission + ' triệu đồng'
+</script>
+</body>
+</html>

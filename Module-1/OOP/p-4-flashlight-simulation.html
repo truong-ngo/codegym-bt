@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Light Simulation</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy() {
+            return this.energy;
+        }
+        setEnergy(energy) {
+            return this.energy = energy;
+        }
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--
+            }
+        }
+    }
+    class FlashLight {
+        constructor(battery) {
+            this.battery = battery;
+            this.status = false;
+        }
+        getBatteryInfo() {
+            return this.battery.getEnergy()
+        }
+        setBattery(battery) {
+            this.battery = battery;
+        }
+        turnOn() {
+            this.battery.decreaseEnergy();
+            return this.status = true;
+        }
+        turnOff() {
+            return this.status = false;
+        }
+        lightCheck() {
+            if (this.status) {
+                alert("Flash light is on");
+            } else {
+                alert("Flash light is off");
+            }
+        }
+    }
+    let battery = new Battery();
+    battery.setEnergy(50);
+    let flashLight = new FlashLight();
+    flashLight.setBattery(battery);
+    console.log(`Battery info: ${flashLight.getBatteryInfo()}`);
+    flashLight.turnOn();
+    flashLight.lightCheck();
+    flashLight.turnOff();
+    flashLight.lightCheck();
+</script>
+</body>
+</html>

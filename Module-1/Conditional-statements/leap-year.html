@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap Year</title>
+</head>
+<body>
+<script>
+
+    //1 biến
+
+    // let year = parseInt(prompt('Enter a year'));
+    // if (year % 4 === 0) {
+    //     if (year % 100 === 0) {
+    //         if (year % 400 === 0) {
+    //             alert(year + " is a leap year")
+    //         } else {
+    //             alert(year + " is not a leap year")
+    //         }
+    //     } else {
+    //         alert(year + " is a leap year")
+    //     }
+    // } else {
+    //     alert(year + " is not a leap year")
+    // }
+
+    //2 biến
+
+    // let year = parseInt(prompt('Enter a year'));
+    // let isLeapYear = false;
+    // if (year % 4 === 0) {
+    //     if (year % 100 === 0) {
+    //         if (year % 400 === 0) {
+    //             isLeapYear = true
+    //         }
+    //     } else {
+    //         isLeapYear = true
+    //     }
+    // }
+    // if (isLeapYear) {
+    //     alert(year + " is a leap year")
+    // } else {
+    //     alert(year + " is not a leap year")
+    // }
+
+    //5 biến
+
+    // let year = parseInt(prompt('Enter a year'));
+    // let isLeapYear = false;
+    // let isDivisiableBy4 = year % 4 === 0;
+    // if (isDivisiableBy4) {
+    //     let isDivisiableBy100 = year % 100 === 0;
+    //     if (isDivisiableBy100) {
+    //         let isDivisiableBy400 = year % 400 === 0;
+    //         if (isDivisiableBy400) {
+    //             isLeapYear = true
+    //         }
+    //     } else {
+    //         isLeapYear = true
+    //     }
+    // }
+    // if (isLeapYear) {
+    //     alert(year + " is a leap year")
+    // } else {
+    //     alert(year + " is not a leap year")
+    // }
+
+    // dùng toán tử logic
+
+    let year = parseInt(prompt('Enter a year'));
+    if (((year%4) && !(year%100)) || ((year%4) && (year%100) && (year%400))) {
+        alert(year + ' is aleap year');
+    } else {
+        alert(year + ' is not aleap year');
+    }
+</script>
+</body>
+</html>

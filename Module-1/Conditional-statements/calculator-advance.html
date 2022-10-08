@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        div {
+            background-color: #ded9d9;
+            opacity: 80%;
+        }
+        caption {
+            font-weight: 600;
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+        input {
+            width: 96%;
+        }
+        #resultCell {
+            width: 206px;
+            border: 1px solid #333333;
+            height: 22px;
+            text-align: right;
+        }
+        .btn,.equal {
+            width: 50px;
+            height: 30px;
+            font-weight: 600;
+        }
+        .delete {
+            width: 50px;
+            height: 30px;
+            font-weight: 600;
+            color: white;
+            background-color: #d61b06;
+            border: none;
+        }
+        .equal {
+            color: white;
+            background-color: #0069d9;
+            border: none;
+        }
+        div {
+            padding: 4px;
+            border: 3px solid #000;
+            display: inline-block;
+        }
+        .btn.operator {
+            border: none;
+            background-color: black;
+            color: white;
+        }
+        .btn {
+            border: none;
+            background-color: #333333;
+            color: white;
+        }
+        button {
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <table>
+          <caption>Calculator</caption>
+          <tr>
+              <td colspan="4"><input type="text" id="resultCell"></td>
+          </tr>
+          <tr>
+              <td>
+                  <button value="(" class="btn">(</button>
+              </td>
+              <td>
+                  <button value=")" class="btn">)</button>
+              </td>
+              <td>
+                  <button onclick="del()" class="delete">DEL</button>
+              </td>
+              <td>
+                  <button onclick="clearBtn()" class="delete">AC</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button value="7" class="btn">7</button>
+              </td>
+              <td>
+                  <button value="8" class="btn">8</button>
+              </td>
+              <td>
+                  <button value="9" class="btn">9</button>
+              </td>
+              <td>
+                  <button value="/" class="btn operator">/</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button value="4" class="btn">4</button>
+              </td>
+              <td>
+                  <button value="5" class="btn">5</button>
+              </td>
+              <td>
+                  <button value="6" class="btn">6</button>
+              </td>
+              <td>
+                  <button value="*" class="btn operator">*</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button value="1" class="btn">1</button>
+              </td>
+              <td>
+                  <button value="2" class="btn">2</button>
+              </td>
+              <td>
+                  <button value="3" class="btn">3</button>
+              </td>
+              <td>
+                  <button value="-" class="btn operator">-</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button value="0" class="btn">0</button>
+              </td>
+              <td>
+                  <button value="." class="btn">.</button>
+              </td>
+              <td>
+                  <button onclick="calculate()" class="equal">=</button>
+              </td>
+              <td>
+                  <button value="+" class="btn operator">+</button>
+              </td>
+          </tr>
+      </table>
+  </div>
+  <script>
+      let result = document.getElementById('resultCell');
+      let numbers = document.getElementsByClassName('btn');
+      //Nhấn nút để hiển thị biểu thức lên màn hình
+      for (let number of numbers) {
+          number.addEventListener('click',function () {
+              result.value += number.value;
+          })
+      }
+      //Hàm tình toán
+      function calculate () {
+          result.value = eval(result.value);
+      }
+      //Hàm reset
+      function clearBtn () {
+          result.value = "";
+      }
+      //Hàm xóa 1 ký tự
+      function del () {
+          result.value = result.value.slice(0,-1);
+      }
+      //Hàm nhấn nút để thay cho click - ko áp dụng vì không có bàn phím số
+      // document.addEventListener('keydown',keyDown);
+      // function keyDown(event) {
+      //     switch (event.keyCode) {
+      //         case 49:
+      //         case 50:
+      //         case 51:
+      //         case 52:
+      //         case 53:
+      //         case 54:
+      //         case 55:
+      //         case 56:
+      //         case 57:
+      //         case 58:
+      //         case 189:
+      //         case 191:
+      //             result.value += event.key;
+      //             break;
+      //         case 27:
+      //             clearBtn();
+      //             break;
+      //         case 8:
+      //             del();
+      //             break;
+      //         case 13:
+      //             calculate();
+      //             break;
+      //         case 187:
+      //             result.value += '+';
+      //             break;
+      //         case 88:
+      //             result.value += '*';
+      //     }
+</script>
+</body>
+</html>

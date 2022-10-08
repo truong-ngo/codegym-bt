@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch case 3 (if else)</title>
+</head>
+<body>
+<script>
+  let value = +prompt('Nhập số:', '');
+
+  //if else
+  // if (value>0) {
+  //   alert('1');
+  // } else if (value===0) {
+  //   alert('0');}
+  //   else {
+  //     alert(-1);
+  //   }
+
+  //switch case
+  switch (value > 0) {
+      case true:
+          alert(1)
+          break
+      case false:
+          switch (value < 0) {
+              case true:
+                  alert(-1)
+                  break
+              default:
+                  alert(0)
+          }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--&ensp;**&ensp;&ensp;**&ensp;<br>-->
+<!--********<br>-->
+<!--&ensp;******&ensp;<br>-->
+<!--&ensp;&ensp;****&ensp;&ensp;<br>-->
+<!--&ensp;&ensp;&ensp;**&ensp;&ensp;&ensp;-->
+</body>
+<script>
+    let data = '';
+    for (let i = 0; i < 2; i++) {
+        data += '&ensp;**&ensp;';
+    }
+    data += '<br>';
+    for (let i = 0; i < 5; i++) {
+        data += '&ensp;'.repeat(i) + '*'.repeat(8-i*2) + '&ensp;'.repeat(i) + '<br>';
+    }
+    document.write(data);
+</script>
+</html>

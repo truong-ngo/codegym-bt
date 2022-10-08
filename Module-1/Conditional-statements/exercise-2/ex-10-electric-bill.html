@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electric Bill Calculate</title>
+</head>
+<body>
+<script>
+    let value = +prompt("Nhập số điện");
+    let money = 0;
+    if (value <= 100) {
+        money = value*1000;
+    } else if (value <= 150) {
+        money = 100*1000 + (value-100)*1200;
+    } else if (value <= 200) {
+        money = 100 * 1000 + 50 * 1200 + (value-150) * 2000;
+    } else {
+        money = 100 * 1000 + 50 * 1200 + 50 * 2000 + (value - 200) * 2500;
+    }
+    console.log("Số tiền phải nộp là " + money);
+</script>
+</body>
+</html>

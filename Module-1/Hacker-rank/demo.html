@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Fibonacci Modified
+    function fibonacciModified(t1, t2, n) {
+        let arrFibonacci = [t1,t2];
+        for (let i = 2; i < n; i++) {
+            arrFibonacci[i] = arrFibonacci[i-1]**2 + arrFibonacci[i-2];
+        }
+        let result = arrFibonacci[n-1];
+        return result;
+    }
+    Number.prototype.noExponents = function() {
+        let data = String(this).split(/[eE]/);
+        if (data.length === 1) return data[0];
+
+        let z = '',
+            sign = this < 0 ? '-' : '',
+            str = data[0].replace('.', ''),
+            mag = Number(data[1]) + 1;
+
+        if (mag < 0) {
+            z = sign + '0.';
+            while (mag++) z += '0';
+            return z + str.replace(/^\-/, '');
+        }
+        mag -= str.length;
+        while (mag--) z += '0';
+        return str + z;
+    }
+    function convert(n) {
+        let sign = +n < 0 ? "-" : "",
+            toStr = n.toString();
+        if (!/e/i.test(toStr)) {
+            return n;
+        }
+        let [lead, decimal, pow] = n.toString()
+            .replace(/^-/, "")
+            .replace(/^([0-9]+)(e.*)/, "$1.$2")
+            .split(/e|\./);
+        return +pow < 0 ?
+            sign + "0." + "0".repeat(Math.max(Math.abs(pow) - 1 || 0, 0)) + lead + decimal :
+            sign + lead + (+pow >= decimal.length ? (decimal + "0".repeat(Math.max(+pow - decimal.length || 0, 0))) : (decimal.slice(0, +pow) + "." + decimal.slice(+pow)))
+    }
+    console.log(convert(fibonacciModified(0,1,10)));
+
+    // Solve Me First
+    function solveMeFirst(a, b) {
+        return a+b;
+    }
+
+    // Simple Array Sum
+    function simpleArraySum(ar) {
+        // Write your code here
+        let sum = 0;
+        for (let i = 0; i < ar.length; i++) {
+            sum += ar[i];
+        }
+        return sum;
+    }
+
+    // Compare the Triplets
+    function compareTriplets(a, b) {
+        let aPoint = 0;
+        let bPoint = 0;
+        let result = [];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > b[i]) {
+                aPoint++;
+            } else if (a[i] < b[i]) {
+                bPoint++;
+            }
+        }
+        result.push(aPoint);
+        result.push(bPoint);
+        return result;
+    }
+
+    // A Very Big Sum
+    function aVeryBigSum(ar) {
+        let sum = 0;
+        for (let i = 0; i < ar.length; i++) {
+            sum += ar[i];
+        }
+        return sum;
+    }
+
+    // Diagonal Difference
+    function diagonalDifference(arr) {
+        let primaryDiagonal = 0;
+        let secondaryDiagonal = 0;
+        let i = 0;
+        let j = 0;
+        while (i < arr.length && j < arr.length) {
+            primaryDiagonal += arr[i][j];
+            i++;
+            j++;
+        }
+        i = 0;
+        j = arr.length-1;
+        while (i < arr.length && j >= 0) {
+            secondaryDiagonal += arr[i][j];
+            i++;
+            j--;
+        }
+        return Math.abs(primaryDiagonal - secondaryDiagonal)
+    }
+
+    // Plus Minus
+    function plusMinus(arr) {
+        let positiveCount = 0;
+        let negativeCount = 0;
+        let zeroCount = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                positiveCount += 1;
+            } else if (arr[i] < 0) {
+                negativeCount += 1;
+            } else {
+                zeroCount += 1;
+            }
+        }
+        let positiveRatio = 0;
+        let negativeRatio = 0;
+        let zeroRatio = 0;
+        positiveRatio = (positiveCount / arr.length).toFixed(6);
+        negativeRatio = (negativeCount / arr.length).toFixed(6);
+        zeroRatio = (zeroCount / arr.length).toFixed(6);
+        console.log(positiveRatio+'\n'+negativeRatio+'\n'+zeroRatio);
+    }
+
+    // Staircase
+    function staircase(n) {
+        for (let i = 1; i <= n; i++) {
+            console.log(' '.repeat(n-i) + '#'.repeat(i));
+        }
+    }
+
+    // Mini-Max Sum
+    function miniMaxSum(arr) {
+        function sum(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        let sumArr = [];
+        let sumArrI = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sumArrI = sum(arr) - arr[i];
+            sumArr.push(sumArrI);
+        }
+        let maxSum = sumArr[0];
+        let minSum = sumArr[0];
+        for (let i = 1; i < sumArr.length; i++) {
+            if (sumArr[i] > maxSum) {
+                maxSum = sumArr[i];
+            }
+            if (sumArr[i] < minSum) {
+                minSum = sumArr[i];
+            }
+        }
+        console.log(minSum + ' ' + maxSum);
+    }
+
+    // Birthday Cake Candles
+    function birthdayCakeCandles(candles) {
+        let count = 0;
+        let max = candles[0]
+        for (let i = 1; i < candles.length; i++) {
+            if (candles[i] > max) {
+                max = candles[i];
+            }
+        }
+        for (let i = 0; i < candles.length; i++) {
+            if (candles[i] === max) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Time Conversion
+    function timeConversion(s) {
+        let sArr = s.split(':');
+        sArr[sArr.length-1] = sArr[sArr.length-1].slice(0,-2);
+        if (parseInt(sArr[0]) === 12) {
+            sArr[0] = '00';
+        }
+        let newTime = '';
+        if (s.endsWith('PM')) {
+            sArr[0] = parseInt(sArr[0]) + 12;
+        }
+        newTime = sArr.join(':');
+        return newTime;
+    }
+
+    // Grading Student
+    function grading(grade) {
+        if (grade >= 38) {
+            for (let j = 8; j <= 20; j++) {
+                if ((j*5 - grade) < 3 && (j*5 - grade) > 0) {
+                    grade = j*5;
+                    break;
+                }
+            }
+        }
+        return grade;
+    }
+
+    // Apple and Orange
+    function countApplesAndOranges(s, t, a, b, apples, oranges) {
+        let numApple = 0;
+        let numOrange = 0;
+        for (let i = 0; i < apples.length; i++) {
+            if (apples[i] + a >= s && apples[i] + a <= t) {
+                numApple++;
+            }
+        }
+        for (let i = 0; i < oranges.length; i++) {
+            if (oranges[i] + b >= s && oranges[i] + b <= t) {
+                numOrange++;
+            }
+        }
+        console.log(numApple);
+        console.log(numOrange);
+    }
+
+    // Number Line Jumps
+    function kangaroo(x1, v1, x2, v2) {
+        let check = (x2-x1)/(v1-v2);
+        let result = (Number.isInteger(check) && check > 0) ? 'YES' : 'NO';
+        return result;
+    }
+
+    // Between Two Sets
+    function getTotalX(a, b) {
+        let aArr = [];
+        let bArr = [];
+        let count = 0;
+        function max(arr) {
+            let max = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        function isGreater(x,y) {
+            if (x>y) {
+                return x;
+            } else {
+                return y;
+            }
+        }
+        for (let num = 1; num <= isGreater(max(a),max(b)); num++) {
+            let check = true;
+            for (let i = 0; i < a.length; i++) {
+                if (num % a[i] !== 0) {
+                    check = false;
+                }
+            }
+            if (check) {
+                aArr.push(num);
+            }
+        }
+        for (let num = 1; num <= isGreater(max(a),max(b)); num++) {
+            let check = true;
+            for (let i = 0; i < b.length; i++) {
+                if (b[i] % num !== 0) {
+                    check = false;
+                }
+            }
+            if (check) {
+                bArr.push(num);
+            }
+        }
+        for (let i = 0; i < aArr.length; i++) {
+            for (let j = 0; j < bArr.length; j++) {
+                if (aArr[i] === bArr[j]) {
+                    count++
+                }
+            }
+        }
+        return count;
+    }
+
+    // Breaking The Record
+    score = [3,4,21,36,10,28,35,5,24,42];
+    function breakingRecords(scores) {
+        let max = scores[0];
+        let min = scores[0];
+        let countMax = 0;
+        let countMin = 0;
+        for (let i = 0; i < scores.length; i++) {
+            if (scores[i] > max) {
+                max = scores[i];
+                countMax++;
+            }
+            if (scores[i] < min) {
+                min = scores[i];
+                countMin++;
+            }
+        }
+        let result = [countMax,countMin];
+        return result;
+    }
+
+    // Subarray Division
+    s = [1,2,1,3,2]; d=3; m=2;
+    function birthday(s, d, m) {
+        let arr = [];
+        let count = 0;
+        for (let i = 0; i <= s.length-m; i++) {
+            arr.push(s.slice(i,m+i));
+        }
+        function sum(arr) {
+            let sum = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (sum(arr[i]) === d) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Divisible Sum Pair
+    function divisibleSumPairs(n, k, ar) {
+        let count = 0;
+        for (let i = 0; i < n; i++) {
+            for (let j = i+1; j < n; j++) {
+                if ((ar[i] + ar[j]) % k === 0) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    // Migratory Birds
+    let arrMB = [1,2,3,4,5,4,3,2,1,3,4];
+    function migratoryBirds(arr) {
+        function max(arr) {
+            let max = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        function min(arr) {
+            let min = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+        let result = []
+        for (let i = min(arr); i <= max(arr) ; i++) {
+            let newArr = [];
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[j] === i) {
+                    newArr.push(arr[j])
+                }
+            }
+            result.push(newArr);
+        }
+        let maxLength = result[0].length;
+        let index = 1;
+        for (let i = 1; i < result.length; i++) {
+            if (result[i].length > maxLength) {
+                maxLength = result[i].length;
+                index = i;
+            } else if (result[i].length === maxLength) {
+                if (result[i][0] < result[index][0]) {
+                    index = i;
+                }
+            }
+        }
+        return result[index][0];
+    }
+
+    // Day of the Programmer
+    function dayOfProgrammer(year) {
+        function isJulianLeapYear(year) {
+            let check = (year % 4 === 0);
+            return check;
+        }
+        function isGregorianLeapYear(year) {
+            let check = false;
+            if (year % 4 !== 0) {
+                check = false;
+            } else if (year % 100 !== 0) {
+                check = true;
+            } else if (year % 400 !== 0) {
+                check = false;
+            } else {
+                check = true;
+            }
+            return check;
+        }
+        let day = '';
+        if (year < 1918) {
+            if (isJulianLeapYear(year)) {
+                day = `12.09.${year}`;
+            } else {
+                day = `13.09.${year}`;
+            }
+        } else if (year > 1918) {
+            if (isGregorianLeapYear(year)) {
+                day = `12.09.${year}`;
+            } else {
+                day = `13.09.${year}`;
+            }
+        } else if (year === 1918) {
+            day = '26.09.1918';
+        }
+        return day;
+    }
+
+    // Bill Division
+    bill = [3,10,2,9]; k = 1; b = 12;
+    function bonAppetit(bill, k, b) {
+        function sum(arr) {
+            let sum = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        let bActual = (sum(bill) - bill[k])/2;
+        if (b === bActual) {
+            result = 'Bon Appetit';
+        } else if (bActual < b) {
+            result = b-bActual;
+        }
+        console.log(result);
+    }
+</script>
+</html>

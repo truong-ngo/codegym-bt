@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số ngày trong 1 tháng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            border: 3px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            width: 30%;
+        }
+        table {
+            margin: 16px 8px;
+            border-collapse: collapse;
+            border-top: 1px solid #000000;
+            width: 97%;
+        }
+        caption {
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+        .row1,.row3 {
+            padding-top: 16px;
+        }
+        select {
+            text-align: left;
+            width: 100%;
+            padding: 2px 0;
+        }
+        button {
+            padding: 2px 2px;
+            position: relative;
+            right: 0;
+        }
+        input {
+            border: none;
+            width: 100%;
+        }
+        td {
+            /*border: 1px solid black;*/
+            text-align: center;
+        }
+        p {
+            text-align: left;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <table>
+        <caption>Kiểm tra số ngày trong 1 tháng</caption>
+        <tr>
+            <td class="row1" class="col1"><p>Chọn tháng:</p></td>
+            <td class="row1">
+                <select name="month" id="sel-month">
+                    <option value="1">Tháng 1</option>
+                    <option value="2">Tháng 2</option>
+                    <option value="3">Tháng 3</option>
+                    <option value="4">Tháng 4</option>
+                    <option value="5">Tháng 5</option>
+                    <option value="6">Tháng 6</option>
+                    <option value="7">Tháng 7</option>
+                    <option value="8">Tháng 8</option>
+                    <option value="9">Tháng 9</option>
+                    <option value="10">Tháng 10</option>
+                    <option value="11">Tháng 11</option>
+                    <option value="12">Tháng 12</option>
+                </select>
+            </td>
+            <td class="row1"><button onclick="checkBtn()" id="check-btn">Check</button></td>
+        </tr>
+        <tr>
+            <td class="row3" class="col1"><p>Số ngày của tháng là:</p></td>
+            <td class="row3" colspan="2"><input id="result" type="text"></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function checkBtn() {
+        let dayNum = +document.getElementById('sel-month').value;
+        switch (dayNum) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = '31';
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result = '30';
+                break;
+            case 2:
+                result = '28 hoặc 29'
+        }
+        document.getElementById('result').value = 'Tháng ' + dayNum + ' có ' + result + ' ngày';
+    }
+
+</script>
+</body>
+</html>

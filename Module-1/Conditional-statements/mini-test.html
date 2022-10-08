@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Test</title>
+    <style>
+      p {
+        display: inline-block;
+        margin: 8px 0;
+      }
+      span {
+        margin: 0 8px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+  <h1>Mini test</h1>
+  <label for="numa">Enter Number a:</label>
+  <input id="numa" type="text"><br><br>
+  <label for="numb">Enter Number b:</label>
+  <input id="numb" type="text"><br><br>
+  <label for="numc">Enter Number c:</label>
+  <input id="numc" type="text"><br><br>
+  <label for="year">Enter year:</label>
+  <input id="year" type="text"><br><br>
+  <p>Perimeter of a square with side length a: </p><span id="result1"></span><button onclick="cal1()">Check</button>
+  <br>
+  <p>Area of a square with side length a: </p><span id="result7"></span><button onclick="cal7()">Check</button>
+  <br>
+  <p>a^2 = </p><span id="result2"></span><button onclick="cal2()">Check</button>
+  <br>
+  <p>a^b = </p><span id="result3"></span><button onclick="cal3()">Check</button>
+  <br>
+  <p>Sum from number a to number b: </p><span id="result4"></span><button onclick="cal4()">Check</button>
+  <br>
+  <p>Century: </p><span id="result5"></span><button onclick="cal5()">Check</button>
+  <br>
+  <p>a, b, c is: </p><span id="result6"></span><button onclick="cal6()">Check</button>
+  <br>
+  <script>
+    function cal1() {
+      let a = document.getElementById('numa').value;
+      preimeter = a*4;
+      document.getElementById('result1').innerText = '' + preimeter;
+    }
+    function cal7() {
+      a = document.getElementById('numa').value;
+      area = a**2;
+      document.getElementById('result7').innerText = '' + area;
+    }
+    function cal2() {
+      a = document.getElementById('numa').value;
+      exp1 = a*a;
+      document.getElementById('result2').innerText = '' + exp1;
+    }
+    function cal3() {
+      a = document.getElementById('numa').value;
+      let b = document.getElementById('numb').value;
+      exp2 = a**b;
+      document.getElementById('result3').innerText = '' + exp2;
+    }
+    function cal4() {
+      a = +document.getElementById('numa').value;
+      b = +document.getElementById('numb').value;
+      numnum = Math.abs(b-a) + 1;
+      sum = (b+a)*(numnum/2);
+      document.getElementById('result4').innerText = '' + sum;
+    }
+    function cal5() {
+      let year = document.getElementById('year').value;
+      cen = parseInt(year.slice(0,-2)) + 1;
+      document.getElementById('result5').innerText = '' + cen;
+    }
+    function cal6() {
+      a = +document.getElementById('numa').value;
+      b = +document.getElementById('numb').value;
+      let c = +document.getElementById('numc').value;
+      if (!(a > 0 && b > 0 && c > 0)) {
+        alert('Enter number a,b,c > 0!')
+      } else if (!((a+b>c) && (a+c>b) && (b+c>a))) {
+        document.getElementById('result6').innerText = 'not the sides of a Triangle';
+      } else if (a===b && a===c) {
+          document.getElementById('result6').innerText = 'is the sides of a Equilateral Triangle';
+      } else if (a===b || a===c || b===c) {
+          document.getElementById('result6').innerText = 'is the sides of a Isosceles Triangle';
+      } else if ((a**2+b**2===c**2) || (a**2+c**2===b**2) || (b**2+c**2===a**2)) {
+          document.getElementById('result6').innerText = 'is the sides of a Right Triangle';
+      } else {
+          document.getElementById('result6').innerText = 'is the sides of a Triangle';
+        }
+    }
+  </script>
+</body>
+</html>

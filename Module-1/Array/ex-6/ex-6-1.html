@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-9</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  for (let i = 0; i < 5; i++) {
+    arr[i] = [0,0,0,0];
+  }
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 4; j++) {
+      arr[i][j] = Math.floor(Math.random()*10);
+    }
+  }
+  console.log(arr);
+  for (let i = 0; i < 5; i++) {
+    console.log('Row ' + i + ':');
+    for (let j = 0; j < 4; j++) {
+      console.log(arr[i][j])
+    }
+  }
+</script>
+</body>
+</html>

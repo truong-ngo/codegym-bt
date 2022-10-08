@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap number</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Enter number 1");
+    let num2 = +prompt("Enter number 2");
+    function swapNumber(a,b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        return [a,b];
+    }
+    console.log(swapNumber(num1,num2));
+</script>
+</body>
+</html>

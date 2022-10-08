@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khai báo và sử dụng biến</title>
+</head>
+<body>
+<script>
+    //Bài 1
+    let i = 10;
+    let f = 20.5;
+    let b = true;
+    let s = 'Hà Nội';
+    document.write('i = ' + i)
+    document.write('<br>')
+    document.write('f = ' + f)
+    document.write('<br>')
+    document.write('b = ' + b)
+    document.write('<br>')
+    document.write('s = ' + s)
+
+    //Bài 2
+    let width = 50;
+    let height = 25;
+    let area = width * height;
+    document.write('<br>'+ 'area = ' +area +'<br>')
+
+    //Bài 3
+    let x = +prompt('Nhập biến x: ');
+    let y = +prompt('Nhập biến y: ');
+    if (x%y == 0) {
+        alert('x chia hết cho y');
+    } else {
+        alert('x không chia hết cho y');
+    }
+</script>
+</body>
+</html>

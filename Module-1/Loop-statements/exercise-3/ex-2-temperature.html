@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 3-2</title>
+</head>
+<body>
+<script>
+    let temp = +prompt('Nhập nhiệt độ hiện tại');
+    while (temp < 20 || temp > 40) {
+        if (temp < 20) {
+            temp = +prompt('Hãy tăng nhiệt độ lên');
+        }
+        if (temp > 40) {
+            temp = +prompt('Hãy giảm nhiệt độ xuống');
+        }
+    }
+    alert('Tạm ổn');
+</script>
+</body>
+</html>

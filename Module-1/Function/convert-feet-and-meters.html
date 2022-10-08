@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Feet & Meters</title>
+</head>
+<body>
+<script>
+    let feetValue = +prompt("Enter feet");
+    let metersValue = +prompt("Enter meters");
+    function footToMeter(foot) {
+        let meter = 0.305 * foot;
+        return meter;
+    }
+    function meterToFoot(meter) {
+        let foot = 3.279 * meter
+        return foot;
+    }
+    console.log(feetValue + " feet = " + footToMeter(feetValue) + " meters");
+    console.log(metersValue + " meters = " + meterToFoot(metersValue) + " feet");
+</script>
+</body>
+</html>

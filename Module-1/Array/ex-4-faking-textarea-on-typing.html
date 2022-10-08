@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 4</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Type anything slowly</h2>
+<textarea onkeydown="typeFnc()" id="typing" name="" id="" cols="30" rows="10"></textarea>
+<script>
+    let arr = ['','T','Ô','I',' ','L','À',' ','M','Ộ','T',' ','Đ','Ứ','A',' ','N','G','Ố','C','!','!','!',''];
+    let data = '';
+    function typeFnc() {
+        let type = document.getElementById('typing').value;
+        if (type.length > 0) {
+            for (let i = 1; i <= type.length; i++) {
+                data += arr[i];
+                if (i === arr.length-1) {
+                    document.getElementById('typing').value = ''
+                    data = '';
+                }
+            }
+        }
+        document.getElementById('typing').value = data;
+        data = '';
+        setTimeout('typeFnc()', 1);
+    }
+</script>
+</body>
+</html>

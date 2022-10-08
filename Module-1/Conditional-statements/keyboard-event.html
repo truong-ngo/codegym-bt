@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Event</title>
+    <style>
+      #nobita {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 190px;
+      }
+    </style>
+</head>
+<body>
+<img id="nobita" src="https://upload.wikimedia.org/wikipedia/vi/2/2c/Nobita.png" alt="nobita">
+<script>
+     let imgNobita = document.getElementById('nobita');
+     let horizontalPx = 0;
+     let verticalPx = 0;
+     function arrowLeft() {
+         imgNobita.style.left = horizontalPx - 5 + 'px';
+         horizontalPx -= 5;
+     }
+     function arrowRight() {
+         imgNobita.style.left= horizontalPx + 5 + 'px';
+         horizontalPx += 5;
+     }
+     function arrowUp() {
+         imgNobita.style.top = verticalPx - 5 + 'px';
+         verticalPx -= 5;
+     }
+     function arrowDown() {
+         imgNobita.style.top = verticalPx + 5 + 'px';
+         verticalPx += 5;
+     }
+     document.addEventListener('keydown',pressBtn);
+     console.log(pressBtn);
+     function pressBtn(event) {
+         switch (event.keyCode) {
+             case 37:
+                 arrowLeft();
+                 break;
+             case 39:
+                 arrowRight();
+                 break;
+             case 38:
+                 arrowUp();
+                 break;
+             case 40:
+                 arrowDown();
+         }
+     }
+</script>
+</body>
+</html>

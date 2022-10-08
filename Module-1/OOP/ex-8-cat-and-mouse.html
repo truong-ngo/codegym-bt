@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat and Mouse</title>
+</head>
+<body>
+</body>
+<script>
+    class Mouse {
+        status;
+        sound;
+        name;
+        weight;
+        speed;
+        constructor(name,weight,speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.status = true;
+        }
+        getName() {
+            return this.name;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        getSpeed() {
+            return this.speed;
+        }
+        mouseSound(sound) {
+            return this.sound = sound;
+        }
+        getStatus() {
+            if (this.status) {
+                alert("Mouse alive");
+            } else {
+                alert("Mouse dead")
+            }
+        }
+        isAlive() {
+            return this.status = true;
+        }
+        isDead() {
+            return this.status = false;
+        }
+    }
+    class Cat {
+        name;
+        weight;
+        maxSpeed;
+        sound;
+        constructor(name,weight,maxSpeed,sound) {
+            this.name = name;
+            this.weight = weight;
+            this.maxSpeed = maxSpeed;
+        }
+        getName() {
+            return this.name;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        getMaxSpeed() {
+            return this.maxSpeed;
+        }
+        catSound(sound) {
+            return this.sound = sound;
+        }
+        catchTheMouse(mouse) {
+            if (this.maxSpeed > mouse.speed) {
+                console.log("The cat caught the mouse")
+            } else {
+                console.log('The cat didnt catch the mouse')
+            }
+        }
+        eatTheMouse(mouse) {
+            if (mouse.isAlive()) {
+                this.weight += mouse.weight;
+                mouse.isDead();
+                console.log('The mouse has been eaten')
+            }
+        }
+    }
+    let mouse = new Mouse("Rat",10,20);
+    let cat = new Cat("Cat",20,30);
+
+    cat.catchTheMouse(mouse);
+    cat.eatTheMouse(mouse);
+    console.log(cat.getWeight());
+</script>
+</html>

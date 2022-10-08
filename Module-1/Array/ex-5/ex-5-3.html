@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-3</title>
+</head>
+<body>
+<script>
+  let n = +prompt('Nhập số phần tử của mảng')
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+    arr[i] = Math.floor(Math.random()*20);
+  }
+  console.log(arr);
+  let index = 0;
+  let max = arr[0];
+  for (let i = 0; i < n; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+      index = i;
+    }
+  }
+  console.log('Số lớn nhất là ' + max + ' tại vị trí ' + index);
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += arr[i];
+  }
+  console.log('Giá trị trung bình của các phần tử trong mảng là ' + sum/n);
+</script>
+</body>
+</html>

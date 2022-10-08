@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interest</title>
+</head>
+<body>
+<script>
+  let capital = +prompt('Nhập số tiền gửi của bạn:');
+  let term = +prompt('Thời gian (tháng) bạn gửi ngân hàng là bao nhiêu (lãi xuất kỳ hạn 1 tháng');
+  const inRate = +prompt('Nhập lãi suất');
+  let sumIn = 0;
+  for (let i = 1; i <= term; i++) {
+      let interest = capital*inRate;
+      capital += interest;
+      sumIn += interest;
+  }
+  document.write(sumIn);
+</script>
+</body>
+</html>

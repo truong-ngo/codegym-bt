@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency convert</title>
+    <style>
+      select {
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th><label for="inputamount"></label>Amount</th>
+      <th><label for="from"></label>From Currency</th>
+      <th><label for="to"></label>To Currency</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><input type="text" id="inputamount" placeholder="amount"></td>
+      <td>
+        <select id="from">
+          <option value="1">USD</option>
+          <option value="23000">VND</option>
+          <option value="7">NDT</option>
+        </select>
+      </td>
+      <td>
+        <select id="to">
+          <option value="1" name="USD">USD</option>
+          <option value="23000" name="VND">VND</option>
+          <option value="7">NDT</option>
+        </select>
+      </td>
+      <td>
+        <button id="btn" onclick="change_currency()">Convert</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Kết quả</td>
+      <td id="result-amount"></td>
+      <td id="unit-amount"></td>
+      <td></td>
+    </tr>
+  </table>
+  <script>
+      function change_currency () {
+        let amount = +document.getElementById('inputamount').value;
+        let fromCurrency = +document.getElementById('from').value;
+        let toCurrency = +document.getElementById('to').value;
+        let result = amount * (toCurrency/fromCurrency);
+        document.getElementById('result-amount').innerText = result;
+    }
+    </script>
+</body>
+</html>

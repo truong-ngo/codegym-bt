@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Event</title>
+<!--    <style>-->
+<!--      #myimage {-->
+<!--        position: relative;-->
+<!--        left: 0;-->
+<!--      }-->
+<!--    </style>-->
+</head>
+<body>
+  <img id="my-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" alt="ball" style="width: 15%; padding-left: 0">
+  <p>Click button below to move image to right</p>
+  <button onclick="clickBtn()">Click Me</button>
+  <script>
+    function clickBtn() {
+      let imgMove = document.getElementById('my-image');
+      imgMove.style.paddingLeft = parseInt(imgMove.style.paddingLeft) + 10 + 'px';
+    }
+  </script>
+</body>
+</html>

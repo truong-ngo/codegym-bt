@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNT</title>
+</head>
+<body>
+<script>
+  //let number = +prompt('Nhập n số nguyên tố đầu tiên');
+  // checkPrimeNumber();
+  // function checkPrimeNumber() {
+  //     let count = 0; // đếm số lượng ước số của số n đang xét SNT
+  //     let countPN = 0; //biến đếm số SNT
+  //     for (let n = 2; n < 9007199254740992n; n++) { //n là số đang xét số nguyên tố
+  //         if (countPN < number) { //xét xem số lượng số nguyên tố in ra đã bằng với số yêu cầu chưa
+  //             for (let i = 2; i < n; i++) { //vòng for để kiểm tra số lượng ước số của số n đang xét
+  //                 if (n % i === 0) {
+  //                     count += 1;
+  //                 }
+  //             }
+  //             if (count === 0) { //nếu số ước số = 0 (n là SNT) thì in số đó ra
+  //                 document.write(n + '<br>');
+  //                 countPN += 1; //tăng 1 giá trị cho số đếm SNT
+  //             }
+  //             count = 0; //đặt lại số lượng ước số của số n (=0) để xét ở vòng lặp tiếp
+  //         } else {
+  //             break;
+  //         }
+  //     }
+  // }
+
+  let number = +prompt('Nhập n số nguyên tố đầu tiên');
+  let num = 1;
+  let countPN = 0;
+  while (countPN < number) {
+      let checkFlag = true;
+      if (num < 2) {
+          checkFlag = false;
+      } else if (num === 2) {
+          checkFlag = true;
+      } else {
+          for (let i = 2; i < num; i++) {
+              if (num % i === 0) {
+                  checkFlag = false;
+                  break;
+              }
+          }
+      }
+      if (checkFlag) {
+          countPN += 1;
+          document.write(num + '<br>');
+      }
+      num += 1;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management App</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        tr {
+            border: 1px solid #cccccc;
+        }
+        .product {
+            width: 200px;
+        }
+        .btn {
+            width: 100px;
+            text-align: center;
+        }
+        .num {
+            width: 100px;
+            color: #d61b06;
+        }
+        input {
+            width: 210px;
+            line-height: 26px;
+        }
+        button {
+            color: white;
+            background-color: #2db62d;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 8px;
+            width: 60px;
+        }
+        .input {
+            padding: 12px 0;
+        }
+        #result {
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+<h2>Add new product</h2>
+<div class="input"><label id="label" for="input"><input placeholder="New Product" onkeydown="keyPress()" id="input" type="text"> </label><button onclick="addProduct()">Add</button></div>
+<h2>Display all product</h2>
+<div id="result"></div>
+<script>
+    // CRUD
+    let product = [];
+    function writeTable(arr) {
+        let data = `<table><tr><th colspan="3">Product Name</th><th class="num">${arr.length} product</th></tr>`;
+        for (let i = 0; i < arr.length; i++) {
+            data += `<tr><td class="product">${arr[i]}</td><td class="btn"><button onclick="editProduct(${i})">Edit</button></td><td class="btn"><button onclick="delProduct(${i})">Delete</button></td><td></td></tr>`;
+        }
+        data += `</table>`;
+        document.getElementById("result").innerHTML = data;
+    }
+    function keyPress(){
+        let keyCode = event.keyCode;
+        if (keyCode === 13) {
+            addProduct();
+        }
+    }
+    function addProduct() {
+        let input = document.getElementById('input').value;
+        product.push(input);
+        writeTable(product);
+        document.getElementById('input').value = '';
+        document.getElementById('input').focus();
+    }
+    function delProduct(index) {
+        if (confirm("Do you want to delete product")) {
+            product.splice(index,1);
+            writeTable(product);
+        }
+    }
+    function editProduct(index) {
+        let productChange = prompt('Edit product');
+        if (productChange !== null && productChange !== '') {
+            product[index] = productChange;
+        }
+        writeTable(product);
+    }
+</script>
+</body>
+</html>

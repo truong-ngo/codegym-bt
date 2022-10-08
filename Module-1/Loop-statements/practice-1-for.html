@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 1</title>
+</head>
+<body>
+<h2>Practice 1-1</h2>
+<p id="result1"></p>
+<h2>Practice 1-2</h2>
+<p id="result2"></p>
+<script>
+  //Practice 1-1
+  let text1 = '';
+  for (let i1 = 0; i1 < 5; i1++) {
+    text1 += 'The number is: ' + i1 + '<br>';
+  }
+  document.getElementById('result1').innerHTML = text1;
+
+  //Practice 1-2
+  let total = 0;
+  let num = +prompt('Enter your number: ');
+  if (num<=0) {
+      num = +prompt('Please enter a number > 0!');
+  }
+  for (let i2 = 1; i2 <= num; i2++) {
+      total += i2;
+  }
+  document.getElementById('result2').innerText = 'Total is: ' + total;
+</script>
+</body>
+</html>

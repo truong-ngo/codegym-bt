@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 1-3</title>
+</head>
+<body>
+<script>
+  let str = prompt('Enter text');
+  let upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let lowCase = 'abcdefghijklmnopqrstuvwxyz';
+  let resultArr = [];
+  for (let i = 0; i < str.length; i++) {
+    if (upCase.includes(str[i])) {
+      resultArr.push(str[i].toLowerCase());
+    } else if (lowCase.includes(str[i])) {
+      resultArr.push(str[i].toUpperCase());
+    } else {
+      resultArr.push(str[i]);
+    }
+  }
+  console.log(resultArr.join(''));
+  console.log(resultArr);
+</script>
+</body>
+</html>

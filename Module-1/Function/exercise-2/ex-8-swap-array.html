@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap Array</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = Math.floor(Math.random()*20);
+    }
+    document.write(arr.join());
+    function swapArray(arrSwap) {
+        return arrSwap.reverse()
+    }
+    console.log(swapArray(arr));
+</script>
+</body>
+</html>

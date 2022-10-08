@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check char in Array</title>
+</head>
+<body>
+<script>
+    let arr = ['a','b','c','d','e','v','g','r','g','r','g','g','f','s','j','f','w','l','k','a','s','d','h'];
+    let char = prompt('Enter a character');
+    function checkCharInArr(arrC,charC) {
+        let count = 0;
+        for (let i = 0; i < arrC.length; i++) {
+            if (arrC[i] === charC) {
+                count += 1;
+            }
+        }
+        if (count >= 1) {
+            return count;
+        } else {
+            return count = -1;
+        }
+    }
+    console.log(checkCharInArr(arr,char));
+</script>
+</body>
+</html>

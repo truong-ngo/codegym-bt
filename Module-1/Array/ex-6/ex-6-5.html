@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 6-5</title>
+</head>
+<body>
+<script>
+  stra = prompt('Enter string a:');
+  strb = prompt('Enter string b:');
+  let i = 0;
+  let checkFlag = true;
+  if (stra.length !== strb.length) {
+    console.log('Two strings are different');
+  } else {
+    while (i < stra.length) {
+      if (stra[i] !== strb[i]) {
+        checkFlag = false;
+        break;
+      }
+      i += 1;
+    }
+  }
+  if (checkFlag) {
+    console.log('Two strings are same');
+  } else {
+    console.log('Two strings are different');
+  }
+</script>
+</body>
+</html>

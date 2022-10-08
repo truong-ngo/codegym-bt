@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <style>
+        img {
+            display: block;
+            width: 450px;
+        }
+        div {
+            display: inline-block;
+            /*border: 1px solid #000000;*/
+        }
+        /*.result {*/
+        /*    margin: 4px 0;*/
+        /*    box-shadow: 0 0 10px red;*/
+        /*}*/
+    </style>
+</head>
+<body onload="setRandomImg()">
+<div id="box">
+    <img class="img" style="width: 563px; height: 140px" onclick="clickBtn('0')" id="pos0" src="" alt="">
+    <img class="img" style="width: 563px; height: 140px" onclick="clickBtn('1')" id="pos1" src="" alt="">
+    <img class="img" style="width: 563px; height: 140px" onclick="clickBtn('2')" id="pos2" src="" alt="">
+    <img class="img" style="width: 563px; height: 140px" onclick="clickBtn('3')" id="pos3" src="" alt="">
+    <img class="img" style="width: 563px; height: 140px" onclick="clickBtn('4')" id="pos4" src="" alt="">
+</div>
+</body>
+<script>
+    // khai báo object
+    let images = {
+        imgsDB: //data base
+        [
+        ["./source/Okabe/Okabe-1.jpg",
+         "./source/Okabe/Okabe-2.jpg",
+         "./source/Okabe/Okabe-3.jpg",
+         "./source/Okabe/Okabe-4.jpg",
+         "./source/Okabe/Okabe-5.jpg"],
+        ["./source/Kurisu/Kurisu-1.jpg",
+         "./source/Kurisu/Kurisu-2.jpg",
+         "./source/Kurisu/Kurisu-3.jpg",
+         "./source/Kurisu/Kurisu-4.jpg",
+         "./source/Kurisu/Kurisu-5.jpg"],
+        ["./source/Mayuri/Mayuri-1.jpg",
+         "./source/Mayuri/Mayuri-2.jpg",
+         "./source/Mayuri/Mayuri-3.jpg",
+         "./source/Mayuri/Mayuri-4.jpg",
+         "./source/Mayuri/Mayuri-5.jpg"],
+        ],
+        imgsPos: [(Math.floor(Math.random()*3)),
+                  (Math.floor(Math.random()*3)),
+                  (Math.floor(Math.random()*3)),
+                  (Math.floor(Math.random()*3)),
+                  (Math.floor(Math.random()*3))], //vị trí của ảnh
+        imgsId: ["pos0","pos1","pos2","pos3","pos4"] //id của ảnh
+    }
+    //hàm set img random
+    function setRandomImg() {
+        let n = 0;
+        for (let imgPos = 0; imgPos < 5; imgPos++) {
+            let imgToggle = images.imgsPos[n]
+            n += 1;
+            document.getElementById(images.imgsId[imgPos]).src = images.imgsDB[imgToggle][imgPos];
+        }
+    }
+    // hàm click chuyển img
+    function clickBtn(i) {
+        images.imgsPos[i] += 1;
+        if (images.imgsPos[i] > 2) {
+            images.imgsPos[i] = 0;
+        }
+        document.getElementById(images.imgsId[i]).src = images.imgsDB[images.imgsPos[i]][i];
+        // kiểm tra hình
+        alertBox();
+        function alertBox() {
+            if ((images.imgsPos[0] === images.imgsPos[1]) &&
+                (images.imgsPos[1] === images.imgsPos[2]) &&
+                (images.imgsPos[2] === images.imgsPos[3]) &&
+                (images.imgsPos[3] === images.imgsPos[4])) {
+                document.getElementById('box').style.boxShadow = '0px 0px 40px red';
+            } else {
+                document.getElementById('box').style.boxShadow = '';
+            }
+        }
+    }
+</script>
+</html>

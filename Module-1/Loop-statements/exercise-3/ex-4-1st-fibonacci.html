@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EX 3-4</title>
+</head>
+<body>
+<script>
+  const sqrt5 = Math.sqrt(5);
+  let Fn = 0;
+  for (let i = 0; i < 100; i++) {
+    Fn = (1/sqrt5) * (((1+sqrt5)/2)**i - ((1-sqrt5)/2)**i)
+    Fn = parseInt(Fn)
+    if (Fn % 5 === 0 && Fn !== 0) {
+      document.write(Fn);
+      break;
+    }
+  }
+</script>
+</body>
+</html>

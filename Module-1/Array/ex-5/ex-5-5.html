@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-5</title>
+</head>
+<body>
+<script>
+  let n = prompt('Enter text')
+  console.log(n);
+  let vowel = ['a','e','i','o','u'];
+  let upVowel = ['A','E','I','O','U'];
+  let count = 0;
+  for (let i = 0; i < n.length; i++) {
+    for (let j = 0; j < vowel.length; j++) {
+      if (n[i] === vowel[j]) {
+        count += 1;
+      }
+    }
+    for (let j = 0; j < upVowel.length; j++) {
+      if (n[i] === upVowel[j]) {
+        count += 1;
+      }
+    }
+  }
+  alert('Total number of vowel is ' + count);
+  console.log(count);
+</script>
+</body>
+</html>

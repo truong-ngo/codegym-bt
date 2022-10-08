@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam and Eve</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        setWeight(weight) {
+            return this.weight = weight;
+        }
+        decreaseWeight() {
+            if (this.isEmpty()) {
+                alert("Apple has been eaten completely");
+            } else {
+                return this.weight--;
+            }
+        }
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    class Human {
+        constructor(name,gender,weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        getName() {
+            return this.name;
+        }
+        getGender() {
+            return this.gender;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        setName(name) {
+            return this.name = name;
+        }
+        setGender(gender) {
+            return this.gender = gender;
+        }
+        setWeight(weight) {
+            return this.weight = weight;
+        }
+        isMale() {
+            if (this.gender === 'Male') {
+                return true;
+            } else if (this.gender === 'Female') {
+                return false;
+            }
+        }
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        eatApple(apple) {
+            if (this.checkApple(apple)) {
+                alert("Apple has been eaten completely");
+            } else {
+                this.weight++;
+                apple.decreaseWeight();
+            }
+        }
+        say(string) {
+            console.log(string);
+        }
+        getInfo() {
+            console.log(`${this.name} - ${this.gender} - ${this.weight}`);
+        }
+    }
+    let Adam = new Human('Adam','Male',70);
+    let Eve = new Human('Eve','Female',55);
+    let apple = new Apple(10);
+    apple.getWeight();
+    apple.setWeight(15);
+    Adam.getName();
+    Adam.setName('Adam');
+    Eve.getGender();
+    Adam.getWeight();
+    Adam.setWeight(65);
+    Eve.setGender('Female');
+    Adam.isMale();
+    console.log(Eve.checkApple(apple));
+    Eve.eatApple(apple);
+    console.log(apple);
+    Adam.say('Hello World');
+    Eve.getInfo();
+</script>
+</body>
+</html>

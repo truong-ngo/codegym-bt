@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P-1</title>
+</head>
+<body>
+<input id="input" type="text">
+<input type="button" onclick="addElement()" value="Add">
+<input type="button" onclick="displayArray()" value="Display">
+<input type="button" onclick="clearBtn()" value="Clear">
+<div id="result" style="width: 329px; border-top: 1px solid #333333; margin-top: 12px"></div>
+<script>
+    let list = [];
+    function addElement() {
+        let element = document.getElementById('input');
+        list.push(element.value);
+        document.getElementById('input').value = '';
+    }
+    function displayArray() {
+        list.forEach(function (item,index) {
+            document.getElementById('result').innerHTML += 'Element ' + index + ': ' + item + '<br>';
+        })
+    }
+    function clearBtn() {
+        document.getElementById('input').value = '';
+        document.getElementById('result').innerHTML = '';
+    }
+</script>
+</body>
+</html>

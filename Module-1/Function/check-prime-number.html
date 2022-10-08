@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime Number</title>
+</head>
+<body>
+<script>
+    console.log(isPrimeNumber(5));
+
+    function isPrimeNumber(num) {
+        let checkPrimeNumber = true;
+        if (num < 2) {
+            checkPrimeNumber = false;
+            return checkPrimeNumber;
+        }
+        if (num === 2) {
+            return checkPrimeNumber;
+        }
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                checkPrimeNumber = false;
+                return checkPrimeNumber;
+            }
+        }
+        return checkPrimeNumber;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 3-3</title>
+</head>
+<body>
+<script>
+  // const sqrt5 = Math.sqrt(5);
+  // let Fn = 0;
+  // for (let i = 0; i < 20; i++) {
+  //   Fn = (1/sqrt5) * (((1+sqrt5)/2)**i - ((1-sqrt5)/2)**i);
+  //   document.write(parseInt(Fn) + '<br>');
+  // }
+  let a = 1;
+  let b = -1;
+  let c = 0;
+  for (let i = 0; i < 20; i++) {
+      c = a;
+      a = a + b;
+      b = c;
+      console.log(a)
+  }
+</script>
+</body>
+</html>

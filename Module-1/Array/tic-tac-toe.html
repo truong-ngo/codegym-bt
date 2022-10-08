@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <style>
+      * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .box {
+          border: 3px solid black;
+          padding: 16px 16px;
+          display: inline-block;
+      }
+      .btn {
+          display: inline-block;
+          width: 46%;
+      }
+      button {
+          width: 100%;
+          cursor: pointer;,
+      }
+      table {
+          border-collapse: collapse;
+          margin: 16px 0;
+          border: 2px solid black;
+      }
+      td {
+          border: 1px groove #5f6062;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          font-weight: 600;
+      }
+      h4 {
+          text-align: left;
+          margin-top: 16px;
+      }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Tic Tac Toe</h2>
+    <div id="content"></div>
+    <div class="btn"><button onclick="startGame()">Start</button></div>
+    <div class="btn"><button onclick="resetGame()">Reset</button></div>
+    <h4>X score: <span id="x-score"></span></h4>
+    <h4>O score: <span id="o-score"></span></h4>
+
+</div>
+<script>
+    // Initialize array corresponding to tic-tac-toe board
+    let size = +prompt('Enter the size of tic tac toe board');
+    let board = new Array(size);
+    let data = '<table>';
+    let xScore = 0;
+    let oScore = 0;
+    let checkWin = false;
+    for (let i = 0; i < size; i++) {
+        board[i] = new Array(size);
+        for (let j = 0; j < size; j++) {
+            board[i][j] = '';
+        }
+    }
+
+    // Initialize tic-tac-toe board
+    function startGame() {
+        for (let i = 0; i < size; i++) {
+            data += '<tr>';
+            for (let j = 0; j < size; j++) {
+                data += '<td id="r' + i + 'c' + j + '" onclick="clickCell(' + i + ',' + j + ')"></td>';
+            }
+            data += '</tr>';
+        }
+        data += '</table>';
+        document.getElementById('content').innerHTML = data;
+    }
+
+    // Click function
+    let playItem = 'X';
+    function clickCell(i,j) {
+        if (board[i][j] !== '') {
+            return;
+        }
+        board[i][j] = playItem;
+        document.getElementById('r' + i + 'c' + j).innerText = board[i][j];
+        // Check winner
+        checkWinner(i,j,playItem);
+        //Change X-O
+        if (board[i][j] === 'X') {
+            document.getElementById('r' + i + 'c' + j).style.color = 'blue';
+            playItem = 'O';
+        } else if (board[i][j] === 'O') {
+            document.getElementById('r' + i + 'c' + j).style.color = 'red';
+            playItem = 'X';
+        }
+    }
+
+    // Reset function
+    function resetGame() {
+        for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size; j++) {
+                board[i][j] = '';
+                document.getElementById('r' + i + 'c' + j).innerText = '';
+            }
+        }
+        playItem = 'X';
+        checkWin = false;
+    }
+    // Winner's check function
+    function checkWinner (xAxis,yAxis,item) {
+        let x = xAxis;
+        let y = yAxis;
+        let count1 = 0;
+        let count2 = 0;
+        let i = 1;
+        //let j = 1;
+
+        // Check horizontal
+        while (y + i < size && board[x][y+i] === item) {
+            count1++; i++;
+        }
+        i = 1;
+        while (y - i >= 0 && board[x][y-i] === item) {
+            count2++; i++;
+        }
+        if (count1 === 4 && count2 === 0) {
+            if (y === 0 || y+5 === size) {
+                checkWin = true;
+            } else if (board[x][y-1] === '' || board[x][y+5] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 3 && count1 === 1) {
+            if (y-1 === 0 || y+4 === size) {
+                checkWin = true;
+            } else if (board[x][y-2] === '' || board[x][y+4] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 2 && count1 === 2) {
+            if (y-2 === 0 || y+3 === size) {
+                checkWin = true;
+            } else if (board[x][y-3] === '' || board[x][y+3] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 1 && count2 === 3) {
+            if (y-3 === 0 || y+2 === size) {
+                checkWin = true;
+            } else if (board[x][y-4] === '' || board[x][y+2] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 0 && count2 === 4) {
+            if (y-4 === 0 || y+1 === size) {
+                checkWin = true;
+            } else if (board[x][y-5] === '' || board[x][y+1] === '') {
+                checkWin = true;
+            }
+        }
+
+        // Check vertical
+        count1 = 0;
+        count2 = 0;
+        i = 1;
+        while (x + i < size && board[x+i][y] === item) {
+            count1++; i++;
+        }
+        i = 1;
+        while (x - i >= 0 && board[x-i][y] === item) {
+            count2++; i++;
+        }
+        if (count1 === 4 && count2 === 0) {
+            if (x === 0 || x+5 === size) {
+                checkWin = true;
+            } else if (board[x-1][y] === '' || board[x+5][y] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 3 && count1 === 1) {
+            if (x-1 === 0 || x+4 === size) {
+                checkWin = true;
+            } else if (board[x-2][y] === '' || board[x+4][y] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 2 && count1 === 2) {
+            if (x-2 === 0 || x+3 === size) {
+                checkWin = true;
+            } else if (board[x-3][y] === '' || board[x+3][y] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 1 && count2 === 3) {
+            if (x-3 === 0 || x+2 === size) {
+                checkWin = true;
+            } else if (board[x-4][y] === '' || board[x+2][y] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 0 && count2 === 4) {
+            if (x-4 === 0 || x+1 === size) {
+                checkWin = true;
+            } else if (board[x-5][y] === '' || board[x+1][y] === '') {
+                checkWin = true;
+            }
+        }
+
+        // Check left diagonal
+        count1 = 0;
+        count2 = 0;
+        i = 1;
+        while ((x + i < size) && (y + i < size) && board[x+i][y+i] === item) {
+            i++; count1++
+        }
+        i = 1;
+        while ((x - i >= 0) && (y - i >= 0) && board[x-i][y-i] === item) {
+            i++; count2++
+        }
+        if (count1 === 4 && count2 === 0) {
+            if (x === 0 || y === 0 || x+5 === size || y+5 === size) {
+                checkWin = true;
+            } else if (board[x-1][y-1] === '' || board[x+5][y+5] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 3 && count2 === 1) {
+            if (x-1 === 0 || y-1 === 0 || x+4 === size || y+4 === size) {
+                checkWin = true;
+            } else if (board[x-2][y-2] === '' || board[x+4][y+4] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 2 && count2 === 2) {
+            if (x-2 === 0 || y-2 === 0 || x+3 === size || y+3 === size) {
+                checkWin = true;
+            } else if (board[x-3][y-3] === '' || board[x+3][y+3] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 1 && count2 === 3) {
+            if (x-3 === 0 || y-3 === 0 || x+2 === size || y+2 === size) {
+                checkWin = true;
+            } else if (board[x-4][y-4] === '' || board[x+2][y+2] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 0 && count2 === 4) {
+            if (x-4 === 0 || y-4 === 0 || x+1 === size || y+1 === size) {
+                checkWin = true;
+            } else if (board[x-5][y-5] === '' || board[x+1][y+1] === '') {
+                checkWin = true;
+            }
+        }
+
+        // Check right diagonal
+        count1 = 0;
+        count2 = 0;
+        i = 1;
+        while ((x + i < size) && (y - i >= 0) && board[x+i][y-i] === item) {
+            i++; count1++
+        }
+        i = 1;
+        while ((x - i >= 0) && (y + i < size) && board[x-i][y+i] === item) {
+            i++; count2++
+        }
+        if (count1 === 4 && count2 === 0) {
+            if (x === 0 || y+1 === size || x+5 === size || y === 4) {
+                checkWin = true;
+            } else if (board[x-1][y+1] === '' || board[x+5][y-5] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 3 && count2 === 1) {
+            if (x-1 === 0 || y+2 === size || x+4 === size || y === 3) {
+                checkWin = true;
+            } else if (board[x-2][y+2] === '' || board[x+4][y-4] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 2 && count2 === 2) {
+            if (x-2 === 0 || y+3 === size || x+3 === size || y === 2) {
+                checkWin = true;
+            } else if (board[x-3][y+3] === '' || board[x+3][y-3] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 1 && count2 === 3) {
+            if (x-3 === 0 || y+4 === size || x+2 === size || y === 1) {
+                checkWin = true;
+            } else if (board[x-4][y+4] === '' || board[x+2][y-2] === '') {
+                checkWin = true;
+            }
+        }
+        if (count1 === 0 && count2 === 4) {
+            if (x-4 === 0 || y+5 === size || x+1 === size || y === 0) {
+                checkWin = true;
+            } else if (board[x-5][y+5] === '' || board[x+1][y-1] === '') {
+                checkWin = true;
+            }
+        }
+        count1 = 0;
+        count2 = 0;
+        i = 1;
+        console.log(checkWin);
+        console.log(playItem);
+        if (checkWin) {
+            alert(playItem + ' winner. Please reset !!!');
+            if (playItem === 'X') {
+                xScore += 1;
+                document.getElementById('x-score').innerText = xScore;
+            } else if (playItem === 'O') {
+                oScore += 1;
+                document.getElementById('o-score').innerText = oScore;
+            }
+        }
+    }
+</script>
+</body>
+</html>

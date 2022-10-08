@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote TV</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Remote {
+        id;
+        tv;
+        constructor(id,tv) {
+            this.id = id;
+            this.tv = tv;
+        }
+        turnTVOn() {
+            this.tv.turnOn();
+        }
+        turnTVOff() {
+            this.tv.turnOff();
+        }
+        setChannel(channel) {
+            this.tv.setChannel(channel);
+        }
+        increaseVolume(value) {
+            return this.tv.increaseVolume(value);
+        }
+        decreaseVolume(value) {
+            return this.tv.decreaseVolume(value);
+        }
+    }
+    class TV {
+        name;
+        status;
+        channel;
+        volume;
+        constructor(name,status,channel,volume) {
+            this.name = name;
+            this.status = false;
+            this.channel = channel;
+            this.volume = volume;
+        }
+        getName() {
+            return this.name;
+        }
+        getChannel() {
+            return this.channel;
+        }
+        getVolume() {
+            return this.volume;
+        }
+        getStatus() {
+            return this.status;
+        }
+        turnOn() {
+            return this.status = true;
+        }
+        turnOff() {
+            return this.status = false;
+        }
+        setChannel(channel) {
+            return this.channel = channel;
+        }
+        increaseVolume(value) {
+            return this.volume += value;
+        }
+        decreaseVolume(value) {
+            return this.volume -= value;
+        }
+    }
+    let sony = new TV('Sony',false,10,50);
+    let remote = new Remote('remoteTV',sony);
+
+    sony.turnOn();
+    sony.setChannel(7);
+    remote.setChannel(3);
+    sony.increaseVolume(2);
+    remote.decreaseVolume(5);
+    remote.turnTVOff();
+
+    console.log(sony);
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Output</title>
+</head>
+<body>
+  <button id="btn1" onclick="showMessage1()">Click me 1</button>
+  <div id="messageDiv">Demo</div>
+  <button id="btn2" onclick="showMessage2()">Click me 2</button>
+  <button id="btn3" onclick="showMessage3()">Click me 3</button>
+  <button id="btn4" onclick="showMessage4()">Click me 4</button>
+
+</body>
+<script>
+    let a = "HelloWorld";
+  function showMessage1 () {
+    alert("HelloWord")
+  }
+  function showMessage2 () {
+    document.getElementById("messageDiv").innerHTML = "<h1>" + 'HelloWorld' + "</h1>"
+  }
+  function showMessage3 () {
+    document.write('HelloWorld')
+  }
+  function showMessage4 () {
+    console.log('HelloWorld')
+  }
+</script>
+</html>

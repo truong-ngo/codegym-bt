@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+</head>
+<body>
+<script>
+    let str = prompt("Enter a string");
+    function isPalindrome(string) {
+        let checkFlag = false;
+        for (let i = 0; i <= (string.length/2); i++) {
+            let j = string.length-1;
+            if (string[i] === string[j]) {
+                checkFlag = true;
+            } else {
+                return checkFlag;
+            }
+            j--;
+        }
+        if (checkFlag) {
+            return checkFlag;
+        }
+    }
+    console.log(isPalindrome(str));
+</script>
+</body>
+</html>

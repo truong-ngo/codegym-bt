@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Simulation</title>
+</head>
+<body onload="board.boardInit()">
+<!--onload="board.boardInit()"-->
+<!--<button onclick="board.boardInit()">Start</button>-->
+<div id="box"></div>
+<h1>Score: <span id="score"></span></h1>
+</body>
+<script>
+    class Car {
+        name;
+        url;
+        urlCar;
+        xAxis;
+        yAxis;
+        speed;
+        constructor(name,xAxis,yAxis,speed) {
+            this.name = name;
+            this.url = ['carUp.png','carRight.png','carDown.png','carLeft.png'];
+            this.urlCar = this.url[0];
+            this.xAxis = xAxis;
+            this.yAxis = yAxis;
+            this.speed = speed;
+        }
+        getCarURL() {
+            return this.urlCar;
+        }
+        getCarX() {
+            return this.xAxis
+        }
+        getCarY() {
+            return this.yAxis;
+        }
+        getCarSpeed() {
+            return this.speed;
+        }
+        speedUp() {
+
+        }
+        moveUp() {
+            this.yAxis -= this.getCarSpeed();
+        }
+        moveDown() {
+            this.yAxis += this.getCarSpeed();
+        }
+        moveLeft() {
+            this.xAxis -= this.getCarSpeed();
+        }
+        moveRight() {
+            this.xAxis += this.getCarSpeed();
+        }
+        rotateUp() {
+            return this.urlCar = this.url[0];
+        }
+        rotateDown() {
+            return this.urlCar = this.url[2];
+        }
+        rotateLeft() {
+            return this.urlCar = this.url[3];
+        }
+        rotateRight() {
+            return this.urlCar = this.url[1];
+        }
+    }
+    class Rectangle {
+        name
+        x;
+        y;
+        width;
+        height;
+        color;
+        constructor (name,x,y,width,height) {
+            this.name = name;
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = getRandomColor();
+        }
+        getX() {
+            return this.x
+        }
+        getY() {
+            return this.y
+        }
+        getWidth() {
+            return this.width;
+        }
+        getHeight() {
+            return this.height;
+        }
+        getColor() {
+            return this.color;
+        }
+    }
+    class Circle {
+        name;
+        x;
+        y;
+        radius;
+        color;
+        quantity;
+        constructor (name,radius,color,quantity) {
+            this.name = name;
+            // this.x = 0;
+            // this.y = 0;
+            this.x = Math.floor((Math.random()*281)+15);
+            this.y = Math.floor((Math.random()*121)+15);
+            this.radius = radius;
+            this.color = color;
+            this.quantity = quantity;
+        }
+        getX() {
+            return this.x;
+        }
+        getY() {
+            return this.y;
+        }
+        getRadius() {
+            return this.radius;
+        }
+        getColor() {
+            return this.color;
+        }
+    }
+    class GameBoard {
+        boardName;
+        width;
+        height;
+        point;
+        isOver;
+        constructor(boardName,width,height) {
+            this.boardName = boardName;
+            this.width = width;
+            this.height = height;
+            this.point = 0;
+            this.isOver = false;
+        }
+        getHtml() {
+            let boardHtml = '';
+            boardHtml = `<canvas id="${this.boardName}" style="width: 1280px; height: 720px;
+                        border: 2px solid black" width="${this.width}" height="${this.height}"></canvas>`;
+            return boardHtml;
+        }
+        getCanvas() {
+            let ctx = document.getElementById(this.boardName).getContext("2d");
+            return ctx;
+        }
+        boardInit() {
+            document.getElementById("box").innerHTML = this.getHtml();
+            this.placeCar(car);
+            this.placeObject(barrierTop);
+            this.placeObject(barrierBottom);
+            this.placeObject(barrierLeft);
+            this.placeObject(barrierRight);
+            this.placeCoin(coin1);
+            this.placeCoin(coin2);
+            this.placeCoin(coin3);
+            this.placeCoin(coin4);
+        }
+        boardRemoveCar(car) {
+            let x = car.getCarX();
+            let y = car.getCarY();
+            this.getCanvas().clearRect(x,y,20,20);
+        }
+        placeObject(object) {
+            let x = object.getX();
+            let y = object.getY();
+            let width = object.getWidth();
+            let height = object.getHeight();
+            this.getCanvas().fillStyle = object.getColor();
+            this.getCanvas().fillRect(x,y,width,height);
+        }
+        placeCoin(coin) {
+            let x = coin.getX();
+            let y = coin.getY();
+            let radius = coin.getRadius();
+            let color = coin.getColor();
+            this.getCanvas().beginPath();
+            this.getCanvas().arc(x,y,radius,0,Math.PI*2);
+            this.getCanvas().fillStyle = color;
+            this.getCanvas().fill();
+        }
+        placeCar(car) {
+            let x = car.getCarX();
+            let y = car.getCarY();
+            let ctx = this.getCanvas();
+            let image = new Image();
+            image.onload = function () {
+                ctx.drawImage(image,x,y,20,20);
+            }
+            image.src = car.urlCar;
+        }
+        moveCar(car) {
+            let keyCode = event.keyCode;
+            switch (keyCode) {
+                case 37:
+                    if (car.getCarURL() !== car.url[3]) {
+                        this.boardRemoveCar(car);
+                        car.rotateLeft();
+                        this.placeCar(car);
+                    } else {
+                        this.boardRemoveCar(car);
+                        car.moveLeft();
+                        this.placeCar(car);
+                    }
+                    break;
+                case 39:
+                    if (car.getCarURL() !== car.url[1]) {
+                        this.boardRemoveCar(car);
+                        car.rotateRight();
+                        this.placeCar(car);
+                    } else {
+                        this.boardRemoveCar(car);
+                        car.moveRight();
+                        this.placeCar(car);
+                    }
+                    break;
+                case 38:
+                    if (car.getCarURL() !== car.url[0]) {
+                        this.boardRemoveCar(car);
+                        car.rotateUp();
+                        this.placeCar(car);
+                    } else {
+                        this.boardRemoveCar(car);
+                        car.moveUp();
+                        this.placeCar(car);
+                    }
+                    break;
+                case 40:
+                    if (car.getCarURL() !== car.url[2]) {
+                        this.boardRemoveCar(car);
+                        car.rotateDown();
+                        this.placeCar(car);
+                    } else {
+                        this.boardRemoveCar(car);
+                        car.moveDown();
+                        this.placeCar(car);
+                    }
+                }
+            }
+        carHitObject(car,object) {
+            if (car.getCarY() < object.getY() + object.getHeight() &&
+                car.getCarY() + 20 > object.getY() &&
+                car.getCarX() < object.getX() + object.getWidth() &&
+                car.getCarX() + 20 > object.getX()) {
+                this.isOver = true;
+                alert("Game over");
+            }
+        }
+        score(car,coin) {
+            console.log(coin.x)
+            console.log(coin.y)
+            let carX = car.getCarX();
+            let carY = car.getCarY();
+            let x = coin.getX();
+            let y = coin.getY();
+            let radius = coin.getRadius();
+            if ((carY < y + radius && carY + 20 > y - radius && carX + 15 > x - radius && carX + 5 < x + radius) &&
+                (carX < x + radius && carX + 20 > x - radius && carY + 15 > y - radius && carY + 5 < y + radius)) {
+                this.point += 1;
+                coin.x = NaN;
+                coin.y = NaN;
+                this.placeCoin(coin);
+                this.getCanvas().clearRect(x-5,y-5,radius*2,radius*2);
+                document.getElementById("score").innerText = this.point;
+            }
+        }
+        isWinner() {
+            if (this.point === 4) {
+                return true;
+            }
+        }
+    }
+    function getRandomColor() {
+        let red = Math.floor(Math.random()*255);
+        let blue = Math.floor(Math.random()*255);
+        let green = Math.floor(Math.random()*255);
+        return `rgb(${red},${blue},${green})`
+    }
+    let board = new GameBoard('board',310,150);
+    let car = new Car('BWM',145,60,10);
+    let barrierTop = new Rectangle('Barrier',0,0,310,10);
+    let barrierBottom = new Rectangle('Barrier',0,140,310,10);
+    let barrierLeft = new Rectangle('Barrier',0,10,10,130);
+    let barrierRight = new Rectangle('Barrier',300,10,10,130);
+    let coin1 = new Circle('Coin',5,'gold',5);
+    let coin2 = new Circle('Coin',5,'gold',5);
+    let coin3 = new Circle('Coin',5,'gold',5);
+    let coin4 = new Circle('Coin',5,'gold',5);
+    window.addEventListener('keydown',function () {
+        if (board.isOver) {
+            return;
+        }
+        if (board.isWinner()) {
+            alert("You are win");
+            return;
+        }
+        board.moveCar(car);
+        board.carHitObject(car,barrierTop);
+        board.carHitObject(car,barrierBottom);
+        board.carHitObject(car,barrierLeft);
+        board.carHitObject(car,barrierRight);
+        board.score(car,coin1);
+        board.score(car,coin2);
+        board.score(car,coin3);
+        board.score(car,coin4);
+    })
+</script>
+</html>

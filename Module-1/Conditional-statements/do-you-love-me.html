@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+  <h1>Do you love me!</h1>
+  <button onclick="yesFnc()">Yes</button>
+  <button id="no-btn" style="position: relative; top: 0; left: 0" onmouseover="noFnc()">No</button>
+</body>
+<script>
+  function yesFnc() {
+    alert('Yes you are right!')
+  }
+  function noFnc () {
+    let noBtn = document.getElementById('no-btn')
+    noBtn.style.top = (Math.floor(Math.random()*window.innerHeight*0.8)) + 'px';
+    noBtn.style.left = (Math.floor(Math.random()*window.innerWidth*0.8)) + 'px';
+  }
+</script>
+</html>

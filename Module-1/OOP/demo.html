@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo OOP</title>
+</head>
+<body>
+    <canvas style="width: 500px; height: 500px; border: 1px solid #000000" id="my-canvas"></canvas>
+<script>
+    // // Init object
+    // var me = {
+    //     myFirstName: "Trường",
+    //     myLastLame: "Ngô",
+    //     myAge: 29,
+    //     myEyeColor: "black",
+    //     myHeight: 1.66
+    // }
+    // me.myAge = 30;
+    // console.log(me);
+    // // Query object property with for-in
+    // let text = '';
+    // for (let x in me) {
+    //     text += me[x] + '<br>';
+    // }
+    // document.write(text);
+    //
+    // Create Classes
+    // function person(firstName,lastName,age,eyeColor,pHeight) {
+    //     this.firstName = firstName;
+    //     this.lastName = lastName;
+    //     this.age = age;
+    //     this.eyeColor = eyeColor;
+    //     this.pHeight = pHeight;
+    //     this.changeName = function (name) {
+    //         this.lastName = name;
+    //     }
+    // }
+    // // Create Object
+    // var myFather = new person("Chiến","Ngô",64,"brown",1.63);
+    // var myMother = new person("Phúc","Cao",58,"brown",1.5);
+    // // myMother.changeName("Ngô");
+    // // console.log(myMother);
+    // // // console.log(me);
+    // console.log(myFather);
+    // console.log(myMother);
+    // //
+    // // Define classes
+    // function student (id,name,address) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.address = address;
+    //     this.getInformation = function () {
+    //         return `Id: ${this.id}, Name: ${this.name}, Address: ${this.address}.`
+    //     }
+    // }
+    // // var studentA = new student(1,"A","New York");
+    // // console.log(studentA.getInformation());
+    //
+    // // Object literal
+    // let mySelf = {
+    //     name: ['Trường', 'Ngô'],
+    //     age: 29,
+    //     gender: 'male',
+    //     interests: ['music', 'film'],
+    //     bio: function() {
+    //         alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    //     },
+    //     greeting: function() {
+    //         alert('Hi! I\'m ' + this.name[0] + '.');
+    //     }
+    // };
+    // let myDataName = 'height';
+    // let myDataValue = '1.75m';
+    // mySelf[myDataName] = myDataValue;
+    // console.log(mySelf);
+    // console.log(mySelf.height);
+    // // mySelf.bio();
+    // // mySelf.greeting()
+    //
+    // // Circle classes
+    // let Circle = function (radius) {
+    //     this.getRadius = function () {
+    //         return radius;
+    //     }
+    //     this.getArea = function () {
+    //         return Math.PI*radius*radius;
+    //     }
+    // }
+    // // let circle = new Circle(10);
+    // // console.log(circle.getRadius());
+    // // console.log(circle.getArea());
+    //
+    // // Singleton
+    // let apple = new function() {
+    //     this.type = "macintosh";
+    //     this.color = "red";
+    //     this.getInfo = function () {
+    //         return this.color + ' ' + this.type + ' apple';
+    //     };
+    // }
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+
+    // Canvas
+
+    // // Draw line
+    // let canvas = document.getElementById("my-canvas");
+    // let canvasContent = canvas.getContext("2d");
+    // canvasContent.moveTo(0,0); //move to start position
+    // canvasContent.lineTo(400,200); // end position
+    // canvasContent.stroke(); // draw
+
+    // // Draw circle
+    // canvasContent.beginPath(); // begin a path of reset current path
+    // canvasContent.arc(50,50,30,0,Math.PI*2,true);
+    // canvasContent.strokeStyle = "blue"; // Border color
+    // canvasContent.fillStyle = "yellow"; // Fill color
+    // canvasContent.stroke(); // Draw border
+    // canvasContent.fill(); // Fill
+    //
+    // // Draw text
+    // canvasContent.beginPath();
+    // canvasContent.font = "30px Arial";
+    // canvasContent.fillStyle = "green";
+    // canvasContent.fillText("Hello World",100,100);
+    //
+    // // Linear Gradient
+    // canvasContent.beginPath();
+    // let gradient = canvasContent.createLinearGradient(0,0,0,100);
+    // gradient.addColorStop(0,"blue");
+    // gradient.addColorStop(1,"yellow");
+    // canvasContent.fillStyle = gradient;
+    // canvasContent.fillRect(150,25,75,30);
+    //
+    // // Radial Gradient
+    // canvasContent.beginPath();
+    // gradient = canvasContent.createRadialGradient(75,50,5,90,60,100);
+    // gradient.addColorStop(0,"red");
+    // gradient.addColorStop(1,"white");
+    // canvasContent.fillStyle = gradient;
+    // canvasContent.fillRect(10,90,100,50);
+    let ctx = document.getElementById("my-canvas").getContext("2d");
+    let image = new Image(50,50);
+    image.onload = function () {
+        ctx.drawImage(image,0,0);
+    }
+    image.src = 'car1.png'
+</script>
+</body>
+</html>

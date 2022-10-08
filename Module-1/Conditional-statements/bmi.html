@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      .box {
+        border: 3px solid #000000;
+        text-align: center;
+        width: 40%;
+        background-color: #cccccc;
+      }
+      .content {
+        margin: 20px 20px;
+        padding: 10px 10px;
+      }
+      h1 {
+        margin-top: 0;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 16px;
+        font-size: 20px;
+      }
+      label, input {
+        display: block;
+        margin: 4px 0;
+        padding: 4px 0;
+      }
+      label {
+        text-align: left;
+      }
+      input {
+        width: 100%;
+      }
+      #del, button {
+        width: 30%;
+        height: 30px;
+      }
+      #del {
+        text-align: center;
+      }
+      span {
+        width: 50%;
+      }
+      table {
+        width: 100%;
+      }
+      th {
+        width: 50%
+      }
+      #del {
+        color: white;
+        background-color: green;
+        border: 2px solid green;
+        border-radius: 3px;
+        opacity: 80%;
+      }
+      #bmi-cal {
+        color: white;
+        background-color: #0069d9;
+        border: 2px solid #0069d9;
+        border-radius: 3px;
+        opacity: 80%;
+      }
+      #del:hover, #bmi-cal:hover {
+        opacity: 100%;
+        cursor: pointer;
+      }
+      table {
+        margin: 16px 0;
+      }
+      .hover {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .hover:hover {
+        border: 1px inset deepskyblue;
+      }
+    </style>
+</head>
+<body>
+  <div class="box">
+    <div class="content">
+      <h1>BMI CALCULATOR</h1>
+      <label for="height">Enter your height:</label>
+      <input class="hover" type="text" id="height">
+      <label for="weight">Enter your weight:</label>
+      <input class="hover" type="text" id="weight">
+      <table>
+        <tr>
+          <th><button onclick="calBtn()" id="bmi-cal">Check</button></th>
+          <th><button onclick="delBtn()" id="del" >Clear</button></th>
+        </tr>
+      </table>
+      <label for="result">Your BMI result:</label>
+      <input class="hover" id="result" type="text">
+      <label for="classify">BMI classification:</label>
+      <input class="hover" id="classify" type="text">
+    </div>
+  </div>
+  <script>
+    function calBtn() {
+      let heightIn = document.getElementById('height');
+      let weightIn = document.getElementById('weight');
+      if ((weightIn.value === '') || (heightIn.value === '')) {
+        alert('Please enter your height & weight!');
+      } else {
+        calBmi();
+        function calBmi() {
+          let bmiStat;
+          bmiStat = (weightIn.value / heightIn.value**2).toFixed(1);
+          document.getElementById('result').value = bmiStat;
+          if (isNaN(bmiStat)) {
+            result = 'None';
+          } else if (bmiStat < 18.5) {
+            result = 'Underweight';
+          } else if (bmiStat < 25) {
+            result = 'Normal';
+          } else if (bmiStat < 30) {
+            result = 'Overweight';
+          } else {
+            result = 'Obese';
+          }
+          document.getElementById('classify').value = result;
+        }
+      }
+    }
+    function delBtn() {
+      document.getElementById('height').value = '';
+      document.getElementById('weight').value = '';
+      document.getElementById('result').value = '';
+      document.getElementById('classify').value = '';
+    }
+  </script>
+</body>
+</html>

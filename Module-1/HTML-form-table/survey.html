@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo form lấy survey khách hàng</title>
+    <style>
+        div {
+            border-bottom: 1px dotted #333;
+        }
+        #age-range, #income-range {
+            width: 50%;
+        }
+        table, tr, th, td {
+            border-collapse: collapse;
+            border: 1px solid #dedede;
+        }
+        td {
+            text-align: center;
+        }
+        label, p {
+            display: block;
+            margin: 8px 0;
+        }
+        .check-box {
+            display: inline-block;
+        }
+        caption {
+            text-align: left;
+        }
+        .col-1 {
+            font-weight: 600;
+            text-align: left;
+            width: 500px;
+        }
+        td {
+            width: 300px;
+        }
+        tr label {
+            margin: 0;
+        }
+        .row-1 {
+            background-color: #e6e6e6;
+        }
+        .row-3 {
+            background-color: #f5f5f5;
+        }
+        .row-4:hover,
+        .row-2:hover, 
+        .row-3:hover {
+            background-color: #FFFFCF;
+        }
+        .item {
+            font-weight: 600;
+        }
+        .money-survey {
+            display: inline-block;
+            border: none;
+        }
+        .dollar-padding {
+            padding-left: 12px;
+            margin: 0;
+            font-size: 12px;
+        }
+        .cent-padding {
+            padding-left: 8px;
+            margin: 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div id="header">
+            <h2>Market Reseach Survey</h2>
+            <p>Please take a few moments to complete this satisfaction survey.</p>
+        </div>
+        <label class="item" for="age-range">What is your age range?</label>
+        <select name="age range" id="age-range">
+            <option value="1">18-24</option>
+            <option value="2">25-34</option>
+            <option value="3">35-50</option>
+            <option value="4">50+</option>
+        </select>
+        <label class="item" for="income-range">What is your yearly income range?</label>
+        <select name="income range" id="income-range">
+            <option value="1">$0 - $25,000</option>
+            <option value="2">$25,001 - $50,000</option>
+            <option value="3">$50,001 - $100,000</option>
+            <option value="4">$100,000+</option>
+        </select>
+        <p class="item">Gender</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label class="check-box" for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label class="check-box" for="female">Female</label>
+        <p class="item">Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+        <input type="checkbox" id="product-1" name="product" value="1">
+        <label for="product-1" class="check-box">Product 1</label><br>
+        <input type="checkbox" id="product-2" name="product" value="2">
+        <label for="product-2" class="check-box">Product 2</label><br>
+        <input type="checkbox" id="product-3" name="product" value="3">
+        <label for="product-3" class="check-box">Product 3</label><br>
+        <p class="item">How often would you use our new product?</p>
+        <input type="radio" id="daily" name="frequent" value="daily">
+        <label for="daily" class="check-box">Daily</label><br>
+        <input type="radio" id="weekly" name="frequent" value="weekly">
+        <label for="weekly" class="check-box">Weekly</label><br>
+        <input type="radio" id="monthly" name="frequent" value="monthly">
+        <label for="monthly" class="check-box">Monthly</label><br>
+        <p class="item">What would you pay for the new product?</p>
+        <div class="money-survey">
+            <label for="dollar" class="check-box">$</label>
+            <input type="text" id="dollar" name="money" size="10">
+            <br>
+            <label class="dollar-padding" for="dollar">Dollar</label>
+        </div>
+        <div class="money-survey">
+            <label for="cent" class="check-box">.</label>
+            <input type="text" id="cent" name="money" size="1">
+            <br>
+            <label class="cent-padding" for="cent">Cent</label>    
+        </div>
+        <br>
+        <label class="item" for="feature">What features would you like to see in the new product.</label>
+        <textarea name="feature" id="feature" cols="150" rows="10"></textarea>
+        <table>
+            <caption>Please rate your level of agreement with the following statements.</caption>
+            <tr class="row-1">
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr class="row-2">
+                <td class="col-1">
+                    Our products are priced fairly.
+                </td>
+                <td>
+                    <input type="radio" name="price survey" value="1" id="price-strongly-disagree">
+                    
+                    <label for="price-strongly-disagree">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="price survey" value="2" id="price-disagree">
+                    
+                    <label for="price-disagree">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="price survey" value="3" id="price-agree">
+                    
+                    <label for="price-agree">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="price survey" value="4" id="price-strongly-agree">
+                    
+                    <label for="price-strongly-agree">4</label>
+                </td>
+            </tr>
+            <tr class="row-3">
+                <td class="col-1">
+                    Our products are high quality.
+                </td>
+                <td>
+                    <input type="radio" name="quality survey" value="1" id="quality-strongly-disagree">
+                    <label for="quality-strongly-disagree">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="quality survey" value="2" id="quality-disagree">
+                    <label for="quality-disagree">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="quality survey" value="3" id="quality-agree">
+                    <label for="quality-agree">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="quality survey" value="4" id="quality-strongly-agree">
+                    <label for="quality-strongly-agree">4</label>
+                </td>
+            </tr>
+            <tr class="row-4">
+                <td class="col-1">
+                    You would recommend our product to a friend or coworker.
+                </td>
+                <td>
+                    <input type="radio" name="recommend" value="1" id="recommend-disagree">
+                    <label for="recommend-disagree">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="recommend" value="2" id="recommend-disagree">
+                    <label for="recommend-disagree">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="recommend" value="3" id="recommend-agree">
+                    <label for="recommend-agree">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="recommend" value="4" id="recommend-agree">
+                    <label for="recommend-agree">4</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" name="submit form" value="Submit">
+    </form>
+</body>
+</html>

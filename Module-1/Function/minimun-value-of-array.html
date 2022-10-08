@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimum Value of Array</title>
+</head>
+<body>
+<script>
+    let arr1 = new Array(10);
+    for (let i = 0; i < arr1.length; i++) {
+        arr1[i] = Math.floor(Math.random()*50)
+    }
+    console.log(arr1);
+    console.log(minArray(arr1))
+    console.log('------------')
+
+    let arr2 = new Array(10);
+    for (let i = 0; i < arr2.length; i++) {
+        arr2[i] = Math.floor(Math.random()*50)
+    }
+    console.log(arr2);
+    console.log(minArray(arr2))
+    console.log('------------')
+
+    let arr3 = new Array(10);
+    for (let i = 0; i < arr3.length; i++) {
+        arr3[i] = Math.floor(Math.random()*50)
+    }
+    console.log(arr3);
+    console.log(minArray(arr3))
+    console.log('------------')
+
+    let arr4 = new Array(10);
+    for (let i = 0; i < arr4.length; i++) {
+        arr4[i] = Math.floor(Math.random()*50)
+    }
+    console.log(arr4);
+    console.log(minArray(arr4))
+    console.log('------------')
+
+    function minArray(arr) {
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+</script>
+</body>
+</html>

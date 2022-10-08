@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 5-8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Math.floor(Math.random()*10);
+    }
+    document.write(arr.join() + '<br>');
+    arr.sort(function (a, b){return b - a});
+    document.write(arr.join() + '<br>');
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle class</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(width,height) {
+            this.width = width;
+            this.height = height;
+        }
+        getWidth() {
+            return this.width;
+        }
+        getHeight() {
+            return this.height;
+        }
+        setWidth(width) {
+            return this.width = width;
+        }
+        setHeight(height) {
+            return this.height = height;
+        }
+        getArea() {
+            let area = this.width*this.height;
+            return area;
+        }
+        getPerimeter() {
+            let perimeter = (this.width+this.height)*2
+            return perimeter;
+        }
+        createRectangle() {
+            let ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.beginPath();
+            let color = getRandomColor()
+            ctx.fillStyle = color;
+            let xAxis = Math.floor(Math.random()*1100)
+            let yAxis = Math.floor(Math.random()*680)
+            ctx.fillRect(xAxis,yAxis,this.width,this.height);
+        }
+    }
+    function getRandomColor() {
+        let red = Math.floor(Math.random()*255);
+        let blue = Math.floor(Math.random()*255);
+        let green = Math.floor(Math.random()*255);
+        return `rgb(${red},${blue},${green})`
+    }
+    let rectangle = new Rectangle(200,100);
+    console.log(rectangle.getWidth());
+    console.log(rectangle.getHeight());
+    console.log(rectangle.getArea());
+    console.log(rectangle.getPerimeter());
+    rectangle.createRectangle();
+    console.log("------------");
+    rectangle.setHeight(300);
+    rectangle.setWidth(400);
+    console.log(rectangle.getWidth());
+    console.log(rectangle.getHeight());
+    console.log(rectangle.getArea());
+    console.log(rectangle.getPerimeter());
+    rectangle.createRectangle();
+</script>
+</body>
+</html>

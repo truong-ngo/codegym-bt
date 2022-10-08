@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 2</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td><label for="input">Nhập từ cần dịch sang tiếng việt:</label></td>
+    <td><input id="input" type="text"></td>
+    <td><input onclick="translateBtn()" type="button" value="Dịch"></td>
+  </tr>
+  <tr>
+    <td>Kết quả:</td>
+    <td><input id="result" type="text"></td>
+    <td><input onclick="clearB()" id="reset" type="button" value="Xóa"></td>
+  </tr>
+</table>
+<script>
+    let engWord = ['Banana','Apple','Orange','Mango','Watermelon','Pineapple'];
+    let vniWord = ['Chuối','Táo','Cam','Xoài','Dưa Hấu','Dứa'];
+    function translateBtn() {
+        let eWord = document.getElementById('input').value;
+        let vWord = '';
+        for (let i = 0; i < engWord.length; i++) {
+            if (engWord[i] === eWord) {
+              vWord = vniWord[i];
+            }
+        }
+        document.getElementById('result').value = vWord;
+    }
+    function clearB() {
+      document.getElementById('result').value = '';
+      document.getElementById('input').value = '';
+    }
+</script>
+</body>
+</html>

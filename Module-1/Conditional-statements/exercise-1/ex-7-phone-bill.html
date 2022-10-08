@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX7</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+  let min = +prompt('Nhập số phút đã sử dụng:')
+  if (min<=50) {
+    fee = 25000 + 600*min;
+  } else if (min<=200) {
+    fee = 25000 + 600*50 + 400*(min-50);
+  } else {
+    fee = 25000 + 600*50 + 400*150 + 200*(min-200);
+  }
+  document.getElementById('result').innerText = 'Cước phí của bạn là: ' + fee + ' VND';
+</script>
+</body>
+</html>

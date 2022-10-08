@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Bài tập] Tạo form đơn giản 1</title>
+    <style>
+        html {
+            font-family: Arial;
+            font-size: 12px;
+        }
+        div {
+            padding: 12px 24px;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+        table {
+            background-color: white;
+        }
+        th {
+            background-color: orangered;
+            color: white;
+            font-size: 18px;
+        }
+        .blue-text {
+            color: blue;
+            text-align: right;
+        }
+        .btn {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+                </tr>
+                <tr>
+                    <td class="blue-text">Họ và tên:</td>
+                    <td colspan="3"><input type="text" name="yourname"></td>
+                </tr>
+                <tr>
+                    <td class="blue-text">Email:</td>
+                    <td colspan="3"><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td class="blue-text">Sở thích:</td>
+                    <td><input type="checkbox" name="hobby">Thể thao</td>
+                    <td><input type="checkbox" name="hobby">Âm nhạc</td>
+                    <td><input type="checkbox" name="hobby">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="hobby">Luớt web</td>
+                    <td><input type="checkbox" name="hobby">Chơi game</td>
+                    <td><input type="checkbox" name="hobby">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="hobby">Du lịch</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="btn"><input type="submit" name="submit form" value="Gửi thông tin"></td>
+                    <td class="btn"><input type="reset" name="reset form" value="Nhập lại"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
