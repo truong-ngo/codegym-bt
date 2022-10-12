@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Rectangle
-        /*
+        System.out.println("Rectangle:");
         System.out.println("Enter the width: ");
         double width = scanner.nextDouble();
         System.out.println("Enter the height: ");
@@ -14,10 +14,10 @@ public class Main {
         System.out.println("Your Rectangle \n" + rectangle.display());
         System.out.println("Perimeter of the Rectangle: "+ rectangle.getPerimeter());
         System.out.println("Area of the Rectangle: "+ rectangle.getArea());
-        */
+        System.out.println("----------");
 
         // Quadratic Equation
-        /*
+        System.out.println("Quadratic Equation: ");
         System.out.println("Enter a: ");
         double a = scanner.nextDouble();
         System.out.println("Enter b: ");
@@ -34,10 +34,11 @@ public class Main {
         } else {
             System.out.println("The equation has two root: x1 = " + equation.getRoot1() + " and x2 = " + equation.getRoot2());
         }
-        */
+        System.out.println("----------");
 
         // Stop Watch
 
+        System.out.println("Stop Watch: ");
         int[] array = new int[100000];
         for (int i = 0; i < 100000; i++) {
             array[i] = (int)(Math.random()*100);
@@ -47,10 +48,10 @@ public class Main {
         LocalTime end = LocalTime.now();
         StopWatch stopWatch = new StopWatch(start,end);
         System.out.println("Time: " + stopWatch.getElapsedTime());
-
+        System.out.println("----------");
 
         // Fan
-        /*
+        System.out.println("Fan: ");
         Fan fan1 = new Fan();
         fan1.setSpeed(fan1.getFAST());
         fan1.setRadius(10);
@@ -61,11 +62,10 @@ public class Main {
         fan2.setRadius(5);
         fan2.setColor("blue");
         fan2.setOnOff(false);
-        System.out.println(fan1.toString());
-        System.out.println(fan2.toString());
-        */
+        System.out.println(fan1);
+        System.out.println(fan2);
     }
-    public static int[] selectionSort(int...a) {
+    public static void selectionSort(int...a) {
         for (int i = 0; i < a.length - 1; i++) {
             for (int j = i + 1; j < a.length - 1; j++) {
                 if (a[j] < a[i]) {
@@ -75,6 +75,5 @@ public class Main {
                 }
             }
         }
-        return a;
     }
 }
