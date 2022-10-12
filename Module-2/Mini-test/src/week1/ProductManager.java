@@ -79,14 +79,18 @@ public class ProductManager {
     }
 
     public void displayMaxPriceProduct() {
-        int index = 0;
-        int maxPrice = products[0].getPrice();
-        for (int i = 1; i < products.length; i++) {
-            if (products[i].getPrice() > maxPrice) {
-                maxPrice = products[i].getPrice();
-                index = i;
+        if (products.length == 0) {
+            System.out.println("Products empty!");
+        } else {
+            int index = 0;
+            int maxPrice = products[0].getPrice();
+            for (int i = 1; i < products.length; i++) {
+                if (products[i].getPrice() > maxPrice) {
+                    maxPrice = products[i].getPrice();
+                    index = i;
+                }
             }
+            System.out.println("Product has max price is: " + products[index].toString());
         }
-        System.out.println("Product has max price is: " + products[index].toString());
     }
 }
