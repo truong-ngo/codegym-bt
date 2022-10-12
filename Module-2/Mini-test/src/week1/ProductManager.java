@@ -17,7 +17,7 @@ public class ProductManager {
         this.products = products;
     }
 
-    public Product inputProduct() {
+    public Product inputProduct(Product productInput) {
         Scanner input = new Scanner(System.in);
         Product product = new Product();
         String name, description, str;
@@ -25,48 +25,27 @@ public class ProductManager {
         boolean checkInput = false;
         System.out.println("Enter product data: ");
         do {
-            System.out.println("Enter product name: ");
+            String dataName = (productInput == null) ? "" : productInput.getName();
+            String dataPrice = (productInput == null) ? "" : Integer.toString(productInput.getPrice());
+            String dataDescription = (productInput == null) ? "" : productInput.getDescription();
+            System.out.println("Enter name: " + dataName);
             name = input.nextLine();
             if (name.equals("")) continue;
-            System.out.println("Enter  price: ");
+            System.out.println("Enter price: " + dataPrice);
             str = input.nextLine();
             if (str.equals("")) continue;
             else price = Integer.parseInt(str);
-            System.out.println("Enter product description: ");
+            System.out.println("Enter description: " + dataDescription);
             description = input.nextLine();
             if (description.equals("")) continue;
             checkInput = true;
-            product = new Product(name,price,description);
-        } while (!checkInput);
-        return product;
-    }
-
-    public Product inputEditProduct(Product editProduct) {
-        Scanner input = new Scanner(System.in);
-        Product product = new Product();
-        String name, description, str;
-        int price;
-        boolean checkInput = false;
-        System.out.println("Edit product data: ");
-        do {
-            System.out.println("Edit name: " + editProduct.getName());
-            name = input.nextLine();
-            if (name.equals("")) continue;
-            System.out.println("Edit price: " + editProduct.getPrice());
-            str = input.nextLine();
-            if (str.equals("")) continue;
-            else price = Integer.parseInt(str);
-            System.out.println("Edit description: " + editProduct.getDescription());
-            description = input.nextLine();
-            if (description.equals("")) continue;
-            checkInput = true;
-            product = new Product(name,price,description);
+            product = new Product(name, price, description);
         } while (!checkInput);
         return product;
     }
 
     public void addProduct() {
-        Product productAdd = inputProduct();
+        Product productAdd = inputProduct(null);
         int index = products.length;
         Product[] newProducts = new Product[index + 1];
         System.arraycopy(products, 0, newProducts, 0, index);
@@ -75,7 +54,7 @@ public class ProductManager {
     }
 
     public void updateProduct(int index, Product product) {
-        Product productUpdate = inputEditProduct(product);
+        Product productUpdate = inputProduct(product);
         products[index].setName(productUpdate.getName());
         products[index].setPrice(productUpdate.getPrice());
         products[index].setDescription(productUpdate.getDescription());
