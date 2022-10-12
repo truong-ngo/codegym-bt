@@ -70,7 +70,7 @@ public class ProductManager {
 
     public void displayProduct() {
         if (products.length == 0) {
-            System.out.println("Products empty!!!");
+            System.out.println("Products empty!");
         } else {
             for (Product product : products) {
                 System.out.println(product);
