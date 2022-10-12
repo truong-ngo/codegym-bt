@@ -82,11 +82,11 @@ public class ProductManager {
     }
 
     public void deleteProduct(int index) {
-        Product[] newProductArray = new Product[products.length - 1];
-        if (index >= 0) System.arraycopy(products, 0, newProductArray, 0, index);
+        Product[] newProducts = new Product[products.length - 1];
+        if (index >= 0) System.arraycopy(products, 0, newProducts, 0, index);
         if (products.length - (index + 1) >= 0)
-            System.arraycopy(products, index + 1, newProductArray, index + 1 - 1, products.length - (index + 1));
-        setProducts(newProductArray);
+            System.arraycopy(products, index + 1, newProducts, index + 1 - 1, products.length - (index + 1));
+        setProducts(newProducts);
     }
 
     public void displayProduct() {
