@@ -30,11 +30,8 @@ public class ProductManager {
             if (name.equals("")) continue;
             System.out.println("Enter  price: ");
             str = input.nextLine();
-            if (str.equals("")) {
-                continue;
-            } else {
-                price = Integer.parseInt(str);
-            }
+            if (str.equals("")) continue;
+            else price = Integer.parseInt(str);
             System.out.println("Enter product description: ");
             description = input.nextLine();
             if (description.equals("")) continue;
@@ -57,11 +54,8 @@ public class ProductManager {
             if (name.equals("")) continue;
             System.out.println("Edit price: " + editProduct.getPrice());
             str = input.nextLine();
-            if (str.equals("")) {
-                continue;
-            } else {
-                price = Integer.parseInt(str);
-            }
+            if (str.equals("")) continue;
+            else price = Integer.parseInt(str);
             System.out.println("Edit description: " + editProduct.getDescription());
             description = input.nextLine();
             if (description.equals("")) continue;
