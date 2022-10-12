@@ -66,19 +66,19 @@ public class ProductManager {
     }
 
     public void addProduct() {
-        Product inputProduct = inputProduct();
+        Product productAdd = inputProduct();
         int index = products.length;
         Product[] newProducts = new Product[index + 1];
         System.arraycopy(products, 0, newProducts, 0, index);
-        newProducts[index] = inputProduct;
+        newProducts[index] = productAdd;
         setProducts(newProducts);
     }
 
     public void updateProduct(int index, Product product) {
-        Product updateProduct = inputEditProduct(product);
-        products[index].setName(updateProduct.getName());
-        products[index].setPrice(updateProduct.getPrice());
-        products[index].setDescription(updateProduct.getDescription());
+        Product productUpdate = inputEditProduct(product);
+        products[index].setName(productUpdate.getName());
+        products[index].setPrice(productUpdate.getPrice());
+        products[index].setDescription(productUpdate.getDescription());
     }
 
     public void deleteProduct(int index) {
