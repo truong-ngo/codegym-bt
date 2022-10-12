@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int choice = -1;
+        int choice;
         Scanner input = new Scanner(System.in);
         ProductManager productManager = new ProductManager();
-        while (choice != 0) {
+        while (true) {
             System.out.println("Product Menu:");
             System.out.println("1. Add Product");
             System.out.println("2. Update Product");

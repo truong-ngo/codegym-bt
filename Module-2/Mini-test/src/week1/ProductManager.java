@@ -39,9 +39,7 @@ public class ProductManager {
             description = input.nextLine();
             if (description.equals("")) continue;
             checkInput = true;
-            product.setName(name);
-            product.setPrice(price);
-            product.setDescription(description);
+            product = new Product(name,price,description);
         } while (!checkInput);
         return product;
     }
@@ -68,9 +66,7 @@ public class ProductManager {
             description = input.nextLine();
             if (description.equals("")) continue;
             checkInput = true;
-            product.setName(name);
-            product.setPrice(price);
-            product.setDescription(description);
+            product = new Product(name,price,description);
         } while (!checkInput);
         return product;
     }
