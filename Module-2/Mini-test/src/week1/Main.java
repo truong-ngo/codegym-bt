@@ -23,11 +23,11 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Enter index: ");
-                    int addIndex = input.nextInt();
-                    productManager.updateProduct(addIndex, productManager.getProducts()[addIndex]);
+                    int index = input.nextInt();
+                    productManager.updateProduct(index, productManager.getProducts()[index]);
                     break;
                 case 3:
-                    System.out.println("Enter index: ");
+                    System.out.println("Enter delete product's index: ");
                     int deleteIndex = input.nextInt();
                     productManager.deleteProduct(deleteIndex);
                     break;
