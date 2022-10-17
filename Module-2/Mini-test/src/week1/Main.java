@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int choice;
         Scanner input = new Scanner(System.in);
         ProductManager productManager = new ProductManager();
         while (true) {
@@ -16,7 +15,7 @@ public class Main {
             System.out.println("5. Display Max Price Product");
             System.out.println("0. Exit");
             System.out.println("Enter your choice: ");
-            choice = input.nextInt();
+            int choice = input.nextInt();
             switch (choice) {
                 case 1:
                     productManager.addProduct();

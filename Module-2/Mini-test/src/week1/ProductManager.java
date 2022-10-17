@@ -72,6 +72,7 @@ public class ProductManager {
         if (products.length == 0) {
             System.out.println("Products empty!");
         } else {
+            System.out.println("Products list: ");
             for (Product product : products) {
                 System.out.println(product);
             }
