@@ -5,21 +5,21 @@ import java.util.*;
 public class ArrayLists<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
-    private Object[] elements = new Object[DEFAULT_CAPACITY];
+    private Object[] elements;
 
     public ArrayLists() {
-
+        elements = new Object[DEFAULT_CAPACITY];
     }
 
-    public ArrayLists(int size) {
-        this.size = size;
+    public ArrayLists(int capacity) {
+        elements = new Object[capacity];
     }
 
     public void add(int index, E element) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
-        if (size >= elements.length) {
+        if (size == elements.length) {
             ensureCapacity(size + 1);
         }
         for (int i = size - 1; i >= index; i--) {

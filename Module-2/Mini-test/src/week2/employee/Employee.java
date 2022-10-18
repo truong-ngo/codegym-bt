@@ -1,6 +1,6 @@
 package week2.employee;
 
-public abstract class Employee {
+public abstract class Employee implements Comparable<Employee> {
     private String id;
     private String name;
     private int age;
@@ -60,4 +60,16 @@ public abstract class Employee {
     }
 
     public abstract int getActualSalary();
+
+    @Override
+    public String toString() {
+        return "Employee: " +
+               "Id = " + id + ", " +
+               "Name = " + name + ", " +
+               "Age = "  + age + ", " +
+               "Phone Number = " + phoneNumber + ", " +
+               "Email = " + email;
+    }
+
+    public abstract int compareTo(Employee employee);
 }

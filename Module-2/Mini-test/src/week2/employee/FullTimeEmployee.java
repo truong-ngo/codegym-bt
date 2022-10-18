@@ -44,4 +44,16 @@ public class FullTimeEmployee extends Employee {
     public int getActualSalary() {
         return baseSalary + bonus - fine;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Salary = " + getActualSalary();
+    }
+
+    @Override
+    public int compareTo(Employee employee) {
+        if (getActualSalary() < employee.getActualSalary()) return -1;
+        else if (getActualSalary() > employee.getActualSalary()) return 1;
+        else return 0;
+    }
 }

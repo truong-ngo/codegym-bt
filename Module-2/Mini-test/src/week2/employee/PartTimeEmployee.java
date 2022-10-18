@@ -1,8 +1,8 @@
 package week2.employee;
 
-public class PartTimeEmployee extends Employee {
+public class PartTimeEmployee extends Employee implements Comparable<Employee> {
     private int workHour;
-    private final int HOURLY_WAGES = 100000;
+    private final int HOURLY_WAGES = 20;
 
     public PartTimeEmployee() {
 
@@ -28,5 +28,16 @@ public class PartTimeEmployee extends Employee {
     @Override
     public int getActualSalary() {
         return workHour * HOURLY_WAGES;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Salary = " + getActualSalary();
+    }
+    @Override
+    public int compareTo(Employee employee) {
+        if (getActualSalary() < employee.getActualSalary()) return -1;
+        else if (getActualSalary() > employee.getActualSalary()) return 1;
+        else return 0;
     }
 }
