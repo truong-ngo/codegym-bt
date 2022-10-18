@@ -12,7 +12,7 @@ public class NextDayCalculator {
             result = (isLastDayOfMonth(day, month, year)) ? getFirstDayOfNextMonth(month, year)
                                                           : getNextDay(day, month, year);
         } else {
-            result = (isLastDayOfMonth(day, month, year)) ? "1/1/" + (year + 1)
+            result = (isLastDayOfMonth(day, month, year)) ? getFirstDayOfNextYear(year)
                                                           : getNextDay(day, month, year);
         }
         return result;
@@ -99,5 +99,9 @@ public class NextDayCalculator {
 
     public static String getFirstDayOfNextMonth(int month, int year) {
         return "1/" + (month + 1) + "/" + year;
+    }
+
+    public static String getFirstDayOfNextYear(int year) {
+        return "1/1/" + (year + 1);
     }
 }
