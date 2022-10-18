@@ -36,8 +36,6 @@ public class PartTimeEmployee extends Employee implements Comparable<Employee> {
     }
     @Override
     public int compareTo(Employee employee) {
-        if (getActualSalary() < employee.getActualSalary()) return -1;
-        else if (getActualSalary() > employee.getActualSalary()) return 1;
-        else return 0;
+        return Integer.compare(getActualSalary(), employee.getActualSalary());
     }
 }

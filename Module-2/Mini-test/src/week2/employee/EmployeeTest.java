@@ -1,19 +1,16 @@
 package week2.employee;
 
-import week2.material.Material;
-import week2.material.MaterialManager;
-
 import java.util.Scanner;
 
 public class EmployeeTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         EmployeeManager employeeManager = new EmployeeManager();
-        Employee fullTime1 = new FullTimeEmployee("F1","Full Name 1",23,"123456","abcdef",500,0,2200);
-        Employee fullTime2 = new FullTimeEmployee("F2","Full Name 2",23,"123456","abcdef",300,0,2500);
-        Employee fullTime3 = new FullTimeEmployee("F3","Full Name 3",23,"123456","abcdef",400,0,2100);
-        Employee fullTime4 = new FullTimeEmployee("F4","Full Name 4",23,"123456","abcdef",700,0,2800);
-        Employee fullTime5 = new FullTimeEmployee("F5","Full Name 5",23,"123456","abcdef",600,0,2400);
+        Employee fullTime1 = new FullTimeEmployee("F1","Full Time 1",23,"123456","common",500,0,2200);
+        Employee fullTime2 = new FullTimeEmployee("F2","Full Time 2",23,"123456","common",300,0,2500);
+        Employee fullTime3 = new FullTimeEmployee("F3","Full Time 3",23,"123456","common",400,0,2100);
+        Employee fullTime4 = new FullTimeEmployee("F4","Full Time 4",23,"123456","common",700,0,2800);
+        Employee fullTime5 = new FullTimeEmployee("F5","Full Time 5",23,"123456","common",600,0,2400);
         Employee partTime1 = new PartTimeEmployee("P1","Part Time 1", 23, "234567", "qwerty", 130);
         Employee partTime2 = new PartTimeEmployee("P2","Part Time 2", 23, "234567", "qwerty", 120);
         Employee partTime3 = new PartTimeEmployee("P3","Part Time 3", 23, "234567", "qwerty", 110);
@@ -38,7 +35,8 @@ public class EmployeeTest {
             System.out.println("5. Display Average Salary");
             System.out.println("6. Display Full Time Employee Have Salary Below Average");
             System.out.println("7. Display Total Salary of Part Time Employee");
-            System.out.println("8. Display Sorted by Salary of Full Time Employee");
+            System.out.println("8. Sort by Price");
+            System.out.println("9. Display Salary of Full Time Employee");
             System.out.println("0. Exit");
             System.out.println("Enter your choice:");
             int choice = Integer.parseInt(scanner.nextLine());
@@ -114,6 +112,9 @@ public class EmployeeTest {
                                        + employeeManager.getTotalSalaryOfPartTimeEmployee());
                     break;
                 case 8:
+                    employeeManager.sortByPrice();
+                    break;
+                case 9:
                     employeeManager.sortFullTimeEmployeeSalary();
                     break;
                 case 0:

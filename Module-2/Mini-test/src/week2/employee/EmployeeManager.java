@@ -1,15 +1,12 @@
 package week2.employee;
 
-import week2.material.CrispyFlour;
-import week2.material.Material;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class EmployeeManager {
-    private ArrayList<Employee> employees = new ArrayList<Employee>();
+    private ArrayList<Employee> employees = new ArrayList<>();
 
     public Employee inputEmployee(Scanner scanner, String employeeType) {
         Employee employee = null;
@@ -106,5 +103,8 @@ public class EmployeeManager {
                 System.out.println(employee);
             }
         }
+    }
+    public void sortByPrice() {
+        Collections.sort(employees);
     }
 }
