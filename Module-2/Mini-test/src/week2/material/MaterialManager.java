@@ -1,6 +1,7 @@
 package week2.material;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class MaterialManager {
         String id = scanner.nextLine();
         System.out.println("Enter name: ");
         String name = scanner.nextLine();
-        LocalDate manufacturingDate = LocalDate.now();
+        LocalDate manufacturingDate = LocalDate.of(2017, 0, 21);
         System.out.println("Enter price: ");
         int cost = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter quantity: ");
@@ -30,7 +31,7 @@ public class MaterialManager {
         String id = scanner.nextLine();
         System.out.println("Enter name: ");
         String name = scanner.nextLine();
-        LocalDate manufacturingDate = LocalDate.now();
+        LocalDate manufacturingDate = LocalDate.of(2017, Month.APRIL, 21);
         System.out.println("Enter price: ");
         int cost = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter weight: ");

@@ -1,6 +1,7 @@
 package week2.material;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public abstract class Material implements Discount {
     private String id;

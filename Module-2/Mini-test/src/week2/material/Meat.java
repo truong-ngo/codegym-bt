@@ -42,6 +42,7 @@ public class Meat extends Material {
         return "Meat {" +
                 "weight=" + weight +
                 ", manufacturingDate=" + manufacturingDate +
+                ", expire date=" + getExpiryDate() +
                 ", cost=" + cost +
                 '}';
     }

@@ -2,6 +2,8 @@ package linked_list;
 
 import my_linked_list.MyLinkedList;
 
+import java.util.LinkedList;
+
 public class MyLinkedLists<E> {
     private Node head;
     private int numNodes;
@@ -60,8 +62,7 @@ public class MyLinkedLists<E> {
         checkIndex(index);
         if (index == 0) {
             E remove = (E) head.getData();
-            head = head.next;
-            numNodes--;
+            removeFirst();
             return remove;
         }
         Node temp = head;
@@ -74,24 +75,40 @@ public class MyLinkedLists<E> {
         return remove;
     }
 
+    public void removeLast() {
+        if (head == null) {
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        numNodes--;
+    }
+
+    public void removeFirst() {
+        if (head == null) {
+            return;
+        }
+        head = head.next;
+        numNodes--;
+    }
+
     public boolean remove(Object e) {
         boolean checkRemove = false;
-        Node temp = head;
-        for (int i = 0; i < numNodes; i++) {
-            do {
-                if (head.getData().equals(e)) {
-                    head = head.next;
-                    temp = head;
-                    checkRemove = true;
-                    numNodes--;
-                }
-            } while (head.getData().equals(e));
-            if (temp.next.getData().equals(e)) {
-                temp.next = temp.next.next;
-                checkRemove = true;
-                numNodes--;
-            } else {
-                temp = temp.next;
+        while (head.getData().equals(e)) {
+            removeFirst();
+            checkRemove = true;
+        }
+        for (int i = 1; i < numNodes; i++) {
+            if (get(i).equals(e)) {
+                remove(i);
+                i--;
             }
         }
         return checkRemove;
