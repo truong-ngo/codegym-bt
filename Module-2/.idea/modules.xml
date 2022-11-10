@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Abstract-class-interface/Abstract-class-interface.iml" filepath="$PROJECT_DIR$/Abstract-class-interface/Abstract-class-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Access-modifier/Access-modifier.iml" filepath="$PROJECT_DIR$/Access-modifier/Access-modifier.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Automated-testing-TDD/Automated-testing-TDD.iml" filepath="$PROJECT_DIR$/Automated-testing-TDD/Automated-testing-TDD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Binary-file-serialization/Binary-file-serialization.iml" filepath="$PROJECT_DIR$/Binary-file-serialization/Binary-file-serialization.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Class-and-object/Class-and-object.iml" filepath="$PROJECT_DIR$/Class-and-object/Class-and-object.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Clean-code/Clean-code.iml" filepath="$PROJECT_DIR$/Clean-code/Clean-code.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Exception-handling/Exception-handling.iml" filepath="$PROJECT_DIR$/Exception-handling/Exception-handling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/I-O-Text-File/I-O-Text-File.iml" filepath="$PROJECT_DIR$/I-O-Text-File/I-O-Text-File.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java-overview/Java-overview.iml" filepath="$PROJECT_DIR$/Java-overview/Java-overview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/List/List.iml" filepath="$PROJECT_DIR$/List/List.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Loop/Loop.iml" filepath="$PROJECT_DIR$/Loop/Loop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Map/Map.iml" filepath="$PROJECT_DIR$/Map/Map.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Mini-test/Mini-test.iml" filepath="$PROJECT_DIR$/Mini-test/Mini-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module-2.iml" filepath="$PROJECT_DIR$/.idea/Module-2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Search-sort/Search-sort.iml" filepath="$PROJECT_DIR$/Search-sort/Search-sort.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Stack-queue/Stack-queue.iml" filepath="$PROJECT_DIR$/Stack-queue/Stack-queue.iml" />
     </modules>
   </component>
 </project>

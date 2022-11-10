@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfe6ecbb-35a5-4dbe-9d62-aac994a44b03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/codegym_file_utils2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral_design_pattern/demo/strategy/FlyWithWings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral_design_pattern/demo/strategy/Queck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design_pattern/DesignPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io_text_file/copy_file/copy-file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io_text_file/copy_file/new-file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack_queue/Stack-queue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string_regex/String-regex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/structural_design_pattern/Strutural-design-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/Thread.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Module-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Module-2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/Abstract-class-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/Abstract-class-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Edible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Edible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Orange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/animal_class_interface_edible/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/animal_class_interface_edible/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/demo_abstract_interface/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/demo_abstract_interface/Animals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/demo_abstract_interface/AnimalsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/demo_abstract_interface/AnimalsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/demo_abstract_interface/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/demo_abstract_interface/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/demo_abstract_interface/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/demo_abstract_interface/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/demo_abstract_interface/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/demo_abstract_interface/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_colorable/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_colorable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_comparator/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_comparator/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_comparator/CircleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_comparator/CircleComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_comparator/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_comparator/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_comparator/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_comparator/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_compareable/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_compareable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_compareable/ComparableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_compareable/ComparableCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_compareable/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_compareable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_compareable/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_compareable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Resizeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Resizeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract-class-interface/src/interface_resizeable/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abtract_class_interface/interface_resizeable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/Access-modifier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Access-modifier.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Chicken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Edible.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Orange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/animal_class_interface_edible/Tiger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/demo_abstract_interface/Animals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/demo_abstract_interface/AnimalsList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/demo_abstract_interface/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/demo_abstract_interface/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/demo_abstract_interface/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Colorable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_colorable/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_comparator/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_comparator/CircleComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_comparator/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_comparator/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_compareable/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_compareable/ComparableCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_compareable/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_compareable/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Resizeable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Abstract-class-interface/interface_resizeable/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Access-modifier/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Access-modifier/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Access-modifier/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Access-modifier/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Access-modifier/Students.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/AddElementToArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/ArrayConcat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/CountCharacterOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/DeleteElementFromArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/FindElementInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/FindMaxElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/FindMinimum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/FindMinimumInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/MatrixPrimaryDiagonal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/MaxOfTwoDimensionArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/NumberOfStudentPass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/ReserveArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/SumOfOneColumn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Array/TemperatureConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/absolute_number_calculator/AbsoluteNumberCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/fizz_buzz/FizzBuzz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/fizz_buzz/FizzBuzzTranslate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/next_day_calculator/NextDayCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/simple_calculator/SimpleCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Automated-testing-TDD/triangle_classifier/TriangleClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/FileInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/FileOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/ObjectInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/ObjectOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/ReadByteConsole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/code-gym.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/hello-code-gym.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Binary-file-serialization/demo/product.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Demo$SimpleCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Demo$TV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/QuadraticEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Class-and-object/StopWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/extract_method/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/extract_method/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/extract_variable_constant/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/extract_variable_constant/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/extract_variable_constant/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/fizz_buzz/FizzBuzz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/fizz_buzz/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Clean-code/tennis_game/TennisGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/array_out_of_bound_exception/ArrayIndexOutOfBoundsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/illegal_triangle_exception/IllegalTriangleException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/illegal_triangle_exception/TriangleCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/linear_equation_resolver/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Exception-handling/number_format_exception/NumberFormatException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/copy_file/CopyFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/copy_file/copy-file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/copy_file/new-file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/CharArrayInput1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/CharArrayInput2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/DataInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/DataOutPutStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/FileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/FileWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/PrintWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/Scanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/data-input-stream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/data-input-stream.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/data-output-stream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/data-output-stream.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/file-reader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/file-reader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/file-writer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/file-writer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/print-writer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/print-writer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/demo/scanner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/scanner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/max_value/MaxValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/max_value/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/max_value/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/max_value/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/max_value/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/read_csv_file/ReadCSV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/read_csv_file/csv-file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/read_csv_file/csv-file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/sum_of_numbers/SumOfNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/I-O-Text-File/sum_of_numbers/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/sum_of_numbers/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/circle_and_cylinder/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/circle_and_cylinder/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/circle_and_cylinder/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/movable_point/MovablePoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/movable_point/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/movable_point/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/point/Point2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/point/Point3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/point/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/shapes/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/shapes/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/shapes/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/shapes/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/shapes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/triangle/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/triangle/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Inheritance/triangle/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/BmiCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/CurrencyConversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/LeapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/NumberToWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/OperatorExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Java-overview/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/array_list/ArrayLists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/array_list/ArrayListsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/linked_list/MyLinkedLists$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/linked_list/MyLinkedLists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/linked_list/MyLinkedListsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/my_linked_list/MyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/my_linked_list/MyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/my_linked_list/MyLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/my_list_class/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/List/my_list_class/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/Display20FirstPrimeNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/DisplayPrimeNumbersLessThan100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/DrawingMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/DrawingShapeMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/GreatestCommonFactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/InterestCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Loop/PrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/comparable_comparator/AgeComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/comparable_comparator/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/comparable_comparator/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/hashmap_hashset/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/hashmap_hashset/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/hashmap_treemap_linkedhashmap/TestMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/product_manager/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/product_manager/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/product_manager/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Map/product_manager/ProductSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week1/Mini-test-week1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week1/Mini-test-week1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week1/Minitest tuần 1 - md2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week1/Minitest tuần 1 - md2.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week1/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week1/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/book/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/book/Bài tập kế thừa.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/book/Bài tập kế thừa.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/book/FictionBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/book/ProgrammingBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/book/TestBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/Employee - W2 .docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/Employee - W2 .docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/EmployeeManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/EmployeeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/FullTimeEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/employee/PartTimeEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/Abstract Class and Interface.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/Abstract Class and Interface.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/CrispyFlour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/Discount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/Material.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/MaterialManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/Meat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Mini-test/week2/material/TestMaterial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/algorithm_complexity/AlgorithmComplexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/binary_search/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/binary_search/BinarySearchRecursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/binary_search/DemoLinearSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/bubble_sort/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/bubble_sort/BubbleSortStepByStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/insertion_sort/InsertionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/insertion_sort/InsertionSortStepByStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/maximum_consecutive_increasingly/MaximumConsecutiveIncreasingly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/maximum_subsequence/MaximumSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Search-sort/selection_sort/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/binary_to_decimal/BinaryToDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/bracket/Bracket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/palindrome/Palindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_array/QueueArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_array/QueueArrayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_circle_link_list/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_circle_link_list/QueueCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_circle_link_list/QueueCircleLinkList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_linked_list/LinkedListQueueClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_linked_list/MyLinkedListQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/queue_linked_list/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/reserve_stack_element/ReserveStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/stack_array/StackArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/stack_array/StackArrayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/stack_linked_list/GenericStackClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/stack_linked_list/MyGenericStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/production/Stack-queue/tree_map/TreeMapCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/test/Automated-testing-TDD/absolute_number_calculator/AbsoluteNumberCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/test/Automated-testing-TDD/fizz_buzz/FizzBuzzTranslateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/test/Automated-testing-TDD/next_day_calculator/NextDayCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/test/Automated-testing-TDD/simple_calculator/SimpleCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/out/test/Automated-testing-TDD/triangle_classifier/TriangleClassifierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access-modifier/src/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access_modifier/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/Array.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Array.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/AddElementToArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/ArrayConcat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/CountCharacterOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/DeleteElementFromArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/FindElementInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/FindMaxElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/FindMinimum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/FindMinimumInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/MatrixPrimaryDiagonal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/MaxOfTwoDimensionArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/NumberOfStudentPass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/ReserveArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/SumOfOneColumn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/out/production/Array/TemperatureConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/AddElementToArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/ArrayConcat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ArrayConcat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/CountCharacterOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/CountCharacterOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/DeleteElementFromArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/DeleteElementFromArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/FindElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindElementInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/FindMaxElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindMaxElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/FindMinimum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindMinimum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/FindMinimumInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindMinimumInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/MatrixPrimaryDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MatrixPrimaryDiagonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/MaxOfTwoDimensionArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxOfTwoDimensionArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/NumberOfStudentPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/NumberOfStudentPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/ReserveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ReserveArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/SumOfOneColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SumOfOneColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/src/TemperatureConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/TemperatureConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/Automated-testing-TDD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/Automated-testing-TDD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/absolute_number_calculator/AbsoluteNumberCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/fizz_buzz/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/fizz_buzz/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/fizz_buzz/FizzBuzzTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/fizz_buzz/FizzBuzzTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/next_day_calculator/NextDayCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/next_day_calculator/NextDayCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/simple_calculator/SimpleCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/simple_calculator/SimpleCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/src/triangle_classifier/TriangleClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automated_testing_tdd/triangle_classifier/TriangleClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/test/absolute_number_calculator/AbsoluteNumberCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/test/fizz_buzz/FizzBuzzTranslateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/automated_testing_tdd/fizz_buzz/FizzBuzzTranslateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/test/next_day_calculator/NextDayCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/automated_testing_tdd/next_day_calculator/NextDayCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/test/simple_calculator/SimpleCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/automated_testing_tdd/simple_calculator/SimpleCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated-testing-TDD/test/triangle_classifier/TriangleClassifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/automated_testing_tdd/triangle_classifier/TriangleClassifierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/Binary-file-serialization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_file_serialization/Binary-file-serialization.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/FileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/FileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/ObjectInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/ObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/ReadByteConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/code-gym-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/code-gym.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/hello-code-gym.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binary-file-serialization/src/demo/product.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/Class-and-object.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/Class-and-object.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Demo$SimpleCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Demo$TV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/QuadraticEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/out/production/Class-and-object/StopWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/Fan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class-and-object/src/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class_and_object/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/Clean-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/Clean-code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/extract_method/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/extract_method/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/extract_method/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/extract_method/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/extract_variable_constant/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/extract_variable_constant/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/extract_variable_constant/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/extract_variable_constant/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/extract_variable_constant/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/extract_variable_constant/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/fizz_buzz/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/fizz_buzz/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/fizz_buzz/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/fizz_buzz/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clean-code/src/tennis_game/TennisGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean_code/tennis_game/TennisGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/Exception-handling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/Exception-handling.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/array_out_of_bound_exception/ArrayIndexOutOfBoundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/array_out_of_bound_exception/ArrayIndexOutOfBoundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/illegal_triangle_exception/IllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/illegal_triangle_exception/IllegalTriangleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/illegal_triangle_exception/TriangleCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/illegal_triangle_exception/TriangleCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/linear_equation_resolver/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/linear_equation_resolver/LinearEquationResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception-handling/src/number_format_exception/NumberFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_handling/number_format_exception/NumberFormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/I-O-Text-File.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/I-O-Text-File.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/copy_file/CopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/copy_file/CopyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/copy_file/copy-file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/copy_file/new-file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/CharArrayInput1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/CharArrayInput1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/CharArrayInput2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/CharArrayInput2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/DataInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/DataInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/DataOutPutStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/DataOutPutStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/FileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/FileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/PrintWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/PrintWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/demo/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/data-input-stream.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/data-output-stream.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/file-reader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/file-writer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/print-writer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/demo/scanner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/max_value/MaxValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/max_value/MaxValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/max_value/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/max_value/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/read_csv_file/ReadCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/read_csv_file/ReadCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/read_csv_file/csv-file.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/sum_of_numbers/SumOfNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_text_file/sum_of_numbers/SumOfNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I-O-Text-File/src/sum_of_numbers/numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/Inheritance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/Inheritance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/circle_and_cylinder/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/circle_and_cylinder/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/circle_and_cylinder/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/circle_and_cylinder/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/circle_and_cylinder/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/circle_and_cylinder/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/movable_point/MovablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/movable_point/MovablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/movable_point/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/movable_point/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/movable_point/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/movable_point/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/point/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/point/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/point/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/point/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/point/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/point/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/shapes/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shapes/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/shapes/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shapes/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/shapes/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shapes/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/triangle/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/triangle/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/triangle/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/triangle/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/src/triangle/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/triangle/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/Java-overview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/Java-overview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/BmiCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/CurrencyConversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/LeapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/NumberToWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/OperatorExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/out/production/Java-overview/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/BmiCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/BmiCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/DayOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/DayOfMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/LeapYearCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/LeapYearCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/LinearEquationResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/NumberToWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/NumberToWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/OperatorExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/OperatorExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-overview/src/VariableDataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_overview/VariableDataType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/List.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/List.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/array_list/ArrayLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/array_list/ArrayLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/array_list/ArrayListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/array_list/ArrayListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/linked_list/MyLinkedLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/linked_list/MyLinkedListsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/my_linked_list/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/my_linked_list/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/my_linked_list/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/my_linked_list/MyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/my_list_class/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/my_list_class/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List/src/my_list_class/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/my_list_class/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/Loop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/Loop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/Display20FirstPrimeNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/DisplayPrimeNumbersLessThan100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/DrawingMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/DrawingShapeMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/GreatestCommonFactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/InterestCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/out/production/Loop/PrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/Display20FirstPrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/Display20FirstPrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/DisplayPrimeNumbersLessThan100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/DisplayPrimeNumbersLessThan100.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/DrawingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/DrawingMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/DrawingShapeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/DrawingShapeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/GreatestCommonFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/GreatestCommonFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/InterestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/InterestCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/src/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop/PrimeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Map.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Map.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/comparable_comparator/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/comparable_comparator/AgeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/comparable_comparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/comparable_comparator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/comparable_comparator/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/comparable_comparator/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/hashmap_hashset/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/hashmap_hashset/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/hashmap_hashset/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/hashmap_hashset/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/hashmap_treemap_linkedhashmap/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/hashmap_treemap_linkedhashmap/TestMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/product_manager/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/product_manager/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/product_manager/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/product_manager/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/product_manager/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/product_manager/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/src/product_manager/ProductSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/product_manager/ProductSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/Mini-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/Mini-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week1/Mini-test-week1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week1/Minitest tuần 1 - md2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week1/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week1/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week1/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week1/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/book/Bài tập kế thừa.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/book/FictionBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/book/FictionBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/book/ProgrammingBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/book/ProgrammingBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/book/TestBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/book/TestBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/Employee - W2 .docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/FullTimeEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/FullTimeEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/employee/PartTimeEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/employee/PartTimeEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/Abstract Class and Interface.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/CrispyFlour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/CrispyFlour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/MaterialManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/MaterialManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-test/src/week2/material/TestMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mini_test/week2/material/TestMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/Search-sort.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ooad/OOAD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/algorithm_complexity/AlgorithmComplexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/algorithm_complexity/AlgorithmComplexity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/binary_search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/binary_search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/binary_search/BinarySearchRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/binary_search/BinarySearchRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/binary_search/DemoLinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/binary_search/DemoLinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/bubble_sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/bubble_sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/bubble_sort/BubbleSortStepByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/bubble_sort/BubbleSortStepByStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/insertion_sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/insertion_sort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/insertion_sort/InsertionSortStepByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/insertion_sort/InsertionSortStepByStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/maximum_consecutive_increasingly/MaximumConsecutiveIncreasingly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/maximum_consecutive_increasingly/MaximumConsecutiveIncreasingly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/maximum_subsequence/MaximumSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/maximum_subsequence/MaximumSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search-sort/src/selection_sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/selection_sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/Stack-queue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/search_sort/Search-sort.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/binary_to_decimal/BinaryToDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/binary_to_decimal/BinaryToDecimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/bracket/Bracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/bracket/Bracket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_array/QueueArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_array/QueueArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_array/QueueArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_array/QueueArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_circle_link_list/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_circle_link_list/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_circle_link_list/QueueCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_circle_link_list/QueueCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_circle_link_list/QueueCircleLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_circle_link_list/QueueCircleLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_linked_list/LinkedListQueueClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_linked_list/LinkedListQueueClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_linked_list/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_linked_list/MyLinkedListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/queue_linked_list/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/queue_linked_list/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/reserve_stack_element/ReserveStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/reserve_stack_element/ReserveStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/stack_array/StackArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/stack_array/StackArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/stack_array/StackArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/stack_array/StackArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/stack_linked_list/GenericStackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/stack_linked_list/GenericStackClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/stack_linked_list/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/stack_linked_list/MyGenericStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack-queue/src/tree_map/TreeMapCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/tree_map/TreeMapCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Gq8tG42qB5cCpFaRFt1wTCBb1E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Learning/Codegym/codegym-bt/Module-2/src/mini_test/week3&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\mini_test\week3" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\thread" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\list" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\binary_file_serialization" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\Structural" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\mini_test" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\thread" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\string_regex" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\stack_queue" />
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\search_sort" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="automated_testing_tdd.absolute_number_calculator" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AbsoluteNumberCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automated_testing_tdd.absolute_number_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automated_testing_tdd.absolute_number_calculator" />
+      <option name="MAIN_CLASS_NAME" value="automated_testing_tdd.absolute_number_calculator.AbsoluteNumberCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsoluteNumberCalculatorTest.testFindAbsoluteNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automated_testing_tdd.absolute_number_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automated_testing_tdd.absolute_number_calculator" />
+      <option name="MAIN_CLASS_NAME" value="automated_testing_tdd.absolute_number_calculator.AbsoluteNumberCalculatorTest" />
+      <option name="METHOD_NAME" value="testFindAbsoluteNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsoluteNumberCalculatorTest.testFindAbsolutePositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automated_testing_tdd.absolute_number_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automated_testing_tdd.absolute_number_calculator" />
+      <option name="MAIN_CLASS_NAME" value="automated_testing_tdd.absolute_number_calculator.AbsoluteNumberCalculatorTest" />
+      <option name="METHOD_NAME" value="testFindAbsolutePositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsoluteNumberCalculatorTest.testFindAbsoluteZero (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automated_testing_tdd.absolute_number_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automated_testing_tdd.absolute_number_calculator" />
+      <option name="MAIN_CLASS_NAME" value="automated_testing_tdd.absolute_number_calculator.AbsoluteNumberCalculatorTest" />
+      <option name="METHOD_NAME" value="testFindAbsoluteZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsoluteNumberCalculatorTest.testFindAbsoluteZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="absolute_number_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="absolute_number_calculator" />
+      <option name="MAIN_CLASS_NAME" value="absolute_number_calculator.AbsoluteNumberCalculatorTest" />
+      <option name="METHOD_NAME" value="testFindAbsoluteZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AbsoluteNumberCalculatorTest" />
+        <item itemvalue="JUnit.AbsoluteNumberCalculatorTest.testFindAbsoluteNegative" />
+        <item itemvalue="JUnit.AbsoluteNumberCalculatorTest.testFindAbsolutePositive" />
+        <item itemvalue="JUnit.AbsoluteNumberCalculatorTest.testFindAbsoluteZero (1)" />
+        <item itemvalue="JUnit.AbsoluteNumberCalculatorTest.testFindAbsoluteZero" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfe6ecbb-35a5-4dbe-9d62-aac994a44b03" name="Changes" comment="" />
+      <created>1667104969371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667104969371</updated>
+      <workItem from="1667104971335" duration="1905000" />
+      <workItem from="1667108153896" duration="15378000" />
+      <workItem from="1667150421559" duration="33644000" />
+      <workItem from="1667238578651" duration="8223000" />
+      <workItem from="1667292622323" duration="621000" />
+      <workItem from="1667297823427" duration="2508000" />
+      <workItem from="1667354511401" duration="723000" />
+      <workItem from="1667359911358" duration="98000" />
+      <workItem from="1667373080135" duration="1332000" />
+      <workItem from="1667379600207" duration="3692000" />
+      <workItem from="1667415133471" duration="611000" />
+      <workItem from="1667461319471" duration="1857000" />
+      <workItem from="1667483979692" duration="22000" />
+      <workItem from="1667486026643" duration="1072000" />
+      <workItem from="1667546857468" duration="1609000" />
+      <workItem from="1667902836566" duration="412000" />
+      <workItem from="1668048271275" duration="1460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
