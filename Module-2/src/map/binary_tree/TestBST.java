@@ -13,6 +13,8 @@ public class TestBST {
         //traverse tree
         System.out.println("Inorder (sorted): ");
         tree.inorder();
+        System.out.println("Postorder (sorted): ");
+        tree.postorder();
         System.out.println("The number of nodes is: " + tree.getSize());
     }
 }
