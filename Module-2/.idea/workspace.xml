@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe6ecbb-35a5-4dbe-9d62-aac994a44b03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/map/binary_tree/AbstractTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/AbstractTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/binary_tree/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/binary_tree/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/TestBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack_queue/de_merging/IOFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack_queue/de_merging/QueueArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack_queue/de_merging/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack_queue/de_merging/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/de_merging/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +34,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Learning/Codegym/codegym-bt/Module-2/src/mini_test/week3&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Learning/Codegym/codegym-bt/Module-2/src/stack_queue/demerging",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\stack_queue\demerging" />
       <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\mini_test\week3" />
       <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\thread" />
       <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\list" />
       <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\binary_file_serialization" />
-      <recent name="C:\Learning\Codegym\codegym-bt\Module-2\Structural" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Learning\Codegym\codegym-bt\Module-2\src\mini_test" />
@@ -73,6 +74,9 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="automated_testing_tdd.absolute_number_calculator" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="stack_queue.de_merging" />
     </key>
   </component>
   <component name="RunManager">
@@ -191,7 +195,7 @@
       <workItem from="1667902836566" duration="412000" />
       <workItem from="1668048271275" duration="1460000" />
       <workItem from="1668092305519" duration="36000" />
-      <workItem from="1668096248294" duration="17952000" />
+      <workItem from="1668096248294" duration="20348000" />
     </task>
     <servers />
   </component>
