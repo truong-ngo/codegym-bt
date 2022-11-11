@@ -24,6 +24,11 @@ public class TestBST {
         tree.delete("Tom");
         System.out.println("Inorder (sorted): ");
         tree.inorder();
+        if (tree.search("Adam")) {
+            System.out.println("Element found");
+        } else {
+            System.out.println("Element not found");
+        }
         System.out.println("The number of nodes is: " + tree.getSize());
     }
 }

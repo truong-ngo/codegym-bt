@@ -5,10 +5,7 @@ public abstract class AbstractTree<E> implements Tree<E> {
     }
 
     public void postorder() {
-
     }
-
     public void preorder() {
-
     }
 }

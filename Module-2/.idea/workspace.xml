@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/src/map/binary_tree/AbstractTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/AbstractTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/binary_tree/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/binary_tree/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/TestBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/binary_tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/binary_tree/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,7 @@
       <workItem from="1667902836566" duration="412000" />
       <workItem from="1668048271275" duration="1460000" />
       <workItem from="1668092305519" duration="36000" />
-      <workItem from="1668096248294" duration="14917000" />
+      <workItem from="1668096248294" duration="17952000" />
     </task>
     <servers />
   </component>
@@ -209,21 +208,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/map/binary_tree/BST.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/map/binary_tree/BST.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
