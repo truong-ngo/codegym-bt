@@ -5,5 +5,6 @@ public interface Tree<E> {
     boolean delete(E e);
     void inorder();
     void postorder();
+    void preorder();
     int getSize();
 }

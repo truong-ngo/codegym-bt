@@ -18,6 +18,8 @@ public class TestBST {
         tree.inorder();
         System.out.println("Postorder (sorted): ");
         tree.postorder();
+        System.out.println("Preorder (sorted): ");
+        tree.preorder();
         System.out.println("Delete: ");
         tree.delete("Tom");
         System.out.println("Inorder (sorted): ");
