@@ -41,6 +41,52 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     }
 
     @Override
+    public boolean delete(E e) {
+        if (root == null) {
+            System.out.println("Empty BST");
+            return true;
+        } else {
+            TreeNode<E> parent = null;
+            TreeNode<E> current = root;
+            while (current != null) {
+                if (e.compareTo(current.element) < 0) {
+                    parent = current;
+                    current = current.left;
+                } else if (e.compareTo(current.element) > 0) {
+                    parent = current;
+                    current = current.right;
+                } else {
+                    break;
+                }
+            }
+            TreeNode<E> currentTemp = current;
+            if (current.left == null) {
+                current = current.right;
+                if (current.element.compareTo(parent.element) < 0) {
+                    parent.left = current;
+                } else if (current.element.compareTo(parent.element) > 0) {
+                    parent.right = current;
+                }
+            } else {
+                TreeNode<E> parentOfRightMost = current;
+                TreeNode<E> rightMost = current.left;
+                while (rightMost.right != null) {
+                    parentOfRightMost = rightMost;
+                    rightMost = rightMost.right;
+                }
+                currentTemp.element = rightMost.element;
+                if (rightMost.left == null) {
+                    parentOfRightMost.right = null;
+                } else {
+                    parentOfRightMost.right = parentOfRightMost.right.left;
+                }
+            }
+        }
+        size--;
+        return true;
+    }
+
+    @Override
     public int getSize() {
         return size;
     }
