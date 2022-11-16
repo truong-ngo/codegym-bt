@@ -24,10 +24,10 @@
  (2,5,4),
  (2,3,3);
  
-select orders.id, orders.date, sum(products.price * order_details.quantity) as total from orders
+select orders.id, orders.date, products.name, sum(products.price * order_details.quantity) as total from orders
 left join order_details on orders.id = order_details.order_id
 inner join products on products.id = order_details.product_id
-group by orders.id
+group by orders.id, products.name
 order by orders.id;
  
 select orders.id, customers.name as customer, products.name as product from customers 
