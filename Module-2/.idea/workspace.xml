@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe6ecbb-35a5-4dbe-9d62-aac994a44b03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +50,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -76,7 +82,7 @@
       <recent name="stack_queue.de_merging" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AbsoluteNumberCalculatorTest">
     <configuration name="AbsoluteNumberCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module-2" />
       <extension name="coverage">
@@ -194,6 +200,10 @@
       <workItem from="1668092305519" duration="36000" />
       <workItem from="1668096248294" duration="21786000" />
       <workItem from="1668157057878" duration="905000" />
+      <workItem from="1668159547370" duration="596000" />
+      <workItem from="1668387702644" duration="2442000" />
+      <workItem from="1668411709034" duration="164000" />
+      <workItem from="1668479433439" duration="890000" />
     </task>
     <servers />
   </component>
