@@ -105,4 +105,3 @@ group by product.id
 having number_of_purchases >= all (select sum(order_detail.quantity) from order_detail group by product_id)
 order by product.id;
 
-
