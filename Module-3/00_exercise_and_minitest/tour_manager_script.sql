@@ -81,26 +81,50 @@ insert into service (tour_id, customer_id, employee_id) values
 (7, '005', 4),(10, '005', 5);
 
 -- Display tour of any employee
+-- Create procedure
+delimiter //
+create procedure tour_of_employee (in id int)
+begin 
 select employee.id, employee.name as employee, tour.location from employee
 inner join service on employee.id = service.employee_id
 inner join tour on service.tour_id = tour.id
-where employee.id = 5
+where employee.id = id
 order by tour.location;
+end
+// delimiter ;
+-- Call
+call tour_of_employee(1);
 
 -- Display tour of any customer
+-- Create procedure
+delimiter //
+create procedure tour_of_customer (in id varchar(30))
+begin
 select customer.id, customer.name as customer, tour.location from customer
 inner join service on customer.id = service.customer_id
 inner join tour on service.tour_id = tour.id
-where customer.id = '001'
+where customer.id = id
 order by tour.location;
+end
+// delimiter ;
+-- Call
+call tour_of_customer('001');
 
 -- Display tour of any city
+-- Create procedure
+delimiter //
+create procedure tour_of_location (in location varchar(30))
+begin
 select tour.id as tour_id, customer.name as customer, employee.name as employee, tour.location from tour
 inner join service on service.tour_id = tour.id
 inner join customer on customer.id = service.customer_id
 inner join employee on employee.id = service.employee_id
-where tour.location = 'Kyoto'
+where tour.location = location
 order by tour.id;
+end
+// delimiter ;
+-- Call
+call tour_of_location('Kyoto');
 
 -- Display tour has max price
 select * from tour

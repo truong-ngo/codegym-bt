@@ -69,7 +69,7 @@ primary key (order_id, product_id)
 insert into order_detail (order_id, product_id, quantity) values
 (1, 1, 5),(1, 2, 2),(1, 4, 1),
 (2, 1, 3),(2, 7, 1),(2, 8, 2),
-(3, 2, 1),(3, 6, 2),(3, 7, 5),
+(3, 2, 5),(3, 6, 2),(3, 7, 5),
 (4, 1, 2),(4, 10, 3),(4, 9, 2),
 (5, 2, 3),(5, 4, 2),
 (6, 5, 5),(6, 3, 4),
@@ -78,8 +78,7 @@ insert into order_detail (order_id, product_id, quantity) values
 
 -- Max amount product
 select * from product
-group by id
-having amount = (select max(amount) from product);
+where amount = (select max(amount) from product);
 
 -- Sort descending price product
 select * from product
@@ -100,10 +99,10 @@ group by orders.id, product.name
 order by orders.id;
 
 -- Most bought product
-select product.id as product_id, product.name as product_name, count(order_detail.product_id) as number_of_purchases from product
+select product.id as product_id, product.name as product_name, sum(order_detail.quantity) as number_of_purchases from product
 inner join order_detail on product.id = order_detail.product_id
 group by product.id
-having number_of_purchases >= all (select count(product_id) from order_detail group by product_id)
+having number_of_purchases >= all (select sum(order_detail.quantity) from order_detail group by product_id)
 order by product.id;
 
 
