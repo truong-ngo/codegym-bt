@@ -34,12 +34,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Learning/Codegym/codegym-bt",
+    "last_opened_file_path": "C:/Learning/Codegym/codegym-bt/Module-3/06_css/the_witcher/the_last_wish",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Learning\Codegym\codegym-bt\Module-3\06_css\the_witcher\the_last_wish" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668582343503</updated>
       <workItem from="1668582344561" duration="4000" />
-      <workItem from="1668735420668" duration="4727000" />
+      <workItem from="1668735420668" duration="19783000" />
     </task>
     <servers />
   </component>
