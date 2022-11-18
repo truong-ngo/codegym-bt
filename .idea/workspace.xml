@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fb97fa-fff8-4834-aed7-47506203404b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Module-3/05_view_index_stored_procedure/demo_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Module-3/05_view_index_stored_procedure/demo_script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +13,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HcRMtbuJNE3msDEnNllQb9A0gj" />
   <component name="ProjectViewState">
@@ -31,6 +35,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Learning/Codegym/codegym-bt",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -43,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668582343503</updated>
       <workItem from="1668582344561" duration="4000" />
-      <workItem from="1668735420668" duration="300000" />
+      <workItem from="1668735420668" duration="1229000" />
     </task>
     <servers />
   </component>
