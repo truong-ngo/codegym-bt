@@ -12,7 +12,8 @@ productStatus bit
 
 -- INDEX (CHỈ MỤC)
 -- Là một mô hình bảng tra cứu được Database Search Engine sử dụng để tăng tốc độ và hiệu suất truy xuất dữ liệu
--- Các kiểu index: B-Tree, Hash, R-Tree
+-- Các loại cấu trúc index: B-Tree, Hash, R-Tree
+-- Các loại index: clustered và nonclustered
 -- Cách sử dụng index
 -- thêm index
 create unique index idx_productCode on products(productCode);
@@ -30,6 +31,7 @@ explain select * from products
 where productName = 'Head First Java';
 explain select * from products
 where productCode = 'JAVA01';
+-- where id = 1;
 
 -- Lưu ý: 
 -- 1. không nên sử dụng ở các bảng nhỏ
