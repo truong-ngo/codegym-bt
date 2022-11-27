@@ -1,0 +1,31 @@
+.header {
+    display: flex !important;
+    justify-content: space-between;
+}
+h1 {
+    display: inline-block;
+    font-size: 35px !important;
+}
+.log-out {
+    display: inline-block !important;
+    background-color: white !important;
+}
+.create {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 12px;
+    line-height: 36px;
+}
+.create:hover {
+    color: white;
+}
+.submit {
+    text-align: right;
+}
+#e-id {
+    display: none;
+}
+#d-id {
+    display: none;
+}

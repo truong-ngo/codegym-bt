@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.yes-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 16px;
+}
+.edit-link, .delete-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 12px;
+}
+.edit-link:hover, .delete-link:hover {
+    color: white;
+}
+th, td {
+    line-height: 36px;
+}

@@ -1,0 +1,42 @@
+html {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    list-style-type: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding:  0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: red;
+}
+
+#menu li ul {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+
