@@ -16,14 +16,13 @@ public class UserDAO implements InterfaceDAO<User> {
     private static final String SELECT_ALL_USERS = "select * from users";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
-
     private static final String SORT_USERS = "select * from users order by ";
 
     public UserDAO() {
     }
 
     protected Connection getConnection() {
-        Connection connection = null;
+        Connection connection;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, username, password);
