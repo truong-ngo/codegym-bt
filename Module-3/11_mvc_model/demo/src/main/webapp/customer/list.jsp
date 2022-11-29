@@ -30,7 +30,7 @@
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#create-modal">
             Create new customer
         </button>
-        <table class="table">
+        <table class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">#</th>
