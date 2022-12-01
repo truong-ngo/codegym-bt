@@ -11,4 +11,12 @@ public interface InterfaceDAO<E> {
     List<E> selectAll();
     boolean delete(int id) throws SQLException;
     boolean update(int id, User user) throws SQLException;
+    E getById(int id) throws SQLException;
+    void insertStored(E e) throws SQLException;
+    void addUserTransaction(User user, int[] permission) throws SQLException;
+    void insertUpdateWithoutTransaction() throws SQLException;
+    public void insertUpdateUseTransaction() throws SQLException;
+    List<E> selectAllStored() throws SQLException;
+    boolean deleteStored(int id) throws SQLException;
+    boolean updateStored(int id, User user) throws SQLException;
 }

@@ -29,7 +29,39 @@ public class UserServlet extends HttpServlet {
                 // searchProduct(request, response);
                 break;
             case "view":
-                listUsers(request, response);
+                try {
+                    listUsers(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
+            case "permission":
+                try {
+                    addUserPermission(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
+            case "test-without-tran":
+                try {
+                    testWithoutTran(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
+            case "test-use-tran":
+                try {
+                    testUseTran(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
+            case "test":
+                try {
+                    test(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
         }
     }
@@ -63,7 +95,11 @@ public class UserServlet extends HttpServlet {
                 }
                 break;
             case "view":
-                listUsers(request, response);
+                try {
+                    listUsers(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
             case "search":
                 search(request, response);
@@ -78,8 +114,8 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    private void listUsers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<User> users = userDAO.selectAll();
+    private void listUsers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+        List<User> users = userDAO.selectAllStored();
         String username = request.getParameter("username");
         request.setAttribute("users", users);
         request.setAttribute("username", username);
@@ -93,7 +129,8 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
         int id = users.get(users.size() - 1).getId() + 1;
-        userDAO.insert(new User(id, name, email, country));
+        //userDAO.insert(new User(id, name, email, country));
+        userDAO.insertStored(new User(id, name, email, country));
         listUsers(request, response);
     }
 
@@ -103,13 +140,13 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
         User newUser = new User(id, name, email, country);
-        userDAO.update(id, newUser);
+        userDAO.updateStored(id, newUser);
         listUsers(request, response);
     }
 
     private void deleteUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         int id = Integer.parseInt(request.getParameter("id"));
-        userDAO.delete(id);
+        userDAO.deleteStored(id);
         listUsers(request, response);
     }
 
@@ -159,5 +196,25 @@ public class UserServlet extends HttpServlet {
         request.setAttribute("username", username);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/user.jsp");
         requestDispatcher.forward(request, response);
+    }
+
+    private void addUserPermission(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+        int[] permission = {1, 2, 4};
+        userDAO.addUserTransaction(user, permission);
+
+    }
+
+    private void testWithoutTran(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+        userDAO.insertUpdateWithoutTransaction();
+    }
+
+    private void testUseTran(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+        userDAO.insertUpdateUseTransaction();
+    }
+
+    private void test (HttpServletRequest request, HttpServletResponse response) throws SQLException {
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+        userDAO.testTransaction(user);
     }
 }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="packaging">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../packaging/out/artifacts/packaging_jar/packaging.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
