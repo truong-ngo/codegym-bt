@@ -23,6 +23,8 @@
 .header {
     background-color: #333333;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header .menu-item-container {
