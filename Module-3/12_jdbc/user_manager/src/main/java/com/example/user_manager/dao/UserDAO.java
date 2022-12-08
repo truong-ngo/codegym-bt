@@ -336,13 +336,13 @@ public class UserDAO implements InterfaceDAO<User> {
         String statementStr = SORT_USERS + item;
         PreparedStatement statement = connection.prepareStatement(statementStr);
         ResultSet result = statement.executeQuery();
-        while (result.next()) {
-            int id = result.getInt("id");
-            String name = result.getString("name");
-            String email = result.getString("email");
-            String country = result.getString("country");
-            sortList.add(new User(id, name, email, country));
-        }
+            while (result.next()) {
+                int id = result.getInt("id");
+                String name = result.getString("name");
+                String email = result.getString("email");
+                String country = result.getString("country");
+                sortList.add(new User(id, name, email, country));
+            }
         connection.close();
         return sortList;
     }
