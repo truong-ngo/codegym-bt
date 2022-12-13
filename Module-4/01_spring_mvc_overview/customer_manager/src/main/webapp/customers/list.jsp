@@ -1,7 +1,3 @@
-<%@ page import="com.example.customer_manager.service.CustomerService" %>
-<%@ page import="com.example.customer_manager.service.CustomerServiceFactory" %>
-<%@ page import="com.example.customer_manager.model.Customer" %>
-<%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
     table {

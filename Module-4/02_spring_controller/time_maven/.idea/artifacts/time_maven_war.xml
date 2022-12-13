@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="time_maven:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>time_maven</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="time_maven-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="time_maven:war exploded" />
+    </root>
+  </artifact>
+</component>
