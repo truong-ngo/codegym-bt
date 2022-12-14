@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>If - then</td>
+            <td>4 > 2 ?</td>
+            <td th:text="4 > 2 ? 'Yes'"></td>
+        </tr>
+        <tr>
+            <td>If - then - else</td>
+            <td>4 < 2 ?</td>
+            <td th:text="4 < 2 ? 'Yes' : 'No'"></td>
+        </tr>
+        <tr>
+            <td>Default</td>
+            <td>null?</td>
+            <td th:text="null ?: 'Codegym'"></td>
+        </tr>
+        <tr>
+            <td>Default</td>
+            <td>HaNoi?</td>
+            <td th:text="'Ha Noi' ?: 'Viet Nam'"></td>
+        </tr>
+    </table>
+</body>
+</html>

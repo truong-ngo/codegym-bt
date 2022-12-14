@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="${name}"></span>
+<br>
+<span th:object="${customer}">
+    <span th:text="*{id}"></span>
+    <span th:text="*{name}"></span>
+</span>
+<a th:href="@{/}">Back to home</a>
+</body>
+</html>

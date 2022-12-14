@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        .input-group-text {
+            height: 100%;
+            border-radius: 4px 0 0 4px !important;
+            border-right: none !important;
+        }
+        .form-control {
+            height: 100%;
+            border-radius: 0 4px 4px 0 !important;
+            border-left: none !important;
+        }
+        th, td {
+            line-height: 31px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="h1 text-center my-3">Product list</h2>
+        <div th:if="${message}">
+            <p style="color: green" th:text="${message}"></p>
+        </div>
+        <form action="/search" method="post" class="search-box d-flex justify-content-between">
+            <a class="btn btn-outline-primary" href="/form">Add new product</a>
+            <div style="margin-bottom: 0 !important;" class="input-group-sm mb-3 d-flex align-items-center mb-0">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </span>
+                <input type="text" class="form-control" placeholder="Search" name="search">
+            </div>
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Manufacturer</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="p, pStatus : ${products}" th:object="${p}">
+                    <td th:text="*{id}"></td>
+                    <td>
+                        <a th:href="@{|/details/*{id}|}" th:text="*{name}"></a>
+                    </td>
+                    <td th:text="${p.price} + '$'"></td>
+                    <td th:text="*{description}"></td>
+                    <td th:text="*{manufacturer.name}"></td>
+                    <td>
+                        <a class="me-2 btn btn-sm btn-outline-primary" th:href="@{|/form/*{id}|}">Edit</a>
+                        <a class="btn btn-sm btn-outline-primary" th:attr="onclick=${'return confirm(' + '''' + 'Do you want to delete product ' + p.name + '''' + ')'}" th:href="@{|/delete/*{id}|}">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
