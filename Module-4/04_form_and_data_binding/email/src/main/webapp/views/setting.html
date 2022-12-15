@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Setting</title>
+    <style>
+        th {
+            text-align: left;
+        }
+        th, td {
+            padding: 8px 0;
+        }
+        td {
+            padding-left: 8px;
+        }
+    </style>
+</head>
+<body>
+<h2>Setting</h2>
+<form action="/save" method="post">
+    <table>
+        <tr>
+            <th>
+                <label for="language">Language:</label>
+            </th>
+            <td>
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="vietnamese">Vietnamese</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="size">Size:</label>
+            </th>
+            <td>
+                Show
+                <select name="size" id="size">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                emails per page
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="spam">Spam filter:</label>
+            </th>
+            <td>
+                <input name="spam" type="radio" id="spam" value="true"> Enable spam filter
+                <input name="spam" type="radio" id="" value="false" checked hidden>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="signature">Signature:</label>
+            </th>
+            <td>
+                <textarea name="signature" id="signature" cols="30" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <button type="submit">Update</button>
+                <button type="button"><a style="text-decoration: none" href="/">Back</a></button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

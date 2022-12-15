@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Email</title>
+</head>
+<body>
+<h2>Your email: truong@gmail.com</h2>
+<p>Inbox</p>
+<p>Sent</p>
+<p>Draft</p>
+<p>Trash</p>
+<a href="/setting">Setting</a>
+<div th:if="${message}">
+    <p style="color: green" th:text="${message}"></p>
+    <p style="font-weight: bold">Your setting: </p>
+    <p style="font-weight: bold">Language: <span th:text="${setting.language}"></span></p>
+    <p style="font-weight: bold">Page size: <span th:text="${setting.size}"></span></p>
+    <p style="font-weight: bold">Spam filter: <span th:text="${setting.spam}"></span></p>
+    <p style="font-weight: bold">Signature: <span th:text="${setting.signature}"></span></p>
+</div>
+</body>
+</html>
