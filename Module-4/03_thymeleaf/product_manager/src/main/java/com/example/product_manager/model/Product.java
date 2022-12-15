@@ -6,7 +6,6 @@ public class Product {
     private double price;
     private String description;
     private Manufacturer manufacturer;
-
     public Product() {
     }
 
