@@ -4,10 +4,7 @@ import com.example.customer_manager.model.Customer;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
-import javax.persistence.PersistenceContext;
-import javax.persistence.TypedQuery;
+import javax.persistence.*;
 import java.util.List;
 
 @Transactional
@@ -48,5 +45,14 @@ public class CustomerRepository implements ICustomerRepository {
         if (customer != null) {
             entityManager.remove(customer);
         }
+    }
+
+    @Override
+    public void insertWithStoredProcedure(Customer customer) {
+        String sql = "call insert_Customer(:firstName, :lastName)";
+        Query query = entityManager.createNativeQuery(sql);
+        query.setParameter("firstName", customer.getFirstName());
+        query.setParameter("lastName", customer.getLastName());
+        query.executeUpdate();
     }
 }

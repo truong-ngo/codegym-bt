@@ -32,7 +32,7 @@ public class CustomerController {
 
     @PostMapping("/create")
     public String create(@ModelAttribute("customer") Customer customer, RedirectAttributes redirect) {
-        customerService.save(customer);
+        customerService.insert(customer);
         redirect.addFlashAttribute("message", "New customer created successfully");
         return "redirect:/";
     }
