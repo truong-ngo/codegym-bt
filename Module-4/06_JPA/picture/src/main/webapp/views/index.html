@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #img-of-the-day {
+            width: 30%;
+            height: 30%
+        }
+    </style>
+</head>
+<body>
+<img id="img-of-the-day">
+<form action="/post" method="post">
+    <select name="rate" id="">
+        <option>Rating</option>
+        <option value="1">1 star</option>
+        <option value="2">2 star</option>
+        <option value="3">3 star</option>
+        <option value="4">4 star</option>
+        <option value="5">5 star</option>
+    </select>
+    <div class="form-group">
+        <label for="author">Author: </label><br>
+        <input id="author" type="text" name="author">
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment: </label><br>
+        <textarea id="comment" cols="30" rows="5" name="comment"></textarea>
+    </div>
+    <button type="submit">Post</button>
+</form>
+<div>
+    <div th:each="f, fs : ${feedbacks}" th:object="${f}">
+        <div style="margin-bottom: 16px">
+            <b th:text="${f.author} + ':'"></b><br>
+            <span th:text="'+' + *{rate}"></span>
+            <span th:text="*{comment}"></span><br>
+            <span th:if="${f.likes}">
+                <span th:text="*{likes}"></span>
+                <span> likes</span>
+            </span>
+            <button><a th:href="@{|like/*{id}|}">Like</a></button>
+            <br><br>
+            <span th:text="*{dateCreated}"></span>
+        </div>
+    </div>
+</div>
+<div>
+
+</div>
+</body>
+<script>
+    let query = 'https://api.nasa.gov/planetary/apod?api_key=tK5OC52SZRtFTqm0VgE6DNYDLWXjgTs2YjRGrAko';
+    let request = new XMLHttpRequest();
+    request.open('GET', query);
+    request.onload = function () {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document.getElementById('img-of-the-day').setAttribute('src', response.url);
+        }
+    };
+    request.send();
+</script>
+</html>
