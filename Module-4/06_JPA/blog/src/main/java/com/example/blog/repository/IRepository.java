@@ -1,4 +1,4 @@
-package com.example.customer_manager.repository;
+package com.example.blog.repository;
 
 import java.util.List;
 

@@ -7,38 +7,29 @@
 </head>
 <body>
 <div class="container">
-    <form style="width: 400px; margin: auto" th:action="@{/save}" method="post" enctype="multipart/form-data" th:object="${songForm}">
-        <div class="header"><h1 class="text-center">Add song</h1></div>
+    <form style="width: 400px; margin: auto" action="/save" th:object="${newArticle}" method="post" enctype="multipart/form-data">
+        <th:block th:if="${newArticle.id}">
+            <div class="header"><h1 class="text-center">Edit new</h1></div>
+        </th:block>
+        <th:block th:unless="${newArticle.id}">
+            <div class="header"><h1 class="text-center">Add new</h1></div>
+        </th:block>
+        <input type="text" th:field="*{id}" name="id" hidden>
         <div class="my-3 form-group">
-            <label for="name" class="form-label">Song name: </label>
-            <input type="text" class="form-control" id="name" placeholder="Song name" name="name" th:field="*{name}">
+            <label for="title" class="form-label">Title: </label>
+            <input type="text" class="form-control" id="title" placeholder="Title" name="title" th:field="*{title}">
         </div>
         <div class="my-3 form-group">
-            <label for="artist" class="form-label">Artist: </label>
-            <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" th:field="*{artist}">
+            <label for="author" class="form-label">Author: </label>
+            <input type="text" class="form-control" id="author" placeholder="Author" name="author" th:field="*{author}">
         </div>
         <div class="my-3 form-group">
-            <p>Category:</p>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Instrumental" name="category" th:field="*{category}">
-                <label class="form-check-label" for="inlineCheckbox1">Instrumental</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="OST" name="category" th:field="*{category}">
-                <label class="form-check-label" for="inlineCheckbox2">Ost</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Game" name="category" th:field="*{category}">
-                <label class="form-check-label" for="inlineCheckbox3">Game</label>
-            </div>
-            <div class="form-check form-check-inline p-0">
-                <label class="form-check-label" for="more">More</label>
-            </div>
-            <input id="more" style="padding: 2px 12px" type="text" class="form-control mt-2" placeholder="More category: " name="category" th:field="*{category}">
+            <label for="contents" class="form-label">Content: </label>
+            <textarea name="contents" id="contents" cols="30" rows="5" th:field="*{contents}"></textarea>
         </div>
         <div class="my-3 form-group">
-            <label for="audio" class="form-label">Audio: </label>
-            <input type="file" id="audio" name="artist" th:field="*{audio}">
+            <label for="image" class="form-label">Image: </label>
+            <input type="file" id="image" name="image_file">
         </div>
         <div>
             <a class="btn btn-sm btn-outline-primary" href="/">Back</a>

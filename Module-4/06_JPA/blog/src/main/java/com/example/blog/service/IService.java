@@ -1,4 +1,4 @@
-package com.example.customer_manager.service;
+package com.example.blog.service;
 
 import java.util.List;
 

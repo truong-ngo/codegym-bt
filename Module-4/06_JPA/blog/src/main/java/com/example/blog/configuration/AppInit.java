@@ -1,4 +1,4 @@
-package com.example.customer_manager.config;
+package com.example.blog.configuration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

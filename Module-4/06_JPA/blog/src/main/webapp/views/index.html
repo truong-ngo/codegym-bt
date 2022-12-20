@@ -38,9 +38,9 @@
             </td>
             <td class="text-row" th:text="*{dateUpload}"></td>
             <td class="text-row" th:text="*{author}"></td>
-            <td>
+            <td class="text-row">
                 <a th:href="@{|/edit/*{id}|}">Edit</a>
-                <a  th:href="@{|/edit/*{id}|}">Delete</a>
+                <a onclick="return confirm('Do you want to delete')" th:href="@{|/delete/*{id}|}">Delete</a>
             </td>
         </tr>
         </tbody>
