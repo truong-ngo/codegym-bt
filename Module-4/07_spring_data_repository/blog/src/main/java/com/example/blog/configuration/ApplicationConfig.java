@@ -1,11 +1,19 @@
 package com.example.blog.configuration;
 
+import com.example.blog.formatter.CategoryFormatter;
+import com.example.blog.service.CategoryService;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -21,7 +29,6 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -32,11 +39,18 @@ import java.util.Properties;
 @ComponentScan("com.example.blog")
 @PropertySource("classpath:new_image.properties")
 @EnableTransactionManagement
-
-public class ApplicationConfig implements WebMvcConfigurer {
+@EnableJpaRepositories("com.example.blog.repository")
+@EnableSpringDataWebSupport
+public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Value("${new_image}")
     private String fileUpload;
 
+    private ApplicationContext applicationContext;
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
     // Thymeleaf
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
@@ -116,5 +130,10 @@ public class ApplicationConfig implements WebMvcConfigurer {
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         return properties;
+    }
+
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
     }
 }

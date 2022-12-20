@@ -1,10 +1,12 @@
 package com.example.blog.service;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 public interface IService<E, K> {
-    List<E> findAll();
-    E findById(K id);
+    Iterable<E> findAll();
+    Optional<E> findById(K id);
     void save(E e);
     void remove(K id);
 }

@@ -15,6 +15,9 @@ public class News {
     private LocalDate dateUpload;
     private String author;
     private String image;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     public Long getId() {
         return id;
@@ -62,5 +65,13 @@ public class News {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
