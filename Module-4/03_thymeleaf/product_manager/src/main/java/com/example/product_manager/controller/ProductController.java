@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class ProductController {
     @Autowired
     private ProductService productService;
-    private ManufacturerService manufacturerService = ManufacturerService.getInstance();
+    private final ManufacturerService manufacturerService = ManufacturerService.getInstance();
 
 
     @GetMapping
