@@ -68,7 +68,7 @@
             </td>
             <td class="text-row" th:text="*{dateUpload}"></td>
             <td class="text-row" th:text="*{author}"></td>
-            <td class="text-row" th:text="*{category.id}"></td>
+            <td class="text-row" th:text="*{category.name}"></td>
             <td class="text-row">
                 <a th:href="@{|http://localhost:8080/news/edit/*{id}|}">Edit</a>
                 <a onclick="return confirm('Do you want to delete')" th:href="@{|http://localhost:8080/news/delete/*{id}|}">Delete</a>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create customer</title>
+</head>
+<body>
+<h1 th:unless="${customer.id}">Create customer</h1>
+<h1 th:if="${customer.id}">Edit customer</h1>
+<p>
+    <a href="/customer">Customer list</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/customer/save}" th:object="${customer}" method="post">
+    <input type="text" th:field="*{id}" hidden>
+    <table>
+        <tr>
+            <td>First name:</td>
+            <td><input type="text" th:field="*{firstName}"/></td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" th:field="*{lastName}"/></td>
+        </tr>
+        <tr>
+            <td>Province:</td>
+            <td>
+                <select name="province" th:if="${customer.id}">
+                    <option value="">----</option>
+                    <option th:selected="${p.id} == ${customer.province.id}" th:each="p : ${provinces}" th:value="${p.id}" th:text="${p.name}"></option>
+                </select>
+                <select name="province" th:unless="${customer.id}">
+                    <option value="" selected>----</option>
+                    <option th:each="p : ${provinces}" th:value="${p.id}" th:text="${p.name}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td th:unless="${customer.id}"><input type="submit" value="Create customer"></td>
+            <td th:if="${customer.id}"><input type="submit" value="Edit customer"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

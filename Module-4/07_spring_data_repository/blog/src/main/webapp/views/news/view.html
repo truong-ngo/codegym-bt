@@ -21,7 +21,7 @@
             <div class="col-lg-4">
                 <div style="height: 100%">
                     <p style="font-weight: bold" class="">TIN CÙNG THỂ LOẠI: </p>
-                    <div class="item-news" th:each="n : ${newList}">
+                    <div class="item-news mt-3" th:each="n : ${newList}">
                         <a class="mb-3" th:unless="${newArticle.id} == ${n.id}" style="text-decoration: none" th:href="@{|http://localhost:8080/news/view/${n.id}|}" th:text="${n.title}"></a>
                     </div>
                 </div>

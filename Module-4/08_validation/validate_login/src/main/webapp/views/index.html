@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form</title>
+</head>
+<body>
+<form th:object="${user}" th:action="@{/validateUser}" method="post">
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input th:field="*{firstName}"></td>
+            <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name error</td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input th:field="*{lastName}"></td>
+            <td th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name error</td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input th:field="*{age}"></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input th:field="*{phoneNumber}"></td>
+            <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Phone number error</td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input th:field="*{email}"></td>
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
