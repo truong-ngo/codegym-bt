@@ -36,7 +36,7 @@ public class FeedbackController {
         if (badComment == null) {
             feedbackService.save(feedback);
         } else {
-            throw new BadFeedbackException("Comment contains " + badComment);
+            throw new BadFeedbackException("Cause: comment contains " + badComment);
         }
         return "redirect:/";
     }

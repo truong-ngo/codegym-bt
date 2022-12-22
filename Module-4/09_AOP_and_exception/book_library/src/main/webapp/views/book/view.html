@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center">
+        <form action="http://localhost:8080/borrow/borrow" th:object="${book}" method="post">
+            <div style="margin: 0 auto" class="text-start">
+                <input type="text" th:field="*{id}" hidden>
+                <h2 class="my-3" th:text="*{name}"></h2>
+                <div th:if="${message}">
+                    <p style="color: green" th:text="${message}"></p>
+                    <p style="font-weight: bold" th:text="'Borrow code: ' + ${code}"></p>
+                </div>
+                <p th:text="'Category: ' + *{category}"></p>
+                <p th:text="'Quantity: ' + *{quantity}"></p>
+                <th:block th:unless="${book.quantity}">
+                    <p style="color: red">Out of stock</p>
+                </th:block>
+                <a class="btn btn-sm btn-outline-primary" href="http://localhost:8080/book">Back</a>
+                <th:block th:if="${book.quantity}">
+                    <button type="submit" class="btn btn-sm btn-primary">Borrow</button>
+                </th:block>
+            </div>
+        </form>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
