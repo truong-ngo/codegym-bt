@@ -1,4 +1,4 @@
-package com.example.book_library.configuration;
+package com.example.view_count.configuration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

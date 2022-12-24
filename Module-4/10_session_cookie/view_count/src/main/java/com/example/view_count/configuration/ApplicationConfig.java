@@ -1,4 +1,4 @@
-package com.example.book_library.configuration;
+package com.example.view_count.configuration;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
-import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -32,9 +31,9 @@ import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.example.book_library")
+@ComponentScan("com.example.view_count")
 @EnableTransactionManagement
-@EnableJpaRepositories("com.example.book_library.repository")
+@EnableJpaRepositories("com.example.view_count.repository")
 @EnableSpringDataWebSupport
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAware {
@@ -80,7 +79,7 @@ public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAw
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.example.book_library.model");
+        em.setPackagesToScan("com.example.view_count.model");
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(additionalProperties());
@@ -91,7 +90,7 @@ public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAw
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/book_library");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/view_count");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
         return dataSource;

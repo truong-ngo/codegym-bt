@@ -1,4 +1,4 @@
-package com.example.view_count.configuration;
+package com.example.user.configuration;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -31,9 +31,9 @@ import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.example.view_count")
+@ComponentScan("com.example.user")
 @EnableTransactionManagement
-@EnableJpaRepositories("com.example.view_count.repository")
+@EnableJpaRepositories("com.example.user.repository")
 @EnableSpringDataWebSupport
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAware {
@@ -79,7 +79,7 @@ public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAw
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.example.view_count.model");
+        em.setPackagesToScan("com.example.user.model");
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(additionalProperties());

@@ -1,4 +1,4 @@
-package com.example.view_count.configuration;
+package com.example.user.configuration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
