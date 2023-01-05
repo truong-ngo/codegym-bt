@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/user.css">
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="container header-container d-flex justify-content-between">
+            <div class="brand d-flex align-items-center">
+                <img class="logo" src="/assets/img/logo/file.svg" alt="Logo">
+                <ul class="nav-bar d-flex list-unstyled align-items-center mb-0">
+                    <li><a class="text-decoration-none text-white mx-3 nav-item" href="/html/product/index.html">Home</a></lic>
+                    <li><a class="text-decoration-none text-white mx-3 nav-item" href="#!">Contact</a></li>
+                    <li><a class="text-decoration-none text-white mx-3 nav-item" href="#!">About us</a></li>
+                </ul>
+            </div>
+            <div class="user-area d-flex align-items-center">
+                <div class="search">
+                    <span class="text-white search-icon d-flex align-items-center" type="button">
+                        <form class="search-bar p-0 me-3" action="#!">
+                            <input onkeydown="searchProduct()" type="text" name="value" class="form-control search-input no-border-radius hide" placeholder="Search">
+                        </form>
+                        <svg onclick="toggleSearch()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search icon" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <a class="text-white text-decoration-none ms-3" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart icon" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+                <a class="login text-white text-decoration-none ms-3" href="http://127.0.0.1:5500/html/user/login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person icon" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                </a>
+                <div class="dropdown ms-3 user-area">
+                    <span class="text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="user"></span>
+                        <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                        </svg>
+                    </span>
+                    </span>
+                    <ul class="dropdown-menu user-control no-border-radius">
+                        <li><a class="dropdown-item" href="#">User information</a></li>
+                        <li><a class="dropdown-item" href="#">Change password</a></li>
+                        <li><hr class="my-1"></li>
+                        <li><a class="dropdown-item" href="#!">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="row">
+            <div class="col col-lg-6">
+                <div class="row border-right my-6">
+                    <div class="col col-lg-8 offset-2 user-form">
+                        <form class="login-form">
+                            <h2 class="text-center my-3">Login</h2>
+                            <div class="form-group my-2 no-border-radius">
+                                <label for="l-username">Username:</label><br>
+                                <div class="input-group">
+                                    <span class="input-group-text username no-border-radius">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                        </svg>
+                                    </span>
+                                    <input id="l-username" type="text" name="username"
+                                           class="form-control username-input no-border-radius" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="form-group my-2 no-border-radius">
+                                <label for="l-password">Password:</label><br>
+                                <div class="input-group">
+                                    <span class="input-group-text password no-border-radius">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                                        </svg>
+                                    </span>
+                                    <input id="l-password" type="password" name="password"
+                                           class="form-control password-input no-border-radius" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="reset" class="btn btn-outline-danger my-4 no-border-radius">Reset</button>
+                                <button onclick="login()" type="button" class="btn btn-outline-dark my-4 no-border-radius">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-6">
+                <div class="row my-6">
+                    <div class="col col-lg-8 offset-2 user-form">
+                        <form class="register">
+                            <h2 class="text-center my-3 no-border-radius">or Register</h2>
+                            <div class="form-group my-2 no-border-radius">
+                                <label for="r-username">Username:</label><br>
+                                <div class="input-group">
+                                    <span class="input-group-text username no-border-radius">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                        </svg>
+                                    </span>
+                                    <input id="r-username" type="text" name="username"
+                                           class="form-control username-input no-border-radius" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="form-group my-2">
+                                <label for="r-password">Password:</label><br>
+                                <div class="input-group">
+                                    <span class="input-group-text password no-border-radius">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                                        </svg>
+                                    </span>
+                                    <input id="r-password" type="password" name="password"
+                                           class="form-control password-input no-border-radius" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="reset" class="btn btn-outline-danger my-4 no-border-radius">Reset</button>
+                                <button onclick="register()" type="button" class="btn btn-outline-dark my-4 no-border-radius">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container footer-content">
+            <footer class="py-3">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                <p class="text-center text-white">© 2022 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.border-right {
+    border-right: 1px solid #e9ecef;
+}
+
+.no-border-bottom {
+    border-bottom: none !important;
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+.header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .brand {
+    width: 40%;
+}
+
+.header .logo {
+    width: 150px;
+    margin-left: -15px;
+}
+
+.header .nav-bar {
+    height: 100%;
+}
+
+.header .nav-bar li:hover a  {
+    color: red !important;
+}
+
+.header .search-input {
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.header .search-bar {
+    background-color: black;
+}
+
+.header .icon {
+    width: 26px;
+    height: 26px;
+}
+
+.header .user-control {
+    top: 17px !important;
+}
+
+.body {
+    margin-top: 62px;
+}
+
+.body .heading {
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.body .add-menu {
+    z-index: 0;
+}
+
+.body .image-desc {
+    aspect-ratio: 1 / 1;
+    padding: 24px;
+}
+
+.body .img-desc {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.body .desc {
+    aspect-ratio: 1 / 1;
+}
+
+.body .name-desc {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.body .price-desc {
+    color: red;
+    font-weight: bold;
+}
+
+.body .add-cart {
+    width: 40%;
+}
+
+.body .product-item:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    height: 150px;
+    background-color: black;
+}

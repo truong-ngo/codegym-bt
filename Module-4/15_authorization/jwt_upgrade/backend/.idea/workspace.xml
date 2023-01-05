@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71d5a935-2b29-47dc-9ae0-7e56ab6b711f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/model/CartDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/repository/ICartDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/repository/ICartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/core/ICartDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/core/ICartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/core/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/core/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/impl/CartDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/impl/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/resources/file_upload.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/cart/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/product/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/product/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/product/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/views/user/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/blog/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/blog/src/main/java/com/example/blog/controller/rest/CategoryRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/blog/src/main/java/com/example/blog/controller/rest/NewRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/controller/CustomerDemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/model/CustomerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/repository/ICustomerDemoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/service/CustomerDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/service/ICustomerDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/java/com/example/cms/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/cms/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/controller/rest/CustomerRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/java/com/example/demo/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/blog/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/blog/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/blog/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/.idea/phone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/front_end/.idea/front_end.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/controller/SmartphoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_jquery_ajax/phone/web_service/src/main/java/com/example/web_service/service/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/blog/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/blog/back_end/src/main/java/com/example/blog/configuration/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/blog/back_end/src/main/java/com/example/blog/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/demo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/demo/src/main/java/com/example/demo/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/demo/src/main/java/com/example/demo/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/demo/src/main/java/com/example/demo/configuration/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/demo/src/main/java/com/example/demo/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/configuration/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/webapp/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/webapp/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/webapp/views/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/.idea/auth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/configuration/CustomSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/configuration/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/java/com/example/auth/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth/backend/src/main/webapp/views/access-denied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/repository/IRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/jwt/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/jwt/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/security/jwt/UserPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/java/com/example/authen_author/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../authen_author/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/configuration/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/controller/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/rest/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/rest/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/rest/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/java/com/example/jwt/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/webapp/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jwt/backend/src/main/webapp/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/model/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/model/UserPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/repository/IRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/security/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jwt/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_back_end/src/main/java/com/example/cms_back_end/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_front_end/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_front_end/.idea/cms_front_end.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_front_end/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_front_end/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/cms/cms_front_end/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/java/com/example/demo_boot/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/java/com/example/demo_boot/controller/HandleErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/resources/templates/error-404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/resources/templates/error-500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/demo_boot/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/controller/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/model/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/repository/IBrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/service/core/IBrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/service/core/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/service/impl/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/backend/src/main/java/com/example/product/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../17_spring_boot/product_manager/frontend/.idea/cms_front_end.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09_AOP_and_exception/book_library/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../09_AOP_and_exception/book_library/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/java/com/example/cart_complete/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../14_spring_web_security/user/src/main/java/com/example/user/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10_session_cookie/cart_complete/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11_web_service/demo/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JfHSfOEcZIgsdXqMrMV1nmlgbo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Learning/Codegym/codegym-bt/Module-4/15_authorization/jwt_upgrade/backend&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2c082574b624d264786c93951fc504e6&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="backend" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.69" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : jwt-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="bad8e522-8c1b-4ce0-8375-6cd9a6eb7b8b" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62648" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : jwt-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71d5a935-2b29-47dc-9ae0-7e56ab6b711f" name="Changes" comment="" />
+      <created>1672462222865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672462222865</updated>
+      <workItem from="1672462225835" duration="13877000" />
+      <workItem from="1672511099997" duration="2943000" />
+      <workItem from="1672518110985" duration="5319000" />
+      <workItem from="1672558972714" duration="57000" />
+      <workItem from="1672559347217" duration="1464000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/jwt/controller/AuthController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

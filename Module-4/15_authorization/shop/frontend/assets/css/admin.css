@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+.border-bottom-grey {
+    border-bottom: 1px solid rgb(71, 70, 70);
+}
+
+.right-text {
+    text-align: right;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 66px;
+}
+
+.header .logo {
+    width: 60%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.header .search-input {
+    width: 200px;
+    border: none;
+}
+
+.header .search-icon {
+    left: -10px;
+    padding: 0 8px;
+}
+
+.header .admin-area {
+    padding: 6px 12px;
+}
+
+.header .admin-control {
+    top: 6px !important;
+    left: -106px !important;
+}
+
+.body {
+    margin-top: 66px;
+}
+
+.body .side-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 66px;
+}
+
+.body .dashboard-content {
+    margin-left: 16.66667%;
+    /* height: 1000px; */
+}
+
+.body .dashboard-item:hover {
+    cursor: pointer;
+    color: red !important;
+}
+
+.body .item {
+    height: 150px;
+}
+
+.body .img-icon {
+    object-fit: contain;
+    width: 100%;
+}
+
+.body .item-header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.body .item-desc {
+    color: red;
+}
+
+.body .item-container:hover .item {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .2s;
+    background-color: rgb(243, 243, 243);
+}
+
+.body .p-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.body .p-box {
+    height: 100px;
+}
+
+.body .p-image {
+    height: 100px;
+    width: 100px;
+}
+
+.body .p-text {
+    margin: auto 0;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(190, 189, 189, 0.5);
+    display: none;
+    z-index: 2;
+}
+
+.modal-dialogue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    padding: 16px 24px 32px 24px;
+    z-index: 3;
+}

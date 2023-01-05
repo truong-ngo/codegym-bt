@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.border-right {
+    border-right: 1px solid #e9ecef;
+}
+
+.no-border-bottom {
+    border-bottom: none !important;
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+.header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .brand {
+    width: 40%;
+}
+
+.header .logo {
+    width: 150px;
+    margin-left: -15px;
+}
+
+.header .nav-bar {
+    height: 100%;
+}
+
+.header .nav-bar li:hover a  {
+    color: red !important;
+}
+
+.header .search-input {
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.header .search-bar {
+    background-color: black;
+}
+
+.header .icon {
+    width: 26px;
+    height: 26px;
+}
+
+.header .user-control {
+    top: 17px !important;
+}
+
+.body {
+    margin-top: 62px;
+}
+
+.body .heading {
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.body .add-menu {
+    z-index: 0;
+}
+
+.body .image {
+    border-bottom: none !important;
+    aspect-ratio: 1 / 1;
+}
+
+.body .img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.body .desc {
+    border-top: none !important;
+    border-left: 1px solid #dee2e6 !important;
+    border-right: 1px solid #dee2e6 !important;
+}
+
+.body .p-name {
+    font-weight: bold;
+}
+
+.body .p-price {
+    color: red;
+}
+
+.body .action {
+    border-top: none !important;
+}
+
+.body .product-item {
+    transition: transform .2s
+}
+
+.body .product-item:hover {
+    transform: scale(1.1);
+}
+
+.body .side-bar .filter-menu {
+    padding: 0;
+}
+
+.body .side-bar .filter-item {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.body .side-bar .price-item,
+.body .side-bar .category-item {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: normal;
+    padding-left: 0;
+}
+
+.body .side-bar .price-item a,
+.body .side-bar .category-item a {
+    text-decoration: none;
+    padding: 4px 0;
+    display: block;
+}
+
+.body .side-bar .price-item li:hover a,
+.body .side-bar .category-item li:hover a {
+    color: red;
+}
+
+.body .side-bar .filter-heading {
+    margin: 8px 0;
+}
+
+.footer {
+    background-color: black;
+}
