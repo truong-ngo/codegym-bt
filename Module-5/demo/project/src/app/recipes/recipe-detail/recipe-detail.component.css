@@ -1,0 +1,10 @@
+.fit-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.open + .dropdown-menu {
+  display: block;
+  top: 40px;
+  left: -80px;
+}

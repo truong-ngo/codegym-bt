@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<nav class="navbar navbar-expand bg-light border mb-3">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#!" class="navbar-brand">Recipe Book</a>
+    </div>
+
+    <div class="collapse navbar-collapse d-flex justify-content-between">
+      <ul class="nav navbar-nav">
+        <li *ngIf="isAuthenticated" class="me-3"><a class="navi-item pointer" routerLink="recipes" routerLinkActive="selected-nav">Recipes</a></li>
+        <li class="me-3"><a class="navi-item pointer" routerLink="shopping-list" routerLinkActive="selected-nav">Shopping list</a></li>
+        <li *ngIf="!isAuthenticated"><a class="navi-item pointer" routerLink="auth" routerLinkActive="selected-nav">Login / Register</a></li>
+      </ul>
+      <ul class="nav navbar-nav" *ngIf="isAuthenticated">
+        <li class="me-3"><a class="pointer" (click)="logout()">Log out</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle pointer" role="button" dropdown>Manage</a>
+          <ul class="dropdown-menu">
+            <li><a class="pointer" (click)="onSaveData()">Save data</a></li>
+            <li><a class="pointer" (click)="onFetchData()">Fetch</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

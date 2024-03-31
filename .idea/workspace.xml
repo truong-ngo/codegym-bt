@@ -2,7 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fb97fa-fff8-4834-aed7-47506203404b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module-5/angular-exercise/src/app/ex5/switch.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/auth/auth-interceptor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/auth/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/auth/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/recipes/recipe.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/recipes/recipes-resolver.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/shared/data-storage.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/shopping-list/shopping-list.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/first-app/src/app/directive/highlight.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/httpRequest/src/app/auth-interceptor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/httpRequest/src/app/logging-interceptor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/httpRequest/src/app/post.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/httpRequest/src/app/post.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/pipes-start/src/app/shorten.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/routing-start/src/app/app-routing.modules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/routing-start/src/app/servers/edit-server/can-deactivate-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/routing-start/src/app/servers/server/server-resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/routing-start/src/app/users/auth-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/routing-start/src/app/users/user/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module-5/xuz/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module-2/behavioral_design_pattern/strategy_exercise/SQLStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Module-2/out/production/Module-2/behavioral_design_pattern/strategy_exercise/SQLStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module-2/behavioral_design_pattern/strategy_exercise/XMLStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Module-2/out/production/Module-2/behavioral_design_pattern/strategy_exercise/XMLStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-4/11_web_service/cms/src/main/java/com/example/cms/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module-4/11_web_service/cms/src/main/java/com/example/cms/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-4/15_authorization/auth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module-4/15_authorization/auth/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-4/15_authorization/auth/backend/src/main/java/com/example/auth/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module-4/15_authorization/auth/backend/src/main/java/com/example/auth/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-4/15_authorization/shop/backend/src/main/java/com/example/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module-4/15_authorization/shop/backend/src/main/java/com/example/backend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/demo/project/src/app/recipes/recipe.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/recipes/recipe.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/demo/project/src/app/shared/ingredient.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/demo/project/src/app/shared/ingredient.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/first-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/first-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/first-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/first-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/first-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/first-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-5/first-app/src/app/component-data-binding-deep/server-element/server-element.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module-5/first-app/src/app/component-data-binding-deep/server-element/server-element.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +66,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Learning/Codegym/codegym-bt/Module-3/06_css/the_witcher/the_last_wish&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Learning\Codegym\codegym-bt\Module-3\06_css\the_witcher\the_last_wish" />
@@ -59,6 +92,10 @@
       <workItem from="1668915379331" duration="6754000" />
       <workItem from="1669046909374" duration="13783000" />
       <workItem from="1669516865240" duration="628000" />
+      <workItem from="1681456412073" duration="643000" />
+      <workItem from="1681458458154" duration="196000" />
+      <workItem from="1681458688950" duration="46000" />
+      <workItem from="1681830974288" duration="443000" />
     </task>
     <servers />
   </component>
@@ -75,5 +112,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,0 +1,12 @@
+<div class="recipe-group bg-light" routerLinkActive="selected">
+  <a class="recipe-link d-flex justify-content-between pointer"
+     [routerLink]="[recipe.id]">
+    <div class="">
+      <h4 class="m-0">{{ recipe.name }}</h4>
+      <p class="m-0">{{ recipe.description }}</p>
+    </div>
+    <div class="d-flex justify-content-end">
+      <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="" style="max-height: 50px">
+    </div>
+  </a>
+</div>

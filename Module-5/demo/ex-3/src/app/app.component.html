@@ -1,0 +1,7 @@
+<div class="container">
+    <button (click)="onToggleDetail()" class="btn btn-primary">Show Details</button>
+    <p [hidden]="messStatus">{{ message }}</p>
+    <div *ngFor="let c of clickDetails">
+      <p [ngClass]="c.className">{{ c.count + ' - ' + c.date }}</p>
+    </div>
+</div>

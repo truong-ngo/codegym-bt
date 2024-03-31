@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="cal-container">
+        <div class="screen-ctn px-1 mb-3">
+            <div class="screen p-2 d-flex align-items-center">{{ screenContent }}</div>
+        </div>
+        <div class="btn-area">
+            <div class="row g-0">
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('(')" class="btn btn-light border">(</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton(')')" class="btn btn-light border">)</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('%')" class="btn btn-light border">%</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="clearScreen()" class="btn btn-danger border">AC</button></div>
+            </div>
+            <div class="row g-0 mt-2">
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('7')" class="btn btn-light border">7</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('8')" class="btn btn-light border">8</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('9')" class="btn btn-light border">9</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('/')" class="btn btn-light border">/</button></div>
+            </div>
+            <div class="row g-0 mt-2">
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('4')" class="btn btn-light border">4</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('5')" class="btn btn-light border">5</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('6')" class="btn btn-light border">6</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('*')" class="btn btn-light border">X</button></div>
+            </div>
+            <div class="row g-0 mt-2">
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('1')" class="btn btn-light border">1</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('2')" class="btn btn-light border">2</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('3')" class="btn btn-light border">3</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('-')" class="btn btn-light border">-</button></div>
+            </div>
+            <div class="row g-0 mt-2">
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('0')" class="btn btn-light border">0</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('.')" class="btn btn-light border">.</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="calculate()" class="btn btn-primary border">=</button></div>
+                <div class="col col-3 g-0 px-1" ><button (click)="onTypeButton('+')" class="btn btn-light border">+</button></div>
+            </div>
+        </div>
+    </div>
+</div>

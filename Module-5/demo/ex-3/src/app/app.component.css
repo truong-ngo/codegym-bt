@@ -1,0 +1,13 @@
+button {
+    border-radius: 0;
+}
+
+.active {
+    color: blue;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+
+p {
+    padding: 10px;
+}

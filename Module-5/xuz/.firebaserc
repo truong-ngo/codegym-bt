@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "upload-file-540c6": {
+      "hosting": {
+        "xuz": [
+          "upload-file-540c6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "upload-file-540c6"
+  }
+}

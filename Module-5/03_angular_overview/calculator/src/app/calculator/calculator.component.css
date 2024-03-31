@@ -1,0 +1,16 @@
+.cal-container {
+    padding: 12px;
+    border: 1px solid grey;
+    width: 300px;
+}
+.btn-area {
+
+}
+button {
+    width: 100%;
+}
+.screen {
+    width: 100%;
+    height: 38px;
+    border: 1px solid grey;
+}

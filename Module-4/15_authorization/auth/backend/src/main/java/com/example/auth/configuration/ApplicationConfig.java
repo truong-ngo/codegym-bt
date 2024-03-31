@@ -43,7 +43,6 @@ public class ApplicationConfig implements WebMvcConfigurer, ApplicationContextAw
 //    private String fileUpload;
 
     private ApplicationContext applicationContext;
-
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
